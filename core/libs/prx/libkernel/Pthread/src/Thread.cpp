@@ -312,10 +312,12 @@ int APS5_VABI scePthreadCreate(Pthread* thread, const PthreadAttr* attr, Pthread
         throw std::runtime_error("scePthreadCreate: invalid Windows stack size");
     auto native = std::make_unique<NativeThreadArgs>(NativeThreadArgs{std::move(args), start.get_future(), {}});
     auto initialized = native->initialized.get_future();
-    const auto handle = _beginthreadex(nullptr, static_cast<unsigned>(nativeStack), StartNativeThread, native.get(), 0, nullptr);
+    unsigned nativeThreadId = 0;
+    const auto handle = _beginthreadex(nullptr, static_cast<unsigned>(nativeStack), StartNativeThread, native.get(), 0, &nativeThreadId);
     if (handle == 0)
         throw std::system_error(errno, std::generic_category(), "Creating guest thread");
     p->nativeHandle = reinterpret_cast<void*>(handle);
+    p->nativeThreadId = nativeThreadId;
     native.release();
     try {
         initialized.get();
@@ -427,6 +429,7 @@ Pthread APS5_VABI scePthreadSelf() {
         if (!DuplicateHandle(GetCurrentProcess(), GetCurrentThread(), GetCurrentProcess(), &handle, 0, FALSE, DUPLICATE_SAME_ACCESS))
             throw std::system_error(GetLastError(), std::system_category(), "Adopting guest thread");
         adopted->nativeHandle = handle;
+        adopted->nativeThreadId = GetCurrentThreadId();
         adopted->threadId = std::this_thread::get_id();
         adopted->_detached = true;
         adopted->references.store(1, std::memory_order_relaxed);
