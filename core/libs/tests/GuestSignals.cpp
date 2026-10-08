@@ -46,4 +46,16 @@ int main() {
     Require(sigprocmask_nid_postfix(2, &blocked, nullptr) == 0);
     Require(sigprocmask_nid_postfix(1, nullptr, &previous) == 0);
     Require(previous.bits[0] == 0);
+    Require(signal_nid_postfix(15, Callback) != invalid);
+    GuestSignalSet term{{1u << 14, 0, 0, 0}};
+    received = 0;
+    Require(sigprocmask_nid_postfix(1, &term, nullptr) == 0);
+    Require(raise_nid_postfix(15) == 0 && received == 0);
+    Require(sigprocmask_nid_postfix(2, &term, nullptr) == 0);
+    Require(raise_nid_postfix(15) == 0 && received == 15);
+    GuestSignalSet urg{{1u << 15, 0, 0, 0}};
+    received = 0;
+    Require(sigprocmask_nid_postfix(1, &urg, nullptr) == 0);
+    Require(raise_nid_postfix(15) == 0 && received == 15);
+    Require(sigprocmask_nid_postfix(2, &urg, nullptr) == 0);
 }
