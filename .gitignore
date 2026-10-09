@@ -101,6 +101,7 @@ downloads/
 
 *.json
 !docs/research/*.json
+docs/research/fork-snapshot.json
 !docs/compatibility/*.json
 !docs/testing/*.json
 !demo/web/i18n/*.json

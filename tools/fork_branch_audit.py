@@ -10,7 +10,7 @@ def git(*args):
     env = dict(os.environ, GIT_TERMINAL_PROMPT="0", GCM_INTERACTIVE="Never")
     result = subprocess.run(["git", *args], capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120, env=env)
     if result.returncode:
-        raise RuntimeError(result.stderr.strip())
+        raise RuntimeError(result.stderr.strip() or f"git {args[0]} exited with {result.returncode} without diagnostics")
     return result.stdout.strip()
 
 

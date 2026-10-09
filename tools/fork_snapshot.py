@@ -61,7 +61,7 @@ def main():
             row["error"] = str(error)
         return tip, row
 
-    pending = [tip for tip in tips if tip not in result["tips"]]
+    pending = [tip for tip in tips if tip not in result["tips"] or "error" in result["tips"][tip]]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         for tip, row in pool.map(inspect, pending):
             result["tips"][tip] = row
