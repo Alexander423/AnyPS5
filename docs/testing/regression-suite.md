@@ -1,5 +1,13 @@
 # Regression suite
 
+## POSIX filesystem and browser continuation
+
+Local code `f95ad11a9`, published tree-equivalent `f0288f10f30a8517b360d9aa276b54fb423a34a6`: full native build and patched libraries pass. Full suite: **526 passed, 1 failed, 2 skipped out of 529**, 80.28 seconds (posix-full.xml). Only the previously reproduced pixel-interlock failure remains; both skips are unchanged. Source conventions pass before report edits. Registration reports 448 test executables, the two known unrun executables and no new omissions.
+
+The initial POSIX/browser pair passed 2/2 at local `c972979a9` (posix-focused.xml). The later browser signature/test refinement is included in the final full suite. Filesystem cases exercise collisions without clobbering, retry recovery, binary I/O, error translation, sockets/pipes/closed descriptors and terminals. Browser tests check the explicit unavailable result, null/empty URLs and unmodified parameters. The Windows console success branch is conditional on an available console; a passing test alone does not establish that branch ran.
+
+[CI run 38000099359](https://github.com/Alexander423/AnyPS5/actions/runs/38000099359) includes guest_posix_filesystem and guest_system_service in both hosts' ABI jobs, retaining signal stress and Linux shader checks. Final status is recorded in baseline.json. Four fresh homebrew relinks and static audits used clean source and rebuilt libraries; all runtime dimensions remain NOT_TESTED. The patched POSIX PRX imports GuestSocketIsOpen_nid_no_patch and patched libkernel exports it, verified with objdump.
+
 ## Per-thread signals continuation
 
 Local code `160047ae5`, published tree-equivalent code `a4d82b379d042d97fc506bf2922566f0b0d12490`: full native build and patched-library build pass. Full CTest is **525 passed, 1 failed, 2 skipped out of 528**, in 77.55 seconds. The pixel-interlock failure and two skips are unchanged. Evidence: signals-full.xml. Source conventions pass before report changes; registration checking finds 447 executables, two previously recorded unrun executables and no new omissions.

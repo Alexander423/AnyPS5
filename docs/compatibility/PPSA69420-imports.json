@@ -1,36 +1,26 @@
 {
-  "source_commit": "160047ae50256df976f3490f93d25fb8eb6c2ec8",
+  "source_commit": "f95ad11a9d17420ca36fd0c86545f0b91fb822bc",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\signals\\PPSA69420\\app.registry.json"
+    "..\\homebrew-results\\posix\\PPSA69420\\app.registry.json"
   ],
   "references": 208,
   "unique_imports": 208,
   "unique_by_class": {
-    "implemented": 205,
+    "implemented": 206,
     "stub": 0,
-    "absent": 3,
+    "absent": 2,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 205,
+    "implemented": 206,
     "stub": 0,
-    "absent": 3,
+    "absent": 2,
     "module": 0
   },
   "missing_libraries": {},
   "library_mismatch": 0,
   "imports": [
-    {
-      "nid": "-+3hY+y8bNo",
-      "library": "libSceSystemService.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sceSystemServiceLaunchWebBrowser",
-      "name_verified": true
-    },
     {
       "nid": "2dEhvvjlq30",
       "library": "libkernel.prx",
@@ -1433,6 +1423,17 @@
       "class": "implemented",
       "providers": [
         "libScePosixForWebKit.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "-+3hY+y8bNo",
+      "library": "libSceSystemService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSystemService.prx"
       ],
       "library_mismatch": false,
       "name": null

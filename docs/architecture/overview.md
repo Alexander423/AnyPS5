@@ -1,5 +1,7 @@
 # Architecture baseline
 
+The POSIX WebKit library now routes mkstemp through the guest file/path layer with exclusive creation; isatty distinguishes terminals, files, pipes and guest socket descriptors. Its socket-query helper remains unmodified by NID patching. The system-service browser export is deliberately unavailable: it returns guest EOPNOTSUPP and launches nothing. The compatibility report lists this separately from functional API support.
+
 Per-thread signal masks now live on PthreadPrivate as four 32-bit words, with inherited masks and pending delivery. Linux bridges mapped guest signals to host masks and supports raised-exception context delivery; Windows maintains guest pending state and avoids an internal emulated-TLS lookup on delivery. Handler mask changes are scoped to the interrupted context. This does not implement sigaction flags or remove all asynchronous host-lock/TLS hazards. The attributed integration and limitations are in the community patch catalog.
 
 Source: [upstream architecture](../dev/ARCHITECTURE.md), revision `d70b89989473ba1f6ae13e44e079e67f1f8a44b0`.

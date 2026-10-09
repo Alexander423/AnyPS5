@@ -1,5 +1,7 @@
 # Priority fork comparison
 
+On 2026-10-10 upstream `c6e3aa767ba9a83db67496d6da7a18486c51d0f6` is 95 first-parent commits beyond the prior baseline. PR1613 (POSIX temporary files/terminal checks) and PR2065 (browser unavailable result) were reviewed and integrated individually with their follow-ups. No complete upstream merge or refreshed network-wide audit is implied. Exact source/published mappings are in the patch catalog and upstream-checkpoint-2026-10-10.json.
+
 The signal continuation separately reviewed Zaid-Talib/AnyPS5 `claude/guest-signal-masks` at `28bea19c49379a30332e5ba207ef4a0ceffe3a4f`: six unique commits beyond its merge base. All six were integrated individually after native signal/exception tests, with conflict resolution retaining prior fixes. PR2106's pthread_sigmask wrapper was then applied against the new per-thread implementation. See the patch catalog for exact source/published mappings and unresolved signal limitations. The priority-fork snapshot below remains historical.
 
 Baseline `d70b89989473ba1f6ae13e44e079e67f1f8a44b0`. Seven requested repositories fetched with all advertised branches: 101 refs. Ahead/behind is commit ancestry, not a functionality ranking. `git cherry` records patch-id equivalence; file lists use merge-base diffs. Duplicate merge commits and semantic equivalents require further human review.

@@ -1,21 +1,21 @@
 {
-  "source_commit": "160047ae50256df976f3490f93d25fb8eb6c2ec8",
+  "source_commit": "f95ad11a9d17420ca36fd0c86545f0b91fb822bc",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\signals\\PPSA99039\\app.registry.json"
+    "..\\homebrew-results\\posix\\PPSA99039\\app.registry.json"
   ],
   "references": 342,
   "unique_imports": 342,
   "unique_by_class": {
-    "implemented": 311,
+    "implemented": 313,
     "stub": 1,
-    "absent": 30,
+    "absent": 28,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 311,
+    "implemented": 313,
     "stub": 1,
-    "absent": 30,
+    "absent": 28,
     "module": 0
   },
   "missing_libraries": {},
@@ -142,16 +142,6 @@
       "name_verified": true
     },
     {
-      "nid": "InoC17C0v7k",
-      "library": "libScePosixForWebKit.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "isatty",
-      "name_verified": true
-    },
-    {
       "nid": "n1KOc0lTUEs",
       "library": "libScePosixForWebKit.prx",
       "references": 1,
@@ -159,16 +149,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "arc4random_buf",
-      "name_verified": true
-    },
-    {
-      "nid": "uEtgPWgPxOk",
-      "library": "libScePosixForWebKit.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "mkstemp",
       "name_verified": true
     },
     {
@@ -2218,7 +2198,29 @@
       "name": null
     },
     {
+      "nid": "InoC17C0v7k",
+      "library": "libScePosixForWebKit.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePosixForWebKit.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
       "nid": "eDmbt0P120g",
+      "library": "libScePosixForWebKit.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePosixForWebKit.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "uEtgPWgPxOk",
       "library": "libScePosixForWebKit.prx",
       "references": 1,
       "class": "implemented",

@@ -1,5 +1,22 @@
 # Community patch catalog
 
+## POSIX filesystem and browser continuation (2026-10-10)
+
+Upstream advanced from `d70b89989473ba1f6ae13e44e079e67f1f8a44b0` to `c6e3aa767ba9a83db67496d6da7a18486c51d0f6` (95 first-parent commits). This is a targeted integration of two reviewed PRs, not a full upstream synchronization. main remains unchanged. The previous fork-network census remains historical; see upstream-checkpoint-2026-10-10.json.
+
+| Source | Author | Published integration |
+|---|---|---|
+| [9f7e2ca75d438a3f529ad58dfc5b7f46ae622efe](https://github.com/boykopovar/AnyPS5/commit/9f7e2ca75d438a3f529ad58dfc5b7f46ae622efe) | LuisBiceps | b9871d73f8f046df824aa0d1633cc74f42fae4e7 |
+| [a551d3ee360f73055c9c5976c7bead48679d5f7b](https://github.com/boykopovar/AnyPS5/commit/a551d3ee360f73055c9c5976c7bead48679d5f7b) | LuisBiceps | 071fc01cccdd67f5b8dfe609e9b8f7aeec4bb178 |
+| [7a771d2d89a8a5d70d80e4370fb96c1deaee3cd8](https://github.com/boykopovar/AnyPS5/commit/7a771d2d89a8a5d70d80e4370fb96c1deaee3cd8) | Tomas Ortellado (NumberGuan) | 57e39fda633c6831e8306b699ade57d1c5f8c89a |
+| [f9be27619ea3ac80ac57dd4b71a4add08cf91e6d](https://github.com/boykopovar/AnyPS5/commit/f9be27619ea3ac80ac57dd4b71a4add08cf91e6d) | NumberGuan | 87068483b1102e5f63a3c0e436acb7be81a51f27 |
+
+[PR2065](https://github.com/boykopovar/AnyPS5/pull/2065) supplies the browser export with an explicit unavailable result, not a host browser launcher. The follow-up matches the public void* parameter declaration and tests literal 0x8002002D, null/empty URLs and unchanged parameter bytes. Existing media-playback cases were retained in conflict resolution. The exact console error and parameter validation remain unverified. The inspected [RommPS caller](https://github.com/s0liton/RommPS/blob/754d4d60f25938a5136b9e2efcd074313c4386c5/platform/ps5/app/rommps/examples/rommps/kit/credits.cpp) tests zero versus nonzero. That is not runtime evidence for ScreenTester5, whose pinned binary imports the same export. The alternative host-launch implementation `7660b10a7590089dd3649b15582e2bb85ff68acf` was reviewed but not integrated.
+
+[PR1613](https://github.com/boykopovar/AnyPS5/pull/1613) adds mkstemp and isatty. Review checked guest path resolution, exclusive creation, descriptor/errno translation, collision enumeration, write guards and socket classification. FreeBSD references: [temporary files](https://github.com/freebsd/freebsd-src/blob/releng/11.0/lib/libc/stdio/mktemp.c), [terminal detection](https://github.com/freebsd/freebsd-src/blob/releng/11.0/lib/libc/gen/isatty.c). The FreeBSD and RommPS source was used for reference; it was not copied into the implementation. Windows permissions retain existing kernel-file limitations; console equivalence remains unverified. The follow-up exports the socket helper without NID rewriting; both its import and export were verified in rebuilt patched PRXs. Tests cover collision exhaustion/recovery without overwriting existing files, binary read/write, fixed names, bad paths, pipes, guest sockets, closed descriptors and terminal detection. The Linux test uses a PTY; the Windows console success case runs only if a console is available.
+
+Original source commits remain additional published parents, with cherry-pick attribution and exact local/remote tree verification. Only documented overlaps were resolved; unrelated upstream changes were excluded. Full native results and CI evidence are in the regression suite. No performance, browser functionality or homebrew startup claim is made.
+
 ## Per-thread signal integration
 
 The later [Zaid-Talib guest-signal-masks branch](https://github.com/Zaid-Talib/AnyPS5/tree/claude/guest-signal-masks) was reviewed at `28bea19c49379a30332e5ba207ef4a0ceffe3a4f`. Unlike the earlier PR1431 head discussed below, this branch actually adds per-thread masks, inheritance and pending delivery. Its six unique commits were applied individually with attribution; prior signal-bit tests and the existing Windows wait/context ordering were retained during conflict resolution. No license changes were introduced.
@@ -122,8 +139,8 @@ Entries below are candidates, not approved integrations. Commit subjects are aut
 | [637dca91cf94ed76feb4bfb76303be3e69f8e180](https://github.com/SP4C3B4R-8/AnyPS5/commit/637dca91cf94ed76feb4bfb76303be3e69f8e180) | Michon | feat(agc): render into one depth slice of a 3D color target |
 | [f7ab857ab14a981be21d84c240bf19151bcdfedb](https://github.com/SP4C3B4R-8/AnyPS5/commit/f7ab857ab14a981be21d84c240bf19151bcdfedb) | Michon | feat(agc): 4 KiB standard color targets and color views of one array slice |
 | [e087a4f303a125d19a8fd6309d5e1a023cf0557d](https://github.com/SP4C3B4R-8/AnyPS5/commit/e087a4f303a125d19a8fd6309d5e1a023cf0557d) | SP4C3B4R-8 | fix(libSceAgcDriver): skip depth and stencil tests whose plane is absent |
-| [946640431ef4f7e76f4ffbfe410ae37c6cb4499d](https://github.com/SP4C3B4R-8/AnyPS5/commit/946640431ef4f7e76f4ffbfe410ae37c6cb4499d) | Adrià Franch | feat(shader): implement the float and 64-bit inc/dec buffer atomics |
-| [f42d0f2f9e0ddfb92328e0d4ee12379446db1f7c](https://github.com/SP4C3B4R-8/AnyPS5/commit/f42d0f2f9e0ddfb92328e0d4ee12379446db1f7c) | Adrià Franch | feat(shader): implement buffer_atomic_inc/dec and the 64-bit integer buffer atomics |
+| [946640431ef4f7e76f4ffbfe410ae37c6cb4499d](https://github.com/SP4C3B4R-8/AnyPS5/commit/946640431ef4f7e76f4ffbfe410ae37c6cb4499d) | AdriÃ  Franch | feat(shader): implement the float and 64-bit inc/dec buffer atomics |
+| [f42d0f2f9e0ddfb92328e0d4ee12379446db1f7c](https://github.com/SP4C3B4R-8/AnyPS5/commit/f42d0f2f9e0ddfb92328e0d4ee12379446db1f7c) | AdriÃ  Franch | feat(shader): implement buffer_atomic_inc/dec and the 64-bit integer buffer atomics |
 | [890363ef708162502865417879c069d435bad49b](https://github.com/SP4C3B4R-8/AnyPS5/commit/890363ef708162502865417879c069d435bad49b) | Dean Galvin | Merge origin/main d7f0c49fd into astrobot (upstream sync 2026-10-05) |
 | [159b633d2cb72ed392e1cf5b8c9dc54db0feecfa](https://github.com/SP4C3B4R-8/AnyPS5/commit/159b633d2cb72ed392e1cf5b8c9dc54db0feecfa) | Dean Galvin | docs: update the Astro Bot status with current frame rates and frames |
 | [382b5dff26100810a0c2d14d1be2a6db00fdd455](https://github.com/SP4C3B4R-8/AnyPS5/commit/382b5dff26100810a0c2d14d1be2a6db00fdd455) | Dean Galvin | perf(agc): size the pipeline cache to a level's working set |
@@ -479,8 +496,8 @@ Entries below are candidates, not approved integrations. Commit subjects are aut
 | [167d574774cccc54481c928386687695990bfa70](https://github.com/SP4C3B4R-8/AnyPS5/commit/167d574774cccc54481c928386687695990bfa70) | Michon | fix(agc): depth fast clears through the HTILE metadata |
 | [d1cfcfe5de1a7babe2793356f2110130c33de6b1](https://github.com/SP4C3B4R-8/AnyPS5/commit/d1cfcfe5de1a7babe2793356f2110130c33de6b1) | SP4C3B4R-8 | chore(agc): dump a draw's programs by code address |
 | [4dd23f00896537d7b35eee1ccb577ed6c75af69c](https://github.com/SP4C3B4R-8/AnyPS5/commit/4dd23f00896537d7b35eee1ccb577ed6c75af69c) | SP4C3B4R-8 | perf(agc): time each recorded draw on the GPU by its fragment program |
-| [21e55758e5c3eaa7a0e4fa1819ce458f385a809b](https://github.com/oneandonlydean/AnyPS5/commit/21e55758e5c3eaa7a0e4fa1819ce458f385a809b) | Adrià Franch | refactor(shader): read f64 operands through readF64Bits and record the v_fma_f64 subnormal gap |
-| [b013c23693416f68cc6fb2c85331815f2c27fb0e](https://github.com/oneandonlydean/AnyPS5/commit/b013c23693416f68cc6fb2c85331815f2c27fb0e) | Adrià Franch | feat(shader): implement basic f64 VALU ops |
+| [21e55758e5c3eaa7a0e4fa1819ce458f385a809b](https://github.com/oneandonlydean/AnyPS5/commit/21e55758e5c3eaa7a0e4fa1819ce458f385a809b) | AdriÃ  Franch | refactor(shader): read f64 operands through readF64Bits and record the v_fma_f64 subnormal gap |
+| [b013c23693416f68cc6fb2c85331815f2c27fb0e](https://github.com/oneandonlydean/AnyPS5/commit/b013c23693416f68cc6fb2c85331815f2c27fb0e) | AdriÃ  Franch | feat(shader): implement basic f64 VALU ops |
 | [196d6d9957e7567ea2d866110bb8062f02a3b83c](https://github.com/oneandonlydean/AnyPS5/commit/196d6d9957e7567ea2d866110bb8062f02a3b83c) | DotDebian | feat(shader): implement the VOPC f64 compares |
 | [375fe317ac59f2bbf66a5f5abf2ed2ae11d58db7](https://github.com/oneandonlydean/AnyPS5/commit/375fe317ac59f2bbf66a5f5abf2ed2ae11d58db7) | SP4C3B4R-8 | fix(libSceAgcDriver): skip depth and stencil tests whose plane is absent |
 | [4f8883faad8ffbd5ecf294f0da531dc1e224c3de](https://github.com/oneandonlydean/AnyPS5/commit/4f8883faad8ffbd5ecf294f0da531dc1e224c3de) | Dean Galvin | test(agc): give the mock device a maxMemoryAllocationCount |
@@ -494,10 +511,10 @@ Entries below are candidates, not approved integrations. Commit subjects are aut
 | [9f77e61acc5f4d6e2092bcfdf4d0b79408c20555](https://github.com/oneandonlydean/AnyPS5/commit/9f77e61acc5f4d6e2092bcfdf4d0b79408c20555) | Dean Galvin | revert(agc): drop astrobot's 0e4853c1 swizzle tables, superseded by upstream #404 |
 | [4ced3af422871038d16427a561781918c418434b](https://github.com/oneandonlydean/AnyPS5/commit/4ced3af422871038d16427a561781918c418434b) | Dean Galvin | integ: take #376's depth bias and bounds rules in place of astrobot's |
 | [5b236afca30ebf47204016c7aa9b7d312aa384cc](https://github.com/oneandonlydean/AnyPS5/commit/5b236afca30ebf47204016c7aa9b7d312aa384cc) | Dean Galvin | integ: take #294 and its compacted-exports follow-up in place of 806851ea and 005bdb41 |
-| [c5199a3259147b897f778a03f0e981e5d77b7b5b](https://github.com/oneandonlydean/AnyPS5/commit/c5199a3259147b897f778a03f0e981e5d77b7b5b) | Adrià Franch | perf(shader): build a shader's front end once on first use |
-| [f42fb79ece23825c4dc62892b286c461a08990bd](https://github.com/oneandonlydean/AnyPS5/commit/f42fb79ece23825c4dc62892b286c461a08990bd) | Adrià Franch | feat(shader): implement v_mad_i64_i32 |
-| [1c0ade9f6270fd3baed212684928dcb960aa1230](https://github.com/oneandonlydean/AnyPS5/commit/1c0ade9f6270fd3baed212684928dcb960aa1230) | Adrià Franch | feat(shader): implement v_movrelsd_b32, v_movrelsd_2_b32, v_swap_b32 and v_swaprel_b32 |
-| [1b1e85e14b96f0b094f1b01a1ffec5aad63519eb](https://github.com/oneandonlydean/AnyPS5/commit/1b1e85e14b96f0b094f1b01a1ffec5aad63519eb) | Adrià Franch | feat(shader): implement the float and 64-bit inc/dec buffer atomics |
+| [c5199a3259147b897f778a03f0e981e5d77b7b5b](https://github.com/oneandonlydean/AnyPS5/commit/c5199a3259147b897f778a03f0e981e5d77b7b5b) | AdriÃ  Franch | perf(shader): build a shader's front end once on first use |
+| [f42fb79ece23825c4dc62892b286c461a08990bd](https://github.com/oneandonlydean/AnyPS5/commit/f42fb79ece23825c4dc62892b286c461a08990bd) | AdriÃ  Franch | feat(shader): implement v_mad_i64_i32 |
+| [1c0ade9f6270fd3baed212684928dcb960aa1230](https://github.com/oneandonlydean/AnyPS5/commit/1c0ade9f6270fd3baed212684928dcb960aa1230) | AdriÃ  Franch | feat(shader): implement v_movrelsd_b32, v_movrelsd_2_b32, v_swap_b32 and v_swaprel_b32 |
+| [1b1e85e14b96f0b094f1b01a1ffec5aad63519eb](https://github.com/oneandonlydean/AnyPS5/commit/1b1e85e14b96f0b094f1b01a1ffec5aad63519eb) | AdriÃ  Franch | feat(shader): implement the float and 64-bit inc/dec buffer atomics |
 | [48d2d0555fff22b6765ad76f91d8376b15f4834f](https://github.com/oneandonlydean/AnyPS5/commit/48d2d0555fff22b6765ad76f91d8376b15f4834f) | Dean Galvin | perf(agc): size the pipeline cache to a level's working set |
 | [3f8514511a0994a832846933a1cabe038a2ca08e](https://github.com/oneandonlydean/AnyPS5/commit/3f8514511a0994a832846933a1cabe038a2ca08e) | Dean Galvin | perf(agc): keep a storage image's refresh proof while nothing it read moved |
 | [7e60c72aecd0c9fbab842ca8b3e6bb613d086812](https://github.com/oneandonlydean/AnyPS5/commit/7e60c72aecd0c9fbab842ca8b3e6bb613d086812) | Dean Galvin | perf(agc): prove a render target's register clear keys instead of scanning them every draw |

@@ -1,0 +1,15 @@
+{
+  "observed_date": "2026-10-10",
+  "previous_baseline": "d70b89989473ba1f6ae13e44e079e67f1f8a44b0",
+  "fetched_tip": "c6e3aa767ba9a83db67496d6da7a18486c51d0f6",
+  "first_parent_commits": 95,
+  "integrated_sources": [
+    "9f7e2ca75d438a3f529ad58dfc5b7f46ae622efe",
+    "7a771d2d89a8a5d70d80e4370fb96c1deaee3cd8",
+    "f9be27619ea3ac80ac57dd4b71a4add08cf91e6d",
+    "a551d3ee360f73055c9c5976c7bead48679d5f7b"
+  ],
+  "full_upstream_integrated": false,
+  "main_unchanged": true,
+  "note": "Targeted integration only. The 2026-10-09 fork inventory remains a historical snapshot; no new full-network census is claimed."
+}

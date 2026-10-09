@@ -1,21 +1,21 @@
 {
-  "source_commit": "160047ae50256df976f3490f93d25fb8eb6c2ec8",
+  "source_commit": "f95ad11a9d17420ca36fd0c86545f0b91fb822bc",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\signals\\PPSA99001\\app.registry.json"
+    "..\\homebrew-results\\posix\\PPSA99001\\app.registry.json"
   ],
   "references": 488,
   "unique_imports": 455,
   "unique_by_class": {
-    "implemented": 398,
+    "implemented": 400,
     "stub": 2,
-    "absent": 55,
+    "absent": 53,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 430,
+    "implemented": 432,
     "stub": 2,
-    "absent": 56,
+    "absent": 54,
     "module": 0
   },
   "missing_libraries": {
@@ -322,26 +322,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "sceOpusDecTerminate",
-      "name_verified": true
-    },
-    {
-      "nid": "InoC17C0v7k",
-      "library": "libScePosixForWebKit.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "isatty",
-      "name_verified": true
-    },
-    {
-      "nid": "uEtgPWgPxOk",
-      "library": "libScePosixForWebKit.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "mkstemp",
       "name_verified": true
     },
     {
@@ -3259,6 +3239,28 @@
       "class": "implemented",
       "providers": [
         "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "InoC17C0v7k",
+      "library": "libScePosixForWebKit.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePosixForWebKit.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "uEtgPWgPxOk",
+      "library": "libScePosixForWebKit.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePosixForWebKit.prx"
       ],
       "library_mismatch": false,
       "name": null

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="2"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="0"
+	timestamp="2026-10-10T00:34:23"
+	>
+	<testcase name="guest_posix_filesystem" classname="guest_posix_filesystem" time="0.214813" status="run">
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/file-p7emNjxgn flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/file-FXhSthJn0 flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occupied-f flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occupied-g flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occupied-h flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occupied-i flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occupied-j flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occupied-k flags=0xA02 nativeFlags=0x8502 mode=0600
+[src/Open.cpp:107 sceKernelOpen] path=/anyps5-posix-test/occ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="guest_system_service" classname="guest_system_service" time="0.0401494" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+</testsuite>

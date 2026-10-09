@@ -125,5 +125,34 @@
     "source_conventions": "PASS before report changes",
     "test_registration": "447 executables; two known unrun; no new omissions",
     "exception_allocation_failure_path": "Code reviewed; no fault injection test"
+  },
+  "posix_filesystem_browser": {
+    "local_code_commit": "f95ad11a9d17420ca36fd0c86545f0b91fb822bc",
+    "published_code_commit": "f0288f10f30a8517b360d9aa276b54fb423a34a6",
+    "tree_sha": "dbd075145b4bfe8b0215ae07aded626a8d8fadf2",
+    "full_build": "PASS",
+    "patched_libraries": "PASS",
+    "native": {
+      "tests": 529,
+      "passed": 526,
+      "failed": 1,
+      "skipped": 2,
+      "seconds": 80.28,
+      "junit": "posix-full.xml"
+    },
+    "initial_focused": {
+      "local_code_commit": "c972979a9d81974ab1f747ecadabe4d283b80206",
+      "tests": 2,
+      "passed": 2,
+      "junit": "posix-focused.xml",
+      "note": "Before browser signature/test follow-up; final behavior covered by full suite"
+    },
+    "source_conventions": "PASS before documentation updates",
+    "test_registration": "448 executables; two known unrun; no new omissions",
+    "patched_socket_helper": "Import and export GuestSocketIsOpen_nid_no_patch verified with objdump on patched PRXs",
+    "ci": {
+      "url": "https://github.com/Alexander423/AnyPS5/actions/runs/38000099359",
+      "status": "PENDING"
+    }
   }
 }
