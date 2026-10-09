@@ -1,5 +1,11 @@
 # Regression suite
 
+## System configuration continuation
+
+Local code `7f9770322`, published tree-equivalent code `29ebb25b0b9343e2dca2ed7e23220d63f2482b6e`: full native build and patched-library build pass. Full CTest remains **525 passed, 1 failed, 2 skipped out of 528** (73.37 seconds); the pixel-interlock failure and two skips are unchanged. Evidence: sysctl-full.xml. The CPU-only patch passes its focused test (sysctl.xml). The added memory fallback regression fails before implementation (sysctl-realmem-before.xml) and passes after (sysctl-realmem-after.xml). Source conventions and test-registration checks pass before the required report updates.
+
+Windows/Linux CI now includes guest_system_configuration: [37943953798](https://github.com/Alexander423/AnyPS5/actions/runs/37943953798); status is recorded in baseline.json. All four homebrew conversions and static import audits were repeated against clean source and freshly built libraries. No application was launched.
+
 ## Kernel API continuation
 
 The full native build and patched libraries were rebuilt at local code `9111f729d` (published tree-equivalent code `a7dd9324c7623014a7f6a1f1bc2c51e0ed94f807`). Full CTest: **525 passed, 1 failed, 2 skipped out of 528**, in 77 seconds. Failure/skips are unchanged. New guest_signal_sets and existing guest_signals/guest_thread_self pass. Source conventions passed against develop before report updates; test-registration checking reports 447 executables, the two already recorded unrun executables, and no new omissions.

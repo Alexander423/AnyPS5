@@ -1,5 +1,17 @@
 # Community patch catalog
 
+## System configuration continuation
+
+[PR1685](https://github.com/boykopovar/AnyPS5/pull/1685), overlordxrz-source, source `18798620e8e9c7973130d35d6211023bafe6bf42`, is integrated as `0b6a9286f33dd747e75e1e86b0f89c1ba83382ec`. It implements read-only hw.ncpu through sysctl/sysctlbyname, using the existing sysconf CPU count. Review included the PR description/comments and [FreeBSD userland_sysctl/sysctl_old_user](https://github.com/freebsd/freebsd-src/blob/releng/11.0/sys/kern/kern_sysctl.c). The original source commit remains a published merge parent with cherry-pick attribution. There are no license changes. The tests pass natively on Windows.
+
+The prior deferral was revisited after inspecting the exact pinned ScreenTester5 ELF. Its CPU fallback passes the hw.ncpu string at VA 0x1331c6 to sysctlbyname at 0x1d50d; its separate memory fallback passes MIB {6,12} and an eight-byte output at 0x1dd18. Registry GOT entries agree with the imports. These are static call sites, not proof of runtime execution. No disassembled third-party binary is included in this repository.
+
+Our follow-up `f8267170f363f2c99b4f83b92e1dbcee2236e33e` supports hw.realmem by name and MIB {6,12}. The guest unsigned-long result is explicitly uint64_t even on Windows. It reports the same host capacity in guest pages as existing sysconf(121), multiplied by the guest page size; this is an emulator model, not a claim about console RAM. Reference: [FreeBSD hw.realmem handler](https://github.com/freebsd/freebsd-src/blob/releng/11.0/sys/kern/kern_mib.c) and [MIB numbers](https://github.com/freebsd/freebsd-src/blob/releng/11.0/sys/sys/sysctl.h). The wider older candidates `abad77228` and `a2bdaa846` were inspected but not merged; their extra nodes and unrelated changes remain outside this integration.
+
+The new regression fails on the CPU-only patch with unsupported MIB 6.12 and passes after the follow-up. It checks size queries, eight-byte output, named/numeric agreement, capacities 0 through 10, exact copied bytes, untouched guard bytes, error/errno behavior and read-only rejection. Unsupported names and MIBs still throw. No new global state, allocations on supported queries or synchronization are introduced.
+
+Next signal candidates were triaged, not integrated: PR1916 (`b9359477cd8fa1e6796b15fd7882106ab3c3f1c1`) records some sigaction handlers without delivering them or applying masks/flags; PR2106 (`e663325fa885115bac4c67b75a8aa372eae24b37`) inherits the process-wide mask; PR1431 (`77143010efe1555449b6f11ee6a91b1517fd4b6d`) proposes per-thread masks and Linux delivery across several files. Their interaction needs a separate correctness review before claiming signal compatibility.
+
 ## Kernel API continuation
 
 - [Scott Schuster, PR1872](https://github.com/boykopovar/AnyPS5/pull/1872), source `25f95d9d5538a3f5b4f1bf3eed6653a18db1c1f3`, published `8660403cca5fc5f92bb66460cba6c48485938a82`: pthread_set_name_np delegates to the existing locked rename path, accepts a null name to clear it, and retains the void ABI. Tests cover main-thread rename, clearing and null handle. PR1593 instead throws for null names, unlike the [FreeBSD implementation](https://github.com/freebsd/freebsd-src/blob/stable/11/lib/libthr/thread/thr_info.c). Both PRs were closed for lacking a current title first-stop reproduction. No title startup claim is made here.

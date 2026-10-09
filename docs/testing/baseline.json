@@ -72,5 +72,19 @@
     "status": "PASS",
     "windows": "PASS",
     "linux": "PASS"
+  },
+  "sysctl_native": {
+    "tests": 528,
+    "failed": 1,
+    "skipped": 2,
+    "passed": 525,
+    "junit": "sysctl-full.xml"
+  },
+  "sysctl_source_commit": "7f9770322fb46f995babfc3ced807a5b991b5d06",
+  "sysctl_tree": "52077cbc8796fba19702e59ac7a5610a3aefa0b4",
+  "sysctl_published_commit": "29ebb25b0b9343e2dca2ed7e23220d63f2482b6e",
+  "sysctl_ci": {
+    "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37943953798",
+    "status": "IN_PROGRESS"
   }
 }

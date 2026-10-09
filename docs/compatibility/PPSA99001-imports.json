@@ -1,21 +1,21 @@
 {
-  "source_commit": "9111f729d4f7f5098a8b65dca59ad000e70be981",
+  "source_commit": "7f9770322fb46f995babfc3ced807a5b991b5d06",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\kernel-apis\\PPSA99001\\app.registry.json"
+    "..\\homebrew-results\\sysctl\\PPSA99001\\app.registry.json"
   ],
   "references": 488,
   "unique_imports": 455,
   "unique_by_class": {
-    "implemented": 395,
+    "implemented": 397,
     "stub": 2,
-    "absent": 58,
+    "absent": 56,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 427,
+    "implemented": 429,
     "stub": 2,
-    "absent": 59,
+    "absent": 57,
     "module": 0
   },
   "missing_libraries": {
@@ -435,16 +435,6 @@
       "name_verified": true
     },
     {
-      "nid": "DFmMT80xcNI",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sysctl",
-      "name_verified": true
-    },
-    {
       "nid": "HTxb6gmexa0",
       "library": "libkernel.prx",
       "references": 1,
@@ -522,16 +512,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "tcsetattr",
-      "name_verified": true
-    },
-    {
-      "nid": "MhC53TKmjVA",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sysctlbyname",
       "name_verified": true
     },
     {
@@ -3998,6 +3978,17 @@
       "name": null
     },
     {
+      "nid": "DFmMT80xcNI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
       "nid": "E+tyo3lp5Lw",
       "library": "libkernel.prx",
       "references": 1,
@@ -4197,6 +4188,17 @@
     },
     {
       "nid": "MZb0GKT3mo8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MhC53TKmjVA",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",

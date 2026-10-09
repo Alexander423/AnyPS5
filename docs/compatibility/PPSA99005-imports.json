@@ -1,21 +1,21 @@
 {
-  "source_commit": "9111f729d4f7f5098a8b65dca59ad000e70be981",
+  "source_commit": "7f9770322fb46f995babfc3ced807a5b991b5d06",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\kernel-apis\\PPSA99005\\app.registry.json"
+    "..\\homebrew-results\\sysctl\\PPSA99005\\app.registry.json"
   ],
   "references": 264,
   "unique_imports": 255,
   "unique_by_class": {
-    "implemented": 238,
+    "implemented": 239,
     "stub": 0,
-    "absent": 17,
+    "absent": 16,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 247,
+    "implemented": 248,
     "stub": 0,
-    "absent": 17,
+    "absent": 16,
     "module": 0
   },
   "missing_libraries": {},
@@ -119,16 +119,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "getgid",
-      "name_verified": true
-    },
-    {
-      "nid": "DFmMT80xcNI",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sysctl",
       "name_verified": true
     },
     {
@@ -2327,6 +2317,17 @@
     },
     {
       "nid": "CawZgCYqXWk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "DFmMT80xcNI",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",
