@@ -82,7 +82,7 @@ int APS5_VABI sysctl_nid_postfix(const int* name, std::uint32_t nameLength, void
         *__error_nid_postfix() = 14;
         return -1;
     }
-    if (nameLength != 2 || name[0] != 6 || name[1] != 3) {
+    if (nameLength != 2 || name[0] != 6 || (name[1] != 3 && name[1] != 12)) {
         std::string mib;
         for (std::uint32_t i = 0; i < nameLength; ++i) mib += (i == 0 ? "" : ".") + std::to_string(name[i]);
         throw std::runtime_error(std::string(__func__) + ": unsupported MIB " + mib);
@@ -90,6 +90,12 @@ int APS5_VABI sysctl_nid_postfix(const int* name, std::uint32_t nameLength, void
     if (newValue != nullptr) {
         *__error_nid_postfix() = 1;
         return -1;
+    }
+    if (name[1] == 12) {
+        const std::int64_t pages = sysconf_nid_postfix(121);
+        if (pages <= 0) return -1;
+        const std::uint64_t value = static_cast<std::uint64_t>(pages) * PS5_PAGE_SIZE;
+        return CopyOut(&value, sizeof(value), oldValue, oldLength);
     }
     const std::int64_t processors = sysconf_nid_postfix(58);
     if (processors <= 0) return -1;
@@ -102,8 +108,9 @@ int APS5_VABI sysctlbyname_nid_postfix(const char* name, void* oldValue, std::si
         *__error_nid_postfix() = 14;
         return -1;
     }
-    if (std::strcmp(name, "hw.ncpu") != 0) throw std::runtime_error(std::string(__func__) + ": unsupported name " + name);
-    static constexpr int mib[] = {6, 3};
+    const bool cpuCount = std::strcmp(name, "hw.ncpu") == 0;
+    if (!cpuCount && std::strcmp(name, "hw.realmem") != 0) throw std::runtime_error(std::string(__func__) + ": unsupported name " + name);
+    const int mib[] = {6, cpuCount ? 3 : 12};
     return sysctl_nid_postfix(mib, 2, oldValue, oldLength, newValue, newLength);
 }
 }

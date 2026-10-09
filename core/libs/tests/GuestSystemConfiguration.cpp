@@ -2,6 +2,8 @@
 #include <cstddef>
 #include <cstdint>
 #include <cstdlib>
+#include <array>
+#include <cstring>
 #include <stdexcept>
 extern "C" {
 std::int64_t APS5_VABI sysconf_nid_postfix(int);
@@ -51,7 +53,36 @@ static void CheckProcessorCountSysctl() {
     }
     Require(threw);
 }
+static void CheckRealMemorySysctl() {
+    const int mib[] = {6, 12};
+    const auto expected = static_cast<std::uint64_t>(sysconf_nid_postfix(121)) * 0x4000u;
+    Require(expected > 0);
+    std::size_t length = 0;
+    *__error_nid_postfix() = 13;
+    Require(sysctl_nid_postfix(mib, 2, nullptr, &length, nullptr, 0) == 0 && length == 8);
+    std::uint64_t value = 0;
+    Require(sysctl_nid_postfix(mib, 2, &value, &length, nullptr, 0) == 0 && value == expected && length == 8);
+    Require(*__error_nid_postfix() == 13);
+    for (std::size_t capacity = 0; capacity <= 10; ++capacity) {
+        std::array<unsigned char, 12> buffer;
+        buffer.fill(0xa5);
+        length = capacity;
+        *__error_nid_postfix() = 13;
+        const int result = sysctlbyname_nid_postfix("hw.realmem", buffer.data() + 1, &length, nullptr, 0);
+        const std::size_t copied = capacity < 8 ? capacity : 8;
+        Require(result == (capacity < 8 ? -1 : 0));
+        Require(*__error_nid_postfix() == (capacity < 8 ? 12 : 13));
+        Require(length == copied && buffer[0] == 0xa5);
+        Require(std::memcmp(buffer.data() + 1, &expected, copied) == 0);
+        for (std::size_t i = copied + 1; i < buffer.size(); ++i) Require(buffer[i] == 0xa5);
+    }
+    value = 0x1122334455667788ull;
+    length = sizeof(value);
+    Require(sysctlbyname_nid_postfix("hw.realmem", &value, &length, &expected, sizeof(expected)) == -1);
+    Require(*__error_nid_postfix() == 1 && value == 0x1122334455667788ull && length == sizeof(value));
+}
 int main() {
+    CheckRealMemorySysctl();
     CheckProcessorCountSysctl();
     *__error_nid_postfix() = 13;
     Require(sysconf_nid_postfix(47) == 0x4000);
