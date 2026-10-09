@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="2"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="57"
+	timestamp="2026-10-09T16:51:55"
+	>
+	<testcase name="guest_signals" classname="guest_signals" time="0.0139149" status="run">
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff7f70b1780 arg=0000000000000000 self=000001cbe59ac9e0
+</system-out>
+	</testcase>
+	<testcase name="guest_raise_exception" classname="guest_raise_exception" time="11.4215" status="run">
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd218b0 arg=00000003363ff600 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd217f0 arg=00000003363ff620 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd21d50 arg=00000003363ff640 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd219f0 arg=00000003363ff660 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd217b0 arg=00000003363ff680 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd217b0 arg=00000003363ff6a0 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd21870 arg=0000000000000000 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd21870 arg=0000000000000000 self=00000172a833d110
+[src/Thread.cpp:181 RunThread] RunThread entry=0x7ff66bd21870 arg=0000000000000000 self=00000172a833...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+</testsuite>

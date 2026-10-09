@@ -1,21 +1,21 @@
 {
-  "source_commit": "7f9770322fb46f995babfc3ced807a5b991b5d06",
+  "source_commit": "160047ae50256df976f3490f93d25fb8eb6c2ec8",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\sysctl\\PPSA99001\\app.registry.json"
+    "..\\homebrew-results\\signals\\PPSA99001\\app.registry.json"
   ],
   "references": 488,
   "unique_imports": 455,
   "unique_by_class": {
-    "implemented": 397,
+    "implemented": 398,
     "stub": 2,
-    "absent": 56,
+    "absent": 55,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 429,
+    "implemented": 430,
     "stub": 2,
-    "absent": 57,
+    "absent": 56,
     "module": 0
   },
   "missing_libraries": {
@@ -452,16 +452,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "sceKernelGetFsSandboxRandomWord",
-      "name_verified": true
-    },
-    {
-      "nid": "JZKw5+Wrnaw",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "pthread_sigmask",
       "name_verified": true
     },
     {
@@ -4133,6 +4123,17 @@
     },
     {
       "nid": "JUimFtKe0Kc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JZKw5+Wrnaw",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",

@@ -88,5 +88,35 @@
     "status": "PASS",
     "windows": "PASS",
     "linux": "PASS"
+  },
+  "signals": {
+    "local_code_commit": "160047ae50256df976f3490f93d25fb8eb6c2ec8",
+    "published_code_commit": "a4d82b379d042d97fc506bf2922566f0b0d12490",
+    "tree_sha": "b5c459d7b0b703649dbf6391337034ca5b63fbcc",
+    "full_build": "PASS",
+    "patched_libraries": "PASS",
+    "native": {
+      "tests": 528,
+      "passed": 525,
+      "failed": 1,
+      "skipped": 2,
+      "seconds": 77.55,
+      "junit": "signals-full.xml"
+    },
+    "chain_repeat": {
+      "local_code_commit": "3607cf9b20ae7a2b38136b0be36bc6c933efa3e2",
+      "published_code_commit": "d7430671930e062dbc616a98dde6b8ee1dbc554c",
+      "tests": 2,
+      "repetitions_each": 5,
+      "passed_runs": 10,
+      "log": "signal-chain-repeat.log"
+    },
+    "ci": {
+      "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37948277433",
+      "status": "PENDING"
+    },
+    "source_conventions": "PASS before report changes",
+    "test_registration": "447 executables; two known unrun; no new omissions",
+    "exception_allocation_failure_path": "Code reviewed; no fault injection test"
   }
 }

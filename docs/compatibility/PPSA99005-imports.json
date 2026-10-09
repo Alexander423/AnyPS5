@@ -1,21 +1,21 @@
 {
-  "source_commit": "7f9770322fb46f995babfc3ced807a5b991b5d06",
+  "source_commit": "160047ae50256df976f3490f93d25fb8eb6c2ec8",
   "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\sysctl\\PPSA99005\\app.registry.json"
+    "..\\homebrew-results\\signals\\PPSA99005\\app.registry.json"
   ],
   "references": 264,
   "unique_imports": 255,
   "unique_by_class": {
-    "implemented": 239,
+    "implemented": 240,
     "stub": 0,
-    "absent": 16,
+    "absent": 15,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 248,
+    "implemented": 249,
     "stub": 0,
-    "absent": 16,
+    "absent": 15,
     "module": 0
   },
   "missing_libraries": {},
@@ -119,16 +119,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "getgid",
-      "name_verified": true
-    },
-    {
-      "nid": "JZKw5+Wrnaw",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "pthread_sigmask",
       "name_verified": true
     },
     {
@@ -2416,6 +2406,17 @@
     },
     {
       "nid": "JGMio+21L4c",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JZKw5+Wrnaw",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",

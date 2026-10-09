@@ -1,0 +1,25 @@
+Test project C:/Projekte/PS5/AnyPS5/build
+    Start 456: guest_signals
+    Test #456: guest_signals ....................   Passed    0.02 sec
+    Start 456: guest_signals
+    Test #456: guest_signals ....................   Passed    0.01 sec
+    Start 456: guest_signals
+    Test #456: guest_signals ....................   Passed    0.01 sec
+    Start 456: guest_signals
+    Test #456: guest_signals ....................   Passed    0.02 sec
+    Start 456: guest_signals
+1/2 Test #456: guest_signals ....................   Passed    0.01 sec
+    Start 459: guest_raise_exception
+    Test #459: guest_raise_exception ............   Passed   11.45 sec
+    Start 459: guest_raise_exception
+    Test #459: guest_raise_exception ............   Passed   11.42 sec
+    Start 459: guest_raise_exception
+    Test #459: guest_raise_exception ............   Passed   11.44 sec
+    Start 459: guest_raise_exception
+    Test #459: guest_raise_exception ............   Passed   11.44 sec
+    Start 459: guest_raise_exception
+2/2 Test #459: guest_raise_exception ............   Passed   11.42 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  57.36 sec

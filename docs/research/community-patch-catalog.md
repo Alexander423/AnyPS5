@@ -1,5 +1,26 @@
 # Community patch catalog
 
+## Per-thread signal integration
+
+The later [Zaid-Talib guest-signal-masks branch](https://github.com/Zaid-Talib/AnyPS5/tree/claude/guest-signal-masks) was reviewed at `28bea19c49379a30332e5ba207ef4a0ceffe3a4f`. Unlike the earlier PR1431 head discussed below, this branch actually adds per-thread masks, inheritance and pending delivery. Its six unique commits were applied individually with attribution; prior signal-bit tests and the existing Windows wait/context ordering were retained during conflict resolution. No license changes were introduced.
+
+| Original source commit (Claude, with original coauthor trailers) | Published integration | Behavior |
+|---|---|---|
+| 7b465b585dbe84feda4739093d373ce58b1215cc | 4ef475fce66de554f11dd94ece48b66627be3462 | Linux raised-exception delivery and context writeback |
+| 77143010efe1555449b6f11ee6a91b1517fd4b6d | d3befa4c56b887873d8b9dd4081eb5e7cad31381 | Registration race and MXCSR validation |
+| 6d3a164f1cf61010593f0a4fcc809d25a61ade46 | 82dd6bcee63413785743140666071fba2ea0801e | Per-thread 128-bit masks, inheritance and pending signals |
+| 67a790382634dc098f776b14e0105506d317fed3 | f791bce19409e65e962ef7714c7567d0a7dbc0e7 | Handler mask restoration, deferred nesting and ignore behavior |
+| 6286ead889245026c9a36fd6d5cca27bc3a31dc0 | d30add8e88b9dac099a017651688dcaccce77391 | Signal-atomic mask transaction and in-place pending context |
+| 28bea19c49379a30332e5ba207ef4a0ceffe3a4f | d7430671930e062dbc616a98dde6b8ee1dbc554c | Avoid emulated TLS lookup in Windows pending delivery |
+
+Original commits remain additional parents of their corresponding published commits; each tree is checked against the local cherry-pick. This preserves attribution without importing the source branch's entire experimental tree.
+
+LeandroLP23's [PR2106](https://github.com/boykopovar/AnyPS5/pull/2106), source `e663325fa885115bac4c67b75a8aa372eae24b37`, is integrated as `9d026b628213d246d14e523572cba9e253ff54fe` after that prerequisite chain. pthread_sigmask now delegates to the per-thread mask implementation, validates how only when a set is supplied, and returns guest EINVAL directly without changing errno. Its earlier global-mask limitation is resolved by this chain. PR1916 sigaction remains deferred because storing a handler alone does not establish delivery and mask/flag semantics.
+
+Our follow-up `27bc56047fd556056f3e585f166690ebdf958e4d` restores the creator's host signal mask if Linux std::thread construction throws. The normal path is covered by thread tests; allocation-failure injection was not performed. `a4d82b379d042d97fc506bf2922566f0b0d12490` expands Windows/Linux CI to include raised exceptions and three repeats of both signal tests.
+
+Review limits: asynchronous interruption while a guest holds host locks remains hazardous; arbitrary guest TLS calls in handlers and Windows upper-YMM context preservation are not solved. The Windows dispatcher change avoids a specific internal TLS lookup, not every possible guest handler deadlock. This is not complete POSIX signal or sigaction compatibility. See the regression evidence and TechnicalDebt.md.
+
 ## System configuration continuation
 
 [PR1685](https://github.com/boykopovar/AnyPS5/pull/1685), overlordxrz-source, source `18798620e8e9c7973130d35d6211023bafe6bf42`, is integrated as `0b6a9286f33dd747e75e1e86b0f89c1ba83382ec`. It implements read-only hw.ncpu through sysctl/sysctlbyname, using the existing sysconf CPU count. Review included the PR description/comments and [FreeBSD userland_sysctl/sysctl_old_user](https://github.com/freebsd/freebsd-src/blob/releng/11.0/sys/kern/kern_sysctl.c). The original source commit remains a published merge parent with cherry-pick attribution. There are no license changes. The tests pass natively on Windows.

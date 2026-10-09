@@ -1,5 +1,15 @@
 # Regression suite
 
+## Per-thread signals continuation
+
+Local code `160047ae5`, published tree-equivalent code `a4d82b379d042d97fc506bf2922566f0b0d12490`: full native build and patched-library build pass. Full CTest is **525 passed, 1 failed, 2 skipped out of 528**, in 77.55 seconds. The pixel-interlock failure and two skips are unchanged. Evidence: signals-full.xml. Source conventions pass before report changes; registration checking finds 447 executables, two previously recorded unrun executables and no new omissions.
+
+GuestSignals covers full-width mask round trips, unmaskable bits, aliasing set/oldset, thread inheritance and independence, pending coalescing, ignore behavior, handler mask restoration, deferred nested delivery, prior signal-bit cases, and pthread_sigmask error/errno behavior. GuestRaiseException covers delivery/context behavior and repeated registration/delivery interactions. On the six-patch chain at local `3607cf9b2` (published `d7430671930e062dbc616a98dde6b8ee1dbc554c`), both tests passed once and then five times each: ten successful repeated runs, 57.36 seconds. The repeat log is signal-chain-repeat.log; this predates the pthread_sigmask wrapper and allocation-failure cleanup. Those follow-ups are included in the full native run.
+
+[Windows/Linux CI](https://github.com/Alexander423/AnyPS5/actions/runs/37948277433) adds raised exceptions to ABI tests and three repeats each of guest_signals and guest_raise_exception. CI status is recorded in baseline.json once complete. Full RX 6600 coverage is local; Linux CI shader checks use Mesa. No allocation-failure injection, sanitizer or Vulkan validation-layer result is claimed.
+
+Four fresh homebrew conversions and import audits use clean source and rebuilt patched libraries. All remain RELINKED with runtime NOT_TESTED. Report hashes include source tree, relinker, libraries, inputs, outputs and bundled modules.
+
 ## System configuration continuation
 
 Local code `7f9770322`, published tree-equivalent code `29ebb25b0b9343e2dca2ed7e23220d63f2482b6e`: full native build and patched-library build pass. Full CTest remains **525 passed, 1 failed, 2 skipped out of 528** (73.37 seconds); the pixel-interlock failure and two skips are unchanged. Evidence: sysctl-full.xml. The CPU-only patch passes its focused test (sysctl.xml). The added memory fallback regression fails before implementation (sysctl-realmem-before.xml) and passes after (sysctl-realmem-after.xml). Source conventions and test-registration checks pass before the required report updates.

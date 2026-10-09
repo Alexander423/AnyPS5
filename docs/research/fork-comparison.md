@@ -1,5 +1,7 @@
 # Priority fork comparison
 
+The signal continuation separately reviewed Zaid-Talib/AnyPS5 `claude/guest-signal-masks` at `28bea19c49379a30332e5ba207ef4a0ceffe3a4f`: six unique commits beyond its merge base. All six were integrated individually after native signal/exception tests, with conflict resolution retaining prior fixes. PR2106's pthread_sigmask wrapper was then applied against the new per-thread implementation. See the patch catalog for exact source/published mappings and unresolved signal limitations. The priority-fork snapshot below remains historical.
+
 Baseline `d70b89989473ba1f6ae13e44e079e67f1f8a44b0`. Seven requested repositories fetched with all advertised branches: 101 refs. Ahead/behind is commit ancestry, not a functionality ranking. `git cherry` records patch-id equivalence; file lists use merge-base diffs. Duplicate merge commits and semantic equivalents require further human review.
 
 | Branch | Tip | Ahead | Behind | Changed files | Decision |

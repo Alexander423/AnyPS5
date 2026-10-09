@@ -1,5 +1,7 @@
 # Architecture baseline
 
+Per-thread signal masks now live on PthreadPrivate as four 32-bit words, with inherited masks and pending delivery. Linux bridges mapped guest signals to host masks and supports raised-exception context delivery; Windows maintains guest pending state and avoids an internal emulated-TLS lookup on delivery. Handler mask changes are scoped to the interrupted context. This does not implement sigaction flags or remove all asynchronous host-lock/TLS hazards. The attributed integration and limitations are in the community patch catalog.
+
 Source: [upstream architecture](../dev/ARCHITECTURE.md), revision `d70b89989473ba1f6ae13e44e079e67f1f8a44b0`.
 
 AnyPS5 converts guest x86-64 ELF programs and bundled modules into host ELF or PE files. The output executes natively and resolves guest imports against replacement system libraries. It is not a CPU interpreter or a sandbox. The relinker performs executable-format, relocation, import, TLS and instruction transformations. `core/libs/prx` supplies system behavior; bundled application modules must remain application-owned.
