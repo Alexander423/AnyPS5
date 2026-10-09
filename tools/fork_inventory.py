@@ -29,11 +29,20 @@ def next_page(link):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=pathlib.Path, required=True)
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
     result = {"observed_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "complete": False,
               "scope": "GitHub upstream forks endpoint; branch and patch review tracked separately", "forks": [], "errors": []}
     url = "https://api.github.com/repos/boykopovar/AnyPS5/forks?per_page=100&sort=oldest"
     seen = set()
+    if args.resume and args.output.exists():
+        result = json.loads(args.output.read_text(encoding="utf-8"))
+        if result["complete"]:
+            return 0
+        url = result.get("resume_url") or url
+        if not url.startswith("https://api.github.com/"):
+            raise ValueError("Unexpected resume host")
+        seen = {repo["id"] for repo in result["forks"]}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     try:
         while url:
@@ -49,7 +58,10 @@ def main():
             print(f"Collected {len(seen)} forks", flush=True)
         result["complete"] = True
     except (urllib.error.URLError, ValueError) as error:
-        result["errors"].append({"url": url, "error": str(error)})
+        headers = getattr(error, "headers", {})
+        result["resume_url"] = url
+        result["errors"].append({"url": url, "error": str(error), "status": getattr(error, "code", None),
+                                 "rate_limit_reset": headers.get("X-RateLimit-Reset"), "retry_after": headers.get("Retry-After")})
     args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     return 0 if result["complete"] else 1
 

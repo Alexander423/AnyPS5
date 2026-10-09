@@ -1,4 +1,5 @@
 import argparse
+import concurrent.futures
 import json
 import pathlib
 import subprocess
@@ -21,6 +22,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("branches", type=pathlib.Path)
     parser.add_argument("--base", default="upstream/main")
+    parser.add_argument("--resume", action="store_true")
     parser.add_argument("--output", type=pathlib.Path, required=True)
     args = parser.parse_args()
     branches = json.loads(args.branches.read_text(encoding="utf-8"))
@@ -34,7 +36,15 @@ def main():
     result = {"upstream": base, "method": "merge-base, ancestry counts, stable patch-id, file diffs; not semantic validation",
               "tips": {}, "repositories": branches}
     tips = sorted({branch["sha"] for repo in branches.values() for branch in repo.get("branches", [])})
-    for tip in tips:
+    if args.resume and args.output.exists():
+        previous = json.loads(args.output.read_text(encoding="utf-8"))
+        if previous["upstream"] != base or previous["repositories"] != branches:
+            raise ValueError("Resume requires the same upstream and branch snapshot")
+        result["tips"] = previous["tips"]
+    result["patch_ids"] = community
+    result["commit_metadata"] = metadata
+
+    def inspect(tip):
         row = {"sha": tip}
         try:
             row["merge_base"] = git("merge-base", base, tip)
@@ -49,10 +59,15 @@ def main():
             row["runtime_validation"] = "NOT_TESTED"
         except (RuntimeError, subprocess.TimeoutExpired) as error:
             row["error"] = str(error)
-        result["tips"][tip] = row
-        if len(result["tips"]) % 100 == 0:
-            save(args.output, result)
-            print(len(result["tips"]), flush=True)
+        return tip, row
+
+    pending = [tip for tip in tips if tip not in result["tips"]]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        for tip, row in pool.map(inspect, pending):
+            result["tips"][tip] = row
+            if len(result["tips"]) % 100 == 0:
+                save(args.output, result)
+                print(len(result["tips"]), flush=True)
     result["complete"] = all("error" not in row for row in result["tips"].values())
     result["patch_ids"] = community
     result["commit_metadata"] = metadata
