@@ -338,23 +338,28 @@ int APS5_VABI scePthreadCreate(Pthread* thread, const PthreadAttr* attr, Pthread
     pthread_sigmask(SIG_BLOCK, &allSignals, &args->signalMask);
     const sigset_t creatorMask = args->signalMask;
     auto* self = p.get();
-    p->_thr = std::thread([self, args = std::move(args), ready = start.get_future()]() mutable {
-        if (!ready.get()) return;
-        self->threadId = std::this_thread::get_id();
-        struct ThreadGuard {
-            PthreadPrivate* self;
-            ~ThreadGuard() {
-                currentThread = nullptr;
-                ReleaseThread(self);
+    try {
+        p->_thr = std::thread([self, args = std::move(args), ready = start.get_future()]() mutable {
+            if (!ready.get()) return;
+            self->threadId = std::this_thread::get_id();
+            struct ThreadGuard {
+                PthreadPrivate* self;
+                ~ThreadGuard() {
+                    currentThread = nullptr;
+                    ReleaseThread(self);
+                }
+            } guard{self};
+            std::jmp_buf exitJump;
+            if (setjmp(exitJump) == 0) {
+                threadExitJump = &exitJump;
+                RunThread(std::move(args));
             }
-        } guard{self};
-        std::jmp_buf exitJump;
-        if (setjmp(exitJump) == 0) {
-            threadExitJump = &exitJump;
-            RunThread(std::move(args));
-        }
-        threadExitJump = nullptr;
-    });
+            threadExitJump = nullptr;
+        });
+    } catch (...) {
+        pthread_sigmask(SIG_SETMASK, &creatorMask, nullptr);
+        throw;
+    }
     pthread_sigmask(SIG_SETMASK, &creatorMask, nullptr);
     p->hostThread = p->_thr.native_handle();
     try {
