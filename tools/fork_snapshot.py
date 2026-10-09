@@ -27,6 +27,10 @@ def main():
     base = git("rev-parse", args.base)
     upstream = set(patch_ids([base]).values())
     community = patch_ids(["--all", "^" + base])
+    metadata = {}
+    for line in git("log", "--all", "--format=%H%x09%an%x09%aI%x09%s", "^" + base).splitlines():
+        sha, author, date, subject = line.split("\t", 3)
+        metadata[sha] = {"author": author, "author_date": date, "subject": subject}
     result = {"upstream": base, "method": "merge-base, ancestry counts, stable patch-id, file diffs; not semantic validation",
               "tips": {}, "repositories": branches}
     tips = sorted({branch["sha"] for repo in branches.values() for branch in repo.get("branches", [])})
@@ -39,6 +43,10 @@ def main():
             row["unique_commits"] = git("rev-list", "--no-merges", base + ".." + tip).splitlines()
             row["patch_equivalent_upstream"] = [commit for commit in row["unique_commits"] if community.get(commit) in upstream]
             row["changed_files"] = git("diff", "--name-only", row["merge_base"], tip).splitlines()
+            row["subsystems"] = sorted({"/".join(path.split("/")[:4 if path.startswith("core/libs/prx/") else 2]) for path in row["changed_files"]})
+            row["license_files_changed"] = [path for path in row["changed_files"] if "license" in path.lower() or "copying" in path.lower()]
+            row["test_files_changed"] = [path for path in row["changed_files"] if "test" in path.lower()]
+            row["runtime_validation"] = "NOT_TESTED"
         except (RuntimeError, subprocess.TimeoutExpired) as error:
             row["error"] = str(error)
         result["tips"][tip] = row
@@ -47,6 +55,7 @@ def main():
             print(len(result["tips"]), flush=True)
     result["complete"] = all("error" not in row for row in result["tips"].values())
     result["patch_ids"] = community
+    result["commit_metadata"] = metadata
     save(args.output, result)
 
 
