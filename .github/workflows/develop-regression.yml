@@ -48,6 +48,16 @@ jobs:
           cmake --build build --target guest_atoll_tests guest_thread_atexit_tests --parallel 2
       - name: Library ABI regression
         run: ctest --test-dir build --output-on-failure -R '^(guest_atoll|guest_thread_atexit)$' --output-junit abi.xml
+      - name: Linux shader regression
+        if: runner.os == 'Linux'
+        env:
+          ANYPS5_REQUIRE_VULKAN: '1'
+          GALLIUM_OVERRIDE_CPU_CAPS: avx
+        run: |
+          sudo apt-get install -y --no-install-recommends libvulkan1 mesa-vulkan-drivers
+          cmake -S . -B build -DANYPS5_ENABLE_SPIRV_TOOLS=ON
+          cmake --build build --target agc_driver_sdwa_float_selectors_tests agc_driver_sdwa_ldexp_f16_tests agc_driver_nan_quieting_tests --parallel 2
+          ctest --test-dir build --output-on-failure --timeout 30 -R '^(agc_driver_sdwa_float_selectors|agc_driver_sdwa_ldexp_f16|agc_driver_nan_quieting)$' --output-junit shader.xml
       - name: Test evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -57,4 +67,5 @@ jobs:
             build-relinker/relinker.xml
             build-relinker/Testing/Temporary/LastTest.log
             build/abi.xml
+            build/shader.xml
             build/Testing/Temporary/LastTest.log
