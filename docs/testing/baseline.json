@@ -55,6 +55,6 @@
     "commit": "58b028349aede94a136de4da560924f3271198ce",
     "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37938980558",
     "windows": "PASS",
-    "linux": "IN_PROGRESS: shader regression"
+    "linux": "PASS"
   }
 }
