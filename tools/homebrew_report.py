@@ -31,7 +31,7 @@ def relink(relinker, source, output, expected, timeout):
     result["command"] = command
     start = time.monotonic()
     try:
-        process = subprocess.run(command, capture_output=True, timeout=timeout)
+        process = subprocess.run(command, cwd=output.parent, capture_output=True, timeout=timeout)
         result.update(returncode=process.returncode,
                       stdout=process.stdout.decode("utf-8", errors="replace"),
                       stderr=process.stderr.decode("utf-8", errors="replace"))

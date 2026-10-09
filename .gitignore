@@ -98,6 +98,9 @@ downloads/
 *.png
 
 *.json
+!docs/research/*.json
+!docs/compatibility/*.json
+!docs/testing/*.json
 !demo/web/i18n/*.json
 
 !/assets/*.jpg
