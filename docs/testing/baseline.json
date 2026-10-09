@@ -52,8 +52,8 @@
   "shader_local_commit": "b1419381a",
   "shader_remote_commit": "b3349d2d510e0f100cb2e415bf8f533eb14e2eaf",
   "latest_code_ci": {
-    "commit": "a4d82b379d042d97fc506bf2922566f0b0d12490",
-    "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37948277433",
+    "commit": "f0288f10f30a8517b360d9aa276b54fb423a34a6",
+    "url": "https://github.com/Alexander423/AnyPS5/actions/runs/38000099359",
     "windows": "PASS",
     "linux": "PASS"
   },
@@ -152,7 +152,14 @@
     "patched_socket_helper": "Import and export GuestSocketIsOpen_nid_no_patch verified with objdump on patched PRXs",
     "ci": {
       "url": "https://github.com/Alexander423/AnyPS5/actions/runs/38000099359",
-      "status": "PENDING"
+      "status": "PASS",
+      "windows": "PASS",
+      "linux": "PASS",
+      "relinker_tests_windows": 56,
+      "relinker_tests_linux": 59,
+      "abi_tests_per_os": 9,
+      "signal_repeat_runs_per_os": 6,
+      "linux_shader_tests": 3
     }
   }
 }
