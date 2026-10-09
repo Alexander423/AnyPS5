@@ -1,0 +1,4975 @@
+{
+  "source_commit": "d03a024e1f6d9b63e6e62f841423ba86ce9710b7",
+  "source_dirty": true,
+  "registries": [
+    "..\\homebrew-results\\final\\PPSA99001\\app.registry.json"
+  ],
+  "references": 488,
+  "unique_imports": 455,
+  "unique_by_class": {
+    "implemented": 390,
+    "stub": 2,
+    "absent": 63,
+    "module": 0
+  },
+  "references_by_class": {
+    "implemented": 422,
+    "stub": 2,
+    "absent": 64,
+    "module": 0
+  },
+  "missing_libraries": {
+    "libSceOpusCeltDec.prx": 6,
+    "libSceOpusDec.prx": 6
+  },
+  "library_mismatch": 0,
+  "imports": [
+    {
+      "nid": "e-YMQ+2tj9M",
+      "library": "libSceAgcDriver.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceAgcDriverGetTFRing",
+      "name_verified": true
+    },
+    {
+      "nid": "-nvxBWa0iDs",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "gethostname",
+      "name_verified": true
+    },
+    {
+      "nid": "1nTKA7pN1jw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "utime",
+      "name_verified": true
+    },
+    {
+      "nid": "2eQpqTjJ5Y4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "asinh",
+      "name_verified": true
+    },
+    {
+      "nid": "5G2ONUzRgjY",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "memrchr",
+      "name_verified": true
+    },
+    {
+      "nid": "7Psx1DlAyE4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getprogname",
+      "name_verified": true
+    },
+    {
+      "nid": "Fk7-KFKZi-8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "acosh",
+      "name_verified": true
+    },
+    {
+      "nid": "GipcbdDM5cI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "makecontext",
+      "name_verified": true
+    },
+    {
+      "nid": "MXRNWnosNlM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sqrt",
+      "name_verified": true
+    },
+    {
+      "nid": "N2OjwJJGjeQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "freeifaddrs",
+      "name_verified": true
+    },
+    {
+      "nid": "NDcSfcYZRC8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "malloc_usable_size",
+      "name_verified": true
+    },
+    {
+      "nid": "UNS2V4S097M",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "syslog",
+      "name_verified": true
+    },
+    {
+      "nid": "YjbpxXpi6Zk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "atanh",
+      "name_verified": true
+    },
+    {
+      "nid": "ZjtRqSMJwdw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sinh",
+      "name_verified": true
+    },
+    {
+      "nid": "a4gLGspPEDM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "trunc",
+      "name_verified": true
+    },
+    {
+      "nid": "j-gWL6wDros",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getifaddrs",
+      "name_verified": true
+    },
+    {
+      "nid": "m7iLTaO9RMs",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "cosh",
+      "name_verified": true
+    },
+    {
+      "nid": "vhtcIgZG-Lk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "realpath",
+      "name_verified": true
+    },
+    {
+      "nid": "6fxZHeuNhIA",
+      "library": "libSceOpusCeltDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusCeltDecDecode",
+      "name_verified": true
+    },
+    {
+      "nid": "Sn-MpfGTN9w",
+      "library": "libSceOpusCeltDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusCeltDecDestroy",
+      "name_verified": true
+    },
+    {
+      "nid": "VMOyIG83Jtg",
+      "library": "libSceOpusCeltDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusCeltDecInitialize",
+      "name_verified": true
+    },
+    {
+      "nid": "pkri5OAPsJk",
+      "library": "libSceOpusCeltDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusCeltDecTerminate",
+      "name_verified": true
+    },
+    {
+      "nid": "xUp4-mftj5I",
+      "library": "libSceOpusCeltDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusCeltDecGetSize",
+      "name_verified": true
+    },
+    {
+      "nid": "z6eJnrUEaVY",
+      "library": "libSceOpusCeltDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusCeltDecCreateEx",
+      "name_verified": true
+    },
+    {
+      "nid": "+CSUx-budSk",
+      "library": "libSceOpusDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusDecDecode",
+      "name_verified": true
+    },
+    {
+      "nid": "290AWkA-lck",
+      "library": "libSceOpusDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusDecDestroy",
+      "name_verified": true
+    },
+    {
+      "nid": "2dA75YfXNrQ",
+      "library": "libSceOpusDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusDecInitialize",
+      "name_verified": true
+    },
+    {
+      "nid": "KAIGiqYrtI4",
+      "library": "libSceOpusDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusDecCreateEx",
+      "name_verified": true
+    },
+    {
+      "nid": "knmEFpLg-Rk",
+      "library": "libSceOpusDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusDecGetSize",
+      "name_verified": true
+    },
+    {
+      "nid": "qOpZPAFEvIs",
+      "library": "libSceOpusDec.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceOpusDecTerminate",
+      "name_verified": true
+    },
+    {
+      "nid": "InoC17C0v7k",
+      "library": "libScePosixForWebKit.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "isatty",
+      "name_verified": true
+    },
+    {
+      "nid": "uEtgPWgPxOk",
+      "library": "libScePosixForWebKit.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "mkstemp",
+      "name_verified": true
+    },
+    {
+      "nid": "6kPnj51T62Y",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceVideoOutGetResolutionStatus",
+      "name_verified": true
+    },
+    {
+      "nid": "+F7C-hdk7+E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sigemptyset",
+      "name_verified": true
+    },
+    {
+      "nid": "04AjkP0jO9U",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "_umtx_op",
+      "name_verified": true
+    },
+    {
+      "nid": "2VRU7xiqLO8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "setcontext",
+      "name_verified": true
+    },
+    {
+      "nid": "2dEhvvjlq30",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "pthread_setcanceltype",
+      "name_verified": true
+    },
+    {
+      "nid": "4oKwKmeOKjM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "setegid",
+      "name_verified": true
+    },
+    {
+      "nid": "5kBfZ40bAuk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "tcgetattr",
+      "name_verified": true
+    },
+    {
+      "nid": "72rYuYoDTWk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getegid",
+      "name_verified": true
+    },
+    {
+      "nid": "AfuS23bX6kg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getgid",
+      "name_verified": true
+    },
+    {
+      "nid": "AxUhC3zNrhk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "issetugid",
+      "name_verified": true
+    },
+    {
+      "nid": "DFmMT80xcNI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sysctl",
+      "name_verified": true
+    },
+    {
+      "nid": "HTxb6gmexa0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "seteuid",
+      "name_verified": true
+    },
+    {
+      "nid": "JGfTMBOdUJo",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sceKernelGetFsSandboxRandomWord",
+      "name_verified": true
+    },
+    {
+      "nid": "JUimFtKe0Kc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sigaddset",
+      "name_verified": true
+    },
+    {
+      "nid": "JZKw5+Wrnaw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "pthread_sigmask",
+      "name_verified": true
+    },
+    {
+      "nid": "Jahsnh4KKkg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "madvise",
+      "name_verified": true
+    },
+    {
+      "nid": "Jc6E7N+dHz0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "system",
+      "name_verified": true
+    },
+    {
+      "nid": "KIbJFQ0I1Cg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "fdatasync",
+      "name_verified": true
+    },
+    {
+      "nid": "KiJEPEWRyUY",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sigaction",
+      "name_verified": true
+    },
+    {
+      "nid": "La7xW-jcZwQ",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "tcsetattr",
+      "name_verified": true
+    },
+    {
+      "nid": "MhC53TKmjVA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sysctlbyname",
+      "name_verified": true
+    },
+    {
+      "nid": "Nd-u09VFSCA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sigdelset",
+      "name_verified": true
+    },
+    {
+      "nid": "VkTAsrZDcJ0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "sigfillset",
+      "name_verified": true
+    },
+    {
+      "nid": "Wh7HbV7JFqc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getrlimit",
+      "name_verified": true
+    },
+    {
+      "nid": "dar03AOn+nM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getcontext",
+      "name_verified": true
+    },
+    {
+      "nid": "kg4x8Prhfxw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "getuid",
+      "name_verified": true
+    },
+    {
+      "nid": "mTBZfEal2Bw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "mlock",
+      "name_verified": true
+    },
+    {
+      "nid": "nnoxZUHK+SA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "pthread_getcpuclockid",
+      "name_verified": true
+    },
+    {
+      "nid": "oxMp8uPqa+U",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "pthread_set_name_np",
+      "name_verified": true
+    },
+    {
+      "nid": "tvpHe5kBO4E",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "geteuid",
+      "name_verified": true
+    },
+    {
+      "nid": "pd02UI9TbOA",
+      "library": "libkernel_sys.prx",
+      "references": 1,
+      "class": "absent",
+      "providers": [],
+      "library_mismatch": false,
+      "name": "readlink",
+      "name_verified": true
+    },
+    {
+      "nid": "-HOOCn0JY48",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "57labkp+rSQ",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8N2tmT3jmC8",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "GIIW2J37e70",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MqAdbRMdNz4",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Wi82ArQtAwg",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "YUeqkyT7mEQ",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Yw0jKSqop+E",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ZvwO9euwYzc",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "f3dg2CSgRKY",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "h9z6+0hEydk",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "hvUfkUIQcOE",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "k3GhuSNmBLU",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kW3GLb7QfPg",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "l4fM9K-Lyks",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "n2fD4A+pb+g",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "q88lQ+GP5Yk",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "tSBxhAPyytQ",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wr23dPKyWc0",
+      "library": "libSceAgc.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "0MtUJ3BpGhE",
+      "library": "libSceAgcDriver.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgcDriver.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "UglJIZjGssM",
+      "library": "libSceAgcDriver.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgcDriver.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "XlNp7jzGiPo",
+      "library": "libSceAgcDriver.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgcDriver.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "u8BkdHb1+Po",
+      "library": "libSceAgcDriver.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAgcDriver.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JfEPXVxhFqA",
+      "library": "libSceAudioOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudioOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QOQtbeDqsT4",
+      "library": "libSceAudioOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudioOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "b+uAV89IlxE",
+      "library": "libSceAudioOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudioOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ekNvsT22rsY",
+      "library": "libSceAudioOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudioOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "s1--uE9mBFw",
+      "library": "libSceAudioOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudioOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "KHXHMDLkILw",
+      "library": "libSceAudiodec.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudiodec.native.prx",
+        "libSceAudiodec.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "O3f1sLMWRvs",
+      "library": "libSceAudiodec.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudiodec.native.prx",
+        "libSceAudiodec.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Tp+ZEy69mLk",
+      "library": "libSceAudiodec.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudiodec.native.prx",
+        "libSceAudiodec.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "VjhsmxpcezI",
+      "library": "libSceAudiodec.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudiodec.native.prx",
+        "libSceAudiodec.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "h5jSB2QIDV0",
+      "library": "libSceAudiodec.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceAudiodec.native.prx",
+        "libSceAudiodec.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "uoUpLGNkygk",
+      "library": "libSceCommonDialog.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceCommonDialog.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "IADmD4tScBY",
+      "library": "libSceImeDialog.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceImeDialog.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "NUeBrN7hzf0",
+      "library": "libSceImeDialog.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceImeDialog.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "gyTyVn+bXMw",
+      "library": "libSceImeDialog.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceImeDialog.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oBmw4xrmfKs",
+      "library": "libSceImeDialog.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceImeDialog.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "x01jxu+vxlc",
+      "library": "libSceImeDialog.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceImeDialog.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "0LWei+c7RNc",
+      "library": "libSceKeyboard.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceKeyboard.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6HpE68bzX6M",
+      "library": "libSceKeyboard.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceKeyboard.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "HJ+KnEHcaxI",
+      "library": "libSceKeyboard.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceKeyboard.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wadT3QBCGY0",
+      "library": "libSceKeyboard.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceKeyboard.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "+P6FRGH4LfA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "+xU0WKT8mDc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "-P6FNMzk2Kc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "-hn1tcVHq5Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "-kU6bB4M-+k",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "1D0H2KNjshE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "1Pk0qZQGeWo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2Btkg8k24Zg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2WE3BTYVwKM",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2X5agFjKxMc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2vDqwBlpF-o",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "34nH7v2xvNQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "4uJJNi+C9wk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "5AYcEn7aoro",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "5OqszGpy7Mg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "5jNubw4vlAA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "5qP1iVQkdck",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6sJWiWSRuqk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "7-a7sBHeUQ8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "7Ly52zaL44Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "7SXNu+0KBYQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "88Vv-AzHVj8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8G2LB+A3rzg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8Q60JLJ6Rv4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8u8lPzUEq+U",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8zTFvBIAIN8",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8zsu04XNsZ4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "9LCjpWyQ5Zc",
+      "library": "libSceLibcInternal.prx",
+      "references": 3,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "9fs1btfLoUs",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "9yDWMxEFdJU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "AEJdIVZTEmo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "AEuF3F2f8TA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "AHxyhN96dy4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "AV6ipCNa4Rw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Av3zjWi64Kw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ByfjUZsWiyg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "C6gWCWJKM+U",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "CRJcH8CnPSI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "DAbZ-Vfu6lQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "DYivN1nO-JQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "DfivPArhucg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "E8wCoUEbfzk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "EH-x713A99c",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Fm-dmyywH9Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "GZWjF-YIFFk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "GcFKlTJEMkI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "H8ya2H00jbI",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "HUbZmOnT-Dg",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "I6Z-684E2C4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "J3XuGS-cC0Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JBcgYuW8lPU",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JM4EBvWT9rc",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JrwFIMzKNr0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "KGKBeVcqJjc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "KdP-nULpuGw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "KqYTqtSfGos",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "L1SBTkC+Cvw",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "LEbYWl9rBc8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "LYo3GhIlB38",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Ls4tzzhimqQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "LxcEU+ICu8U",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "M4YYbSFfJ8g",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MUjC4lbHrK4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MZO7FXyAPU8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MpxhMh8QFro",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "NVadfnzQhHQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "NesIgTmfF0Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "OJjm-QOIHlI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "OXmauLdQ8kY",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Ovb2dSJOAuE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "PqF+kHW-2WQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Q2V+iqvjgC0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Q3VBxCXhUHs",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Q4rRL34CEeE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Q8pvJimUWis",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QI-x0SL8jhw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QJ5xVfKkni0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QMFyLoqNxIg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QrZZdJ8XsX0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QxmSHBCuKTk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "RBcs3uut1TA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "RIa6GnWp+iU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "RQXLbdT2lc4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "SAd0Z3wKwLA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "SRI6S9B+-a4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "SfQIZcqvvms",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "St9nbxSoezk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "T7uyNqP7vQA",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "TYE4irxSmko",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "UTrpOVLcoOA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "VOBg+iNwB-4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Vla-Z+eXlxo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "WDpobjImAb4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "WkYnBHFsmW4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "WkkeywLJcgU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "WuMbPBKN1TU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "XGnuIBmEmyk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "XepdqehVYe4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Y5DhuDKGlnQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Y7aJ1uydPMo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "YQ0navp+YIc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ZE6RNL+eLbk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "aZK8lNei-Qw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "aaDMGGkXFxo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "aesyjrHVWy4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "akpGErA1zdg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "as8Od-tH1BI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ay3uROQAc5A",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "bgAcsbcEznc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "bzQExy189ZI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "cOYia2dE0Ik",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "cVSk9y8URbc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "cpCOXWMgha0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "d3dMyWORw8A",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "dhK16CKwhQg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "dnaeGXbjP6E",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "eGkOpTojJl4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "eLdDw6l0-bU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "enqPGLfmVNU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fEoW6BJsPt4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fGPRa6T+Cu8",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fPxypibz2MY",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fffwELXNVFA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fnUEjBCNRVU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "g7zzzLDYGw0",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "gNQ1V2vfXDE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "gQX+4GDQjpM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "gigoVHZvVPE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "gkWgn0p1AfU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "hcuQgD53UxM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "hsi9drzHR2k",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "j4ViWNHEgww",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "jbz9I9vkqkk",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kA-TdiOCsaY",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kDZvoVssCgQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kHg45qPC6f0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kiZSXIWd9vg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kn0yiYeExgA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lKEN2IebgJ0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lbB+UlZqVG0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lhnrCOBiTGo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lhpd6Wk6ccs",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lybyyKtP54c",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "m5wN+SwZOR4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "mXlxhmLNMPg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "nJz16JE1txM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "nW9JRkciRk4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oVkZ8W8-Q8A",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ob5xAW4ln-0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pDBDcY6uLSA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pKwslsMUmSk",
+      "library": "libSceLibcInternal.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pNtJdE3x49E",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pXvbDfchu6k",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pkYiKw09PRA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pztV4AF18iI",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "q0F6yS-rCms",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "q1OvUam0BJU",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "qWESlyXMI3E",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "qdlHjTa9hQ4",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "qjBlw2cVMAM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "rDMyAf1Jhug",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "rg5JEBlKCuo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "rrgxakQtvc0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "rtV7-jWC6Yg",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "smbQukfxYJM",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "srzSVSbKn7M",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "tIhsqj0qsFE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "tcVi5SivF7Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "tsvEmnenz48",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "uMei1W9uyNo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "uodLYyUip20",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "v7S7LhP2OJc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "viiwFMaNamA",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "w-BvXF4O6xo",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wLlFkwG9UcQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wZi5ly2guNw",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wazw2x2m3DQ",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "weDug8QD-lE",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wuAQt-j+p4o",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "xeYO4u7uyJ0",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "yDnwZsMnX0Q",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "zqJhBxAKfsc",
+      "library": "libSceLibcInternal.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2mKX2Spso7I",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "45ggEzakPJQ",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "9wO9XrMsNhc",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "C4UgDHHPvdw",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "K7RlrTkI-mw",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Nd91WaWmG2w",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "OXXX4mUk3uk",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Q4qBuN-c0ZM",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "beRjXBn-z+o",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "dgJBaeJnGpo",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "kJlYH5uMAWI",
+      "library": "libSceNet.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceNet.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6ncge5+l5Qs",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "RR4novUEENY",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "W2G-yoyMF5U",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "YndgXqQVV7c",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "hv1luiJrqQM",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "q1cHNfGycLI",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "xk0AcarP3V4",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "yFVnOdGxvZY",
+      "library": "libScePad.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libScePad.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "39iV5E1HoCk",
+      "library": "libSceSysmodule.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSysmodule.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "eR2bZFAAU0Q",
+      "library": "libSceSysmodule.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSysmodule.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "g8cM39EUZ6o",
+      "library": "libSceSysmodule.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSysmodule.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "vXZhrtJxkGc",
+      "library": "libSceSysmodule.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSysmodule.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Vo5V8KAwCmk",
+      "library": "libSceSystemService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSystemService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fZo48un7LK4",
+      "library": "libSceSystemService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceSystemService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "1xxcMiGu2fo",
+      "library": "libSceUserService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceUserService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "CdWp0oHWGr0",
+      "library": "libSceUserService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceUserService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "bwFjS+bX9mA",
+      "library": "libSceUserService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceUserService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "eNb53LQJmIM",
+      "library": "libSceUserService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceUserService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fPhymKNvK-A",
+      "library": "libSceUserService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceUserService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "j3YMu1MVNNo",
+      "library": "libSceUserService.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceUserService.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "-Ozn0F1AFRg",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "CBiu4mCE1DA",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "HXzjK9yI30k",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "N5KDtkIjjJ4",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Nv8c-Kb+DUM",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "PjS5uASwcV8",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "SbU3dwp80lQ",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "U46NwOiJpys",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Up36PTk687E",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "j6RaAUlaLv0",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "rKBUtgRrtbk",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "uquVH4-Du78",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "utPrVdxio-8",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "w0hLuNarQxY",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "zgXifHT9ErY",
+      "library": "libSceVideoOut.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libSceVideoOut.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "+Pqub9HZCPo",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "+U1R4WtXvoc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "-Jp7F+pXxNg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "0-KXaS70xy4",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "0TyVk4MSLt0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "1471ajPzxh0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "1G3lF1Gg1k8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "1jfXLRVzisc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "27bAgiJmOh0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2MOy+rUfuhQ",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2Q0z6rnBrTE",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "2Z+PpY6CaJg",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "3e+4Iv7IJ8U",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "4J2sUJmuHZQ",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "4pYihoPggn8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "4qGrR6eoP9Y",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "4wSze92BhLI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6BpEZuDT7YI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6O8EwYOgH9Y",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6UgtwV+0zb4",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "6XG4B33N09g",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "7H0iTOciTLo",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "7Xl257M4VNI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8nY19bKoiZk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "8vE6Z6VEYyk",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "9BcDykPmo1I",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "9JYNqN6jAKI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "AqBioC2vF3I",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "B+vc2AO2Zrc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "BPE9s9vQQXo",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Bq+LRV-N6Hk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "C2kJ-byS5rM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "CBNtXOoef-E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "CawZgCYqXWk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Cg4srZ6TKbU",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "D0OdFMjp46I",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "E+tyo3lp5Lw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "E6ao34wPw+U",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "EgmLo6EWgso",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "EotR8a3ASf4",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Ez8xjo9UF4E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "FIs3-UQT9sg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "FJrT5LuUBAU",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "FN4gaPmuFV8",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "HF7lK46xzjY",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "HoLVWNanBBc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "IKP8typ0QUk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Io9+nTKXZtA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JGMio+21L4c",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "K-jXhbt2gn4",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "KuOmgKoqCdY",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "L-Q3LEjIbgA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MBuItvba6z8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "MZb0GKT3mo8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "NN01qLRhiqU",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Op8TBGY5KHg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "OxhIB8LB-PQ",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Oy6IpwgtYOk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "PfccT7qURYE",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "QcteRwbsnV0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "RXXqi4CtF8w",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "RenI1lL1WFk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "TU-d9PfIHPM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "TUuiYS2kE8s",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "TXFFFiNldU8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "UK2Tl2DWUns",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "UqDGjXA5yUM",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "UteVS6B1ZrU",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "VADc3MNQ3cM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "VAzswvTOCzI",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "WBWzsRifCEA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "WrOLvHU0yQM",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "XVL8So3QJUk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Xs9hdiD7sAA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "YCV5dGGBcCo",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "YQOfxL4QfeU",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ZsXLFtd2jqQ",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "bY-PO6JhzhQ",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "biY+kcVB5D4",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "c7ZnT7V1B98",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "cDW233RAwWo",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "dQHWEsJtoE4",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ezv-RSBNKqI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fFxGkxF2bVo",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fZOeZIOEmLw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fyPeCKJ94Hg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "fzyMKs9kim0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "h9CcP3J0oVM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "iGjsr1WAtI0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ih4CD9-gghM",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "jpFjmgAC5AE",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "juWbTNM+8hw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ku7D4q1Y9PI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lLMT9vJAck0",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "lUk6wrGXyMw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ltCfaGr2JGE",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "m0iS6jNsXds",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "mDmgMOGVUqg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "mkawd0NA9ts",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "mkx2fVhNMsg",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "mqQMh1zPPT8",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "mqULNdimTn0",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "n01yNbQO5W4",
+      "library": "libkernel.prx",
+      "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "n88vx3C5nW8",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oBr313PppNE",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oiT0vgzmW0M",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pDuPEf3m4fI",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pO96TwzOm5E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "pxnCmagrtao",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "rTXw65xmLIA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "sIlRvQqsN2Y",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ttHNfU+qDBU",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ucFJiTO1EUw",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "w5IHyvahg-o",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wtkt-teR1so",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "wuCroIGjt2g",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "yS8U2TGCe1A",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "ytQULN-nhL4",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "zHchY8ft5pk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JoBqSQt1yyA",
+      "library": "libSceSystemService.prx",
+      "references": 1,
+      "class": "stub",
+      "providers": [
+        "libSceSystemService.prx"
+      ],
+      "library_mismatch": false,
+      "name": "sceSystemServiceLoadExec"
+    },
+    {
+      "nid": "T8fER+tIGgk",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "stub",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": "select_nid_postfix"
+    }
+  ]
+}

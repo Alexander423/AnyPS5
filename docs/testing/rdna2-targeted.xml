@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="2"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="1"
+	timestamp="2026-10-09T15:40:55"
+	>
+	<testcase name="agc_driver_sdwa_float_selectors" classname="agc_driver_sdwa_float_selectors" time="0.554368" status="run">
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+[src/VulkanDevice.cpp:582 VulkanDevice] VulkanDevice constructor window=0000000000000000
+[src/VulkanDevice.cpp:591 VulkanDevice] Vulkan loader loaded library=00007ff9dd430000
+[src/VulkanDevice.cpp:625 VulkanDevice] Vulkan instance created instance=00000212475c7020
+[src/VulkanDevice.cpp:636 VulkanDevice] Physical device count=1
+[src/VulkanDevice.cpp:669 VulkanDevice] Physical device candidate=000002120851b600 name=AMD Radeon RX 6600 api=0x40413b type=2
+[src/VulkanDevice.cpp:716 VulkanDevice] Physical device selected physical=000002120851b600 queueFamily=0
+[src/VulkanDevice.cpp:729 VulkanDevice] Selected GPU name=AMD Radeon RX 6600 vendor=0x1002 device=0x73ff subgroup=64
+[src/VulkanDevice.cpp:731 VulkanDevice] Memory heap 0 size=7870.1 MiB flags=0x0
+[src/VulkanDevice.cpp:731 VulkanDevice] Memory heap 1 size=8176.0 MiB flags=0x3
+[src/VulkanDevice.cpp:732 VulkanDevice] Memory type 0 heap=1 flags=0x1
+[src/VulkanDevice.cpp:732 Vulka...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="agc_driver_sdwa_ldexp_f16" classname="agc_driver_sdwa_ldexp_f16" time="0.550178" status="run">
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+[src/VulkanDevice.cpp:582 VulkanDevice] VulkanDevice constructor window=0000000000000000
+[src/VulkanDevice.cpp:591 VulkanDevice] Vulkan loader loaded library=00007ff9dd620000
+[src/VulkanDevice.cpp:625 VulkanDevice] Vulkan instance created instance=0000019a9b52ab50
+[src/VulkanDevice.cpp:636 VulkanDevice] Physical device count=1
+[src/VulkanDevice.cpp:669 VulkanDevice] Physical device candidate=0000019a8657f090 name=AMD Radeon RX 6600 api=0x40413b type=2
+[src/VulkanDevice.cpp:716 VulkanDevice] Physical device selected physical=0000019a8657f090 queueFamily=0
+[src/VulkanDevice.cpp:729 VulkanDevice] Selected GPU name=AMD Radeon RX 6600 vendor=0x1002 device=0x73ff subgroup=64
+[src/VulkanDevice.cpp:731 VulkanDevice] Memory heap 0 size=7870.1 MiB flags=0x0
+[src/VulkanDevice.cpp:731 VulkanDevice] Memory heap 1 size=8176.0 MiB flags=0x3
+[src/VulkanDevice.cpp:732 VulkanDevice] Memory type 0 heap=1 flags=0x1
+[src/VulkanDevice.cpp:732 Vulka...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+</testsuite>

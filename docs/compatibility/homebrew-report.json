@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-09T13:46:33.073961+00:00",
+  "source_commit": "d03a024e1f6d9b63e6e62f841423ba86ce9710b7",
+  "source_dirty": true,
+  "host": "Windows-11-10.0.26200-SP0",
+  "relinker_sha256": "b4e29e773d3c82dbc7aede69d8557580b2a395473a8fc8e678342cba9ec5cf7d",
+  "applications": [
+    {
+      "id": "PPSA69420",
+      "repository": "https://github.com/Marice/ScreenTester5",
+      "version": "01.000.000",
+      "release_url": "https://github.com/Marice/ScreenTester5/releases/tag/01.000.000",
+      "asset_url": "https://github.com/Marice/ScreenTester5/releases/download/01.000.000/PPSA69420.zip",
+      "archive_sha256": "49a5c6d7bbb08f5a1539feb65b7fd2b537b6d7b304bdd3eed1c923e4ccbec8fd",
+      "input": "C:\\Projekte\\PS5\\homebrew-elf\\PPSA69420\\eboot.elf",
+      "input_sha256": "e900c4b95978c2e5ae94ee5d6e651a9e02135cfc2cd7f8546f2f7725d0f369ca",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "a5411d6a6eb6ab3d71106b6bd654b937c30a794aaffc9a20b2b3889f4474bfa2",
+      "stage": "RELINKED",
+      "expected_sha256": "e900c4b95978c2e5ae94ee5d6e651a9e02135cfc2cd7f8546f2f7725d0f369ca",
+      "runtime_tested": false,
+      "checks": {
+        "rendering": "NOT_TESTED",
+        "controller": "NOT_TESTED",
+        "keyboard": "NOT_TESTED",
+        "audio": "NOT_TESTED",
+        "filesystem": "NOT_TESTED",
+        "shutdown": "NOT_TESTED",
+        "leaks": "NOT_TESTED",
+        "frame_time": "NOT_TESTED"
+      },
+      "command": [
+        "C:\\Projekte\\PS5\\AnyPS5\\build\\core\\relinker\\relinker.exe",
+        "--windows",
+        "--windows-diagnostics",
+        "--registry",
+        "C:\\Projekte\\PS5\\homebrew-elf\\PPSA69420\\eboot.elf",
+        "C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA69420\\app.exe"
+      ],
+      "returncode": 0,
+      "stdout": "System: Windows; unused-filter=0\r\nsce_module/sce_modules/prx processing: enabled\r\nNID input: 208 references\r\nUnused NID filtering: disabled; filtered=0\r\nNID total: 208 -> 208; filtered=0\r\nWrote Windows import diagnostics to C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA69420\\windows-diagnostics-imports.txt\r\nGuest module: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA69420\\app0/sce_module\\libc.prx.guest.prx\r\nExternal prx references: 208\r\nOutput file: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA69420\\app.exe\r\nExpected runtime layout (relative to the output executable):\r\napp.exe\r\nlibs/\r\n    *.prx\r\napp0/\r\n    <game resources>\r\n    sce_module/libc.prx.guest.prx\r\nGame resources and system libraries must be placed in this layout separately.\r\n",
+      "stderr": "",
+      "output_sha256": "7e2fd2159879e55c5b7b8f9429ceb23edab18fc3c54b54f41cd56a37783368ee",
+      "registry_sha256": "640bd563a9e89a0fbb8e622706239e973ad1e0976256e966b0946364f7c8b2fb",
+      "blocker": "Guest execution requires an isolated test environment; relinking does not verify functionality",
+      "elapsed_seconds": 0.4191795000001548,
+      "import_summary": {
+        "implemented": 199,
+        "stub": 0,
+        "absent": 9,
+        "module": 0
+      },
+      "missing_libraries": {},
+      "bundled_modules": [
+        {
+          "name": "libc.prx",
+          "sha256": "8ee6e124993e1af26420cb455890fd002f5d6c7e78883c860ce45734e7d002bb"
+        }
+      ]
+    },
+    {
+      "id": "PPSA99005",
+      "repository": "https://github.com/blackbearreloaded/ps5-opengl",
+      "version": "v1.0.1",
+      "release_url": "https://github.com/blackbearreloaded/ps5-opengl/releases/tag/v1.0.1",
+      "asset_url": "https://github.com/blackbearreloaded/ps5-opengl/releases/download/v1.0.1/ps5-opengl-showcase-1.0.1-PPSA99005.zip",
+      "archive_sha256": "d16eb7f779d382d21e7f3374a3871e54cce3dea150a9e7de1603a9011833c9f9",
+      "input": "C:\\Projekte\\PS5\\homebrew-elf\\PPSA99005\\eboot.elf",
+      "input_sha256": "704e39509d73afb1a89f998958d61df84429dc09941e982a89eadab9b5acff99",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "09f4387004c4b62ec881194a67df7326f2d8532ec81b5a5c90b99215c163a2f8",
+      "stage": "RELINKED",
+      "expected_sha256": "704e39509d73afb1a89f998958d61df84429dc09941e982a89eadab9b5acff99",
+      "runtime_tested": false,
+      "checks": {
+        "rendering": "NOT_TESTED",
+        "controller": "NOT_TESTED",
+        "keyboard": "NOT_TESTED",
+        "audio": "NOT_TESTED",
+        "filesystem": "NOT_TESTED",
+        "shutdown": "NOT_TESTED",
+        "leaks": "NOT_TESTED",
+        "frame_time": "NOT_TESTED"
+      },
+      "command": [
+        "C:\\Projekte\\PS5\\AnyPS5\\build\\core\\relinker\\relinker.exe",
+        "--windows",
+        "--windows-diagnostics",
+        "--registry",
+        "C:\\Projekte\\PS5\\homebrew-elf\\PPSA99005\\eboot.elf",
+        "C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99005\\app.exe"
+      ],
+      "returncode": 0,
+      "stdout": "System: Windows; unused-filter=0\r\nsce_module/sce_modules/prx processing: enabled\r\nNID input: 264 references\r\nUnused NID filtering: disabled; filtered=0\r\nNID total: 264 -> 264; filtered=0\r\nWrote Windows import diagnostics to C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99005\\windows-diagnostics-imports.txt\r\nGuest module: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99005\\app0/sce_module\\libc.prx.guest.prx\r\nExternal prx references: 264\r\nOutput file: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99005\\app.exe\r\nExpected runtime layout (relative to the output executable):\r\napp.exe\r\nlibs/\r\n    *.prx\r\napp0/\r\n    <game resources>\r\n    sce_module/libc.prx.guest.prx\r\nGame resources and system libraries must be placed in this layout separately.\r\n",
+      "stderr": "",
+      "output_sha256": "066e716eb1c40541ce328822caff9e9a8bd061bff15a11ae910ccf189d71db66",
+      "registry_sha256": "c0c9f1b0ca7b1ad10a82be6b836d9f718a747aa3d819888f9a31742844b6d1f5",
+      "blocker": "Guest execution requires an isolated test environment; relinking does not verify functionality",
+      "elapsed_seconds": 5.097297499999968,
+      "import_summary": {
+        "implemented": 235,
+        "stub": 0,
+        "absent": 20,
+        "module": 0
+      },
+      "missing_libraries": {},
+      "bundled_modules": [
+        {
+          "name": "libc.prx",
+          "sha256": "8ee6e124993e1af26420cb455890fd002f5d6c7e78883c860ce45734e7d002bb"
+        }
+      ]
+    },
+    {
+      "id": "PPSA99039",
+      "repository": "https://github.com/sainsaji/EVO-PLAYER-PS5",
+      "version": "v0.12.0",
+      "release_url": "https://github.com/sainsaji/EVO-PLAYER-PS5/releases/tag/v0.12.0",
+      "asset_url": "https://github.com/sainsaji/EVO-PLAYER-PS5/releases/download/v0.12.0/EVOPlayer-v0.12.0-PPSA99039.zip",
+      "archive_sha256": "98788be10b3d2fe2909f6e353e2e09409ad29e46c2bc37112e2f35d9baa00d8a",
+      "input": "C:\\Projekte\\PS5\\homebrew-elf\\PPSA99039\\eboot.elf",
+      "input_sha256": "a8bd09bd26492c78b43ee3e487c326ab777ee9cf540327efc0fff730d4d032ba",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "313abfb90bfc616ea1b3a0eef1828b9b6ceff435ce3c2aa9f2c5cd31f3c7f021",
+      "stage": "RELINKED",
+      "expected_sha256": "a8bd09bd26492c78b43ee3e487c326ab777ee9cf540327efc0fff730d4d032ba",
+      "runtime_tested": false,
+      "checks": {
+        "rendering": "NOT_TESTED",
+        "controller": "NOT_TESTED",
+        "keyboard": "NOT_TESTED",
+        "audio": "NOT_TESTED",
+        "filesystem": "NOT_TESTED",
+        "shutdown": "NOT_TESTED",
+        "leaks": "NOT_TESTED",
+        "frame_time": "NOT_TESTED"
+      },
+      "command": [
+        "C:\\Projekte\\PS5\\AnyPS5\\build\\core\\relinker\\relinker.exe",
+        "--windows",
+        "--windows-diagnostics",
+        "--registry",
+        "C:\\Projekte\\PS5\\homebrew-elf\\PPSA99039\\eboot.elf",
+        "C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99039\\app.exe"
+      ],
+      "returncode": 0,
+      "stdout": "System: Windows; unused-filter=0\r\nsce_module/sce_modules/prx processing: enabled\r\nNID input: 342 references\r\nUnused NID filtering: disabled; filtered=0\r\nNID total: 342 -> 342; filtered=0\r\nWrote Windows import diagnostics to C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99039\\windows-diagnostics-imports.txt\r\nGuest module: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99039\\app0/sce_module\\libc.prx.guest.prx\r\nExternal prx references: 342\r\nOutput file: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99039\\app.exe\r\nExpected runtime layout (relative to the output executable):\r\napp.exe\r\nlibs/\r\n    *.prx\r\napp0/\r\n    <game resources>\r\n    sce_module/libc.prx.guest.prx\r\nGame resources and system libraries must be placed in this layout separately.\r\n",
+      "stderr": "",
+      "output_sha256": "0ee4e0539fb84f33d5c2b4431c8c99cd8af59311b924c339a855d62c4c04e5b5",
+      "registry_sha256": "7d511c225bb9c7e37ba617e1f12dd8ffede5f44e67cce7148ae51b5162fff238",
+      "blocker": "Guest execution requires an isolated test environment; relinking does not verify functionality",
+      "elapsed_seconds": 18.28832489999968,
+      "import_summary": {
+        "implemented": 308,
+        "stub": 1,
+        "absent": 33,
+        "module": 0
+      },
+      "missing_libraries": {},
+      "bundled_modules": [
+        {
+          "name": "libc.prx",
+          "sha256": "8ee6e124993e1af26420cb455890fd002f5d6c7e78883c860ce45734e7d002bb"
+        }
+      ]
+    },
+    {
+      "id": "PPSA99001",
+      "repository": "https://github.com/blackbearreloaded/ProsperoRadio",
+      "version": "01.000.010",
+      "release_url": "https://github.com/blackbearreloaded/ProsperoRadio/releases/tag/01.000.010",
+      "asset_url": "https://github.com/blackbearreloaded/ProsperoRadio/releases/download/01.000.010/PPSA99001.zip",
+      "archive_sha256": "413011fcaf2cee3b1ce796388f3c9b13d3a0ac2e1a1a2b5bc5bba1adcd0fc020",
+      "input": "C:\\Projekte\\PS5\\homebrew-elf\\PPSA99001\\eboot.elf",
+      "input_sha256": "7c154a26f52312f700f52aaa9ececf3e29d6e8f05c2593511529bb8f319aabd2",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "16541c81c3aa39bf7def6c17debf63048fc47559ef2321c9eff726f677c412a4",
+      "stage": "RELINKED",
+      "expected_sha256": "7c154a26f52312f700f52aaa9ececf3e29d6e8f05c2593511529bb8f319aabd2",
+      "runtime_tested": false,
+      "checks": {
+        "rendering": "NOT_TESTED",
+        "controller": "NOT_TESTED",
+        "keyboard": "NOT_TESTED",
+        "audio": "NOT_TESTED",
+        "filesystem": "NOT_TESTED",
+        "shutdown": "NOT_TESTED",
+        "leaks": "NOT_TESTED",
+        "frame_time": "NOT_TESTED"
+      },
+      "command": [
+        "C:\\Projekte\\PS5\\AnyPS5\\build\\core\\relinker\\relinker.exe",
+        "--windows",
+        "--windows-diagnostics",
+        "--registry",
+        "C:\\Projekte\\PS5\\homebrew-elf\\PPSA99001\\eboot.elf",
+        "C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99001\\app.exe"
+      ],
+      "returncode": 0,
+      "stdout": "System: Windows; unused-filter=0\r\nsce_module/sce_modules/prx processing: enabled\r\nNID input: 488 references\r\nUnused NID filtering: disabled; filtered=0\r\nNID total: 488 -> 488; filtered=0\r\nWrote Windows import diagnostics to C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99001\\windows-diagnostics-imports.txt\r\nGuest module: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99001\\app0/sce_module\\libc.prx.guest.prx\r\nExternal prx references: 488\r\nOutput file: C:\\Projekte\\PS5\\homebrew-results\\final\\PPSA99001\\app.exe\r\nExpected runtime layout (relative to the output executable):\r\napp.exe\r\nlibs/\r\n    *.prx\r\napp0/\r\n    <game resources>\r\n    sce_module/libc.prx.guest.prx\r\nGame resources and system libraries must be placed in this layout separately.\r\n",
+      "stderr": "",
+      "output_sha256": "3f4c755b9925699a9e501344c6800e84a567821f98e5b9c5637993dae2a8d9b3",
+      "registry_sha256": "9ed6e2514ee4b2e289ce5e6cfbeda70964ae2de4a49a8b2d5f2cb0451d6862c0",
+      "blocker": "Guest execution requires an isolated test environment; relinking does not verify functionality",
+      "elapsed_seconds": 16.231609700000263,
+      "import_summary": {
+        "implemented": 390,
+        "stub": 2,
+        "absent": 63,
+        "module": 0
+      },
+      "missing_libraries": {
+        "libSceOpusCeltDec.prx": 6,
+        "libSceOpusDec.prx": 6
+      },
+      "bundled_modules": [
+        {
+          "name": "libc.prx",
+          "sha256": "8ee6e124993e1af26420cb455890fd002f5d6c7e78883c860ce45734e7d002bb"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "source_repository": "https://github.com/Marice/ScreenTester5",
+    "source_commit": "72913163d6a73518fb4133d95221ca64afa6aac8",
+    "source_file": "tooling/native/self_container.cpp",
+    "zlib_commit": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf",
+    "method": "Source-built wrapper calls ps5::self::extract; rejects encrypted segments; GPLv3 source and artifacts outside AnyPS5"
+  },
+  "library_files": [
+    {
+      "name": "libc.prx",
+      "sha256": "cee3fa0534572cfb92332d8fc563b2a2f67567c0c39ac030b3b693545ea94495"
+    },
+    {
+      "name": "libkernel.prx",
+      "sha256": "3edc052ab02c6d8e3ef6133db38b2839179cee2dbd9b291cd5cdcd111cdf40a9"
+    },
+    {
+      "name": "libkernel_sys.prx",
+      "sha256": "41f8ef57691e9455417a71c9189bad8ba1379ac71d98725e894a0a355e933747"
+    },
+    {
+      "name": "libkernel_web.prx",
+      "sha256": "1ff293fc27e3e4fdb23510c4db1780000b693f26e478ba9c3a491f767fa08bb2"
+    },
+    {
+      "name": "libReactNative.Modules.Vsh.prx",
+      "sha256": "b6fd27fac59c970819b95408a6c20871460a5d362c9fd6e920ea3e16bea61171"
+    },
+    {
+      "name": "libReactNative.Modules.Vsh.WebAppLauncher.prx",
+      "sha256": "9f2939487502bd4176dbdc5d208f1e238d8c42c99bd43501b1dcd4e690779729"
+    },
+    {
+      "name": "libSceAcm.prx",
+      "sha256": "1e9c844964bec0f481570fd0daa1a7080624bfda6b1965d6f4843eb1a0ddc54f"
+    },
+    {
+      "name": "libSceAgc.prx",
+      "sha256": "864e2edc8f85771d78f270d475b7cedd888e7ce1a5fe4ec344af9c114b32d61b"
+    },
+    {
+      "name": "libSceAgcDriver.prx",
+      "sha256": "d5155561cae99f1f341cbee76e4dd6c07cfb4909f33a59458451ae8a57e9f13a"
+    },
+    {
+      "name": "libSceAgcVsh.prx",
+      "sha256": "eb672b94bc905a72c86befba4720b0b2b72ecf6214d4e34514847dc4b96459be"
+    },
+    {
+      "name": "libSceAjm.native.prx",
+      "sha256": "1fbcbdd16f3dfe88d181384969afd42bc3324c50ea9fd637f12d536950262e39"
+    },
+    {
+      "name": "libSceAjm.prx",
+      "sha256": "8c1333927c7e2f1e822d4e47925ba10af42c905638da3a2b921242661ca7fc55"
+    },
+    {
+      "name": "libSceAjmi.prx",
+      "sha256": "ec67832a72f806e567add310fa58af9924aa609ea89146e84c167fcb136582cf"
+    },
+    {
+      "name": "libSceAmpr.prx",
+      "sha256": "1888f8d51662bad1ad74a603d5b40dc6ab808b9b67bdb68e7bb4cf123cb8b21b"
+    },
+    {
+      "name": "libSceAppContent.prx",
+      "sha256": "3a067ff9b926960e5e27093e59690734d1684df12bc4109adde8881231c32d30"
+    },
+    {
+      "name": "libSceAudio.prx",
+      "sha256": "51763b9e2b77bf94c39e69aef03a395becba76a9c5ed88af19ce04178f855c34"
+    },
+    {
+      "name": "libSceAudio3d.prx",
+      "sha256": "8a3a0a8cc0553fb1eddbff84644cdc580b598405cbea51db1a31961ca786c6f7"
+    },
+    {
+      "name": "libSceAudiodec.native.prx",
+      "sha256": "848e3b156df604c68e532edc94363b425bd0cc6b3036e3346073f244b3755eb1"
+    },
+    {
+      "name": "libSceAudiodec.prx",
+      "sha256": "69f984bbd553308465072b1b50b7c13f97a66d8303b608be4c9dcdeced76880e"
+    },
+    {
+      "name": "libSceAudioIn.prx",
+      "sha256": "e461da0a60746dc033e4178c870ede5e21aed7e824ac4155350e905327808e31"
+    },
+    {
+      "name": "libSceAudioOut.prx",
+      "sha256": "cd14582dcedfa42289dea6fa95c20bdb8b6a08cfab5c218a707090be4567a387"
+    },
+    {
+      "name": "libSceAudioPropagation.prx",
+      "sha256": "58044f4fcd9401e0dc75480e8bb1e6ef4070a7d21f23174e9b8aa26697393724"
+    },
+    {
+      "name": "libSceAvPlayer.native.prx",
+      "sha256": "8fe7d56ae1cb94e79c2f5e7ab721719f287f0c9edf4eab97d783650ae9cb2772"
+    },
+    {
+      "name": "libSceAvPlayer.prx",
+      "sha256": "0d5b84e5933fb4e966b9d19793040e92cac7921dd679dff2450a9020771a389a"
+    },
+    {
+      "name": "libSceBluetoothHid.prx",
+      "sha256": "808f9f2bf6ce2f0b5def6b1809e75744b873fa7eff1b79b8b5adfece0495daf4"
+    },
+    {
+      "name": "libSceCdlgG2P.prx",
+      "sha256": "80cb1c4598e2f4ba2d9b1084fc4bb225985ae4caf62dde458a4d36ccd19b3db8"
+    },
+    {
+      "name": "libSceCdlgPlayerReview.prx",
+      "sha256": "b0b6e75e1f16d7c4ca4f5222030a8d763842ebc3f799be27ec402a661da076e6"
+    },
+    {
+      "name": "libSceCesCs.prx",
+      "sha256": "a0959c08aca939a8bb6464f845231a2935eaf0f7ecff7227d8d5e159261b1da5"
+    },
+    {
+      "name": "libSceCommonDialog.prx",
+      "sha256": "c4d006ee089a317b28d232482433318ddd693b47c1ab005a1eb699ff0bfe65d6"
+    },
+    {
+      "name": "libSceContentDelete.prx",
+      "sha256": "376f14252ffa02184191b06435f17265c7e1236a277f0455881d247d9bce62db"
+    },
+    {
+      "name": "libSceContentExport.prx",
+      "sha256": "5d4e98a5f3642800d12dc2f5b6b55734a9a0fe5489f376464095f1b13a3c2892"
+    },
+    {
+      "name": "libSceContentSearch.prx",
+      "sha256": "7ad66e845b71323c41ba0899e91ba053c7b9ecb0902b4bd78e17e388441ce594"
+    },
+    {
+      "name": "libSceConvertKeycode.prx",
+      "sha256": "a954543b8a5ecbc6549e587e00c45be3b4ae843775d81554453fe64fee79860e"
+    },
+    {
+      "name": "libSceErrorDialog.prx",
+      "sha256": "9741ee7537298d9c47f0af175174779ee2292b0675ceb65bcff737b31d99452b"
+    },
+    {
+      "name": "libSceFiber.prx",
+      "sha256": "1d8374f29ae591815f7f1fbfe0a6591df837367c00f3b69399ef0e61635b459b"
+    },
+    {
+      "name": "libSceFont-module.prx",
+      "sha256": "792fd4413017233c84ccb6cd555156932a7132f9ced61948291cf9894749f6ac"
+    },
+    {
+      "name": "libSceFont.native.prx",
+      "sha256": "de0d1c0d8d944f769e06718db08d3fa904733539c4e36192852c6a9713f88179"
+    },
+    {
+      "name": "libSceFont.prx",
+      "sha256": "021a73014156d6d8683b7b005e7a0a73ccacc7f3f8f4e29db0d21ac232955703"
+    },
+    {
+      "name": "libSceFontFt-module.prx",
+      "sha256": "c0e348886e25ac47d8b7271dcb1d9532def7eba84265beec5874466545f3c093"
+    },
+    {
+      "name": "libSceFontFt.prx",
+      "sha256": "4953d8d2bc4336d6049c2a937ce180563f5848461933faaaffb3b1328844e9ee"
+    },
+    {
+      "name": "libSceGameLiveStreaming.prx",
+      "sha256": "d215c7cc7d60bef9eb2f5d53dfab5505d281875b3b2cf373846156320a540caf"
+    },
+    {
+      "name": "libSceGameUpdate.prx",
+      "sha256": "b8a18ef7ced464ed9bc4b8474547afdcdfc3cc9d01e22c06200d73a4be5f6da2"
+    },
+    {
+      "name": "libSceHmd.prx",
+      "sha256": "740cfaded040e31e90e6191cd0d56331a2af5ce62bed0cf9efbc1519e21ed810"
+    },
+    {
+      "name": "libSceHmd2.prx",
+      "sha256": "cc3ca6220807c54e63203b742e6dad5163fc7b202be14ee77994ddca04bc16a8"
+    },
+    {
+      "name": "libSceHttp.prx",
+      "sha256": "1d03379bf1f3fd2bf68c53fb56197a7c1697d50f5b79949975b612789a2408ac"
+    },
+    {
+      "name": "libSceHttp2.prx",
+      "sha256": "965bb82d2122935b3ed0996992aa32f4af5c73733673901d5e39c5500a845119"
+    },
+    {
+      "name": "libSceIme.prx",
+      "sha256": "596b16a03afa34caa1cfa2dafdeacc1910076e53302ee7dd222ee1013b38157a"
+    },
+    {
+      "name": "libSceImeBackend.prx",
+      "sha256": "f3647490a1ac6eaa8fc1b65afd8540472d72dca3e4a39d0c8413f84ff80e6f9b"
+    },
+    {
+      "name": "libSceImeDialog.prx",
+      "sha256": "51e346aa4e7dcd9ab30ddd74adfa6c180dabb164a00afa1a56e99742981b90ac"
+    },
+    {
+      "name": "libSceJpegDec.prx",
+      "sha256": "3ac4e62afb1ae846a287c8b7813d138e38f0728f49d3f5b8d0b8dfe2bcc9d9cd"
+    },
+    {
+      "name": "libSceJpegEnc.prx",
+      "sha256": "8370079f15c395f15c8edb4a416fa5d566f1da578b1c021a2a41f68cbd8c73be"
+    },
+    {
+      "name": "libSceJson2.prx",
+      "sha256": "c6ef9718a0efd1e02bb60f136fa15463489892bcfb9d3de82da459fee78815de"
+    },
+    {
+      "name": "libSceKeyboard.prx",
+      "sha256": "31d894def6ebd786d2773d1abd5a0a6a010856402a3d387ee84d7bbe90c4dcfb"
+    },
+    {
+      "name": "libSceLibcInternal.prx",
+      "sha256": "9b70ebac9415198d0ec5fb94b570919976356851e13e41baa067238f6a328fe2"
+    },
+    {
+      "name": "libSceLoginDialog.prx",
+      "sha256": "b2f985856601b340ed80aac481a4fbcb49275a465fa380ae5572b4dc6e9a630a"
+    },
+    {
+      "name": "libSceMbus.prx",
+      "sha256": "6b91a7a7c830bf6185efe2e6da4c2a70a27590df89a07338fc0c160ad9de9a49"
+    },
+    {
+      "name": "libSceMouse.prx",
+      "sha256": "49893f4781cd94bfa4a4aa9686434fa18d80a8cd9c76e1adb228751d09e9c0a2"
+    },
+    {
+      "name": "libSceMsgDialog.native.prx",
+      "sha256": "9e23a69181b10c86813793b785def2107e7d3a4b915429187a92a56f29c59712"
+    },
+    {
+      "name": "libSceMsgDialog.prx",
+      "sha256": "6c8e972d1342f5718a316efad16615751bca4a4bc854532f37730d6164c9a905"
+    },
+    {
+      "name": "libSceNet.prx",
+      "sha256": "37b2d46697f67199a1841de178c6331b5d581eaa401fbb9af83b5240cf6b6c3c"
+    },
+    {
+      "name": "libSceNetCtl.prx",
+      "sha256": "61ee6360251e3c117e14da957b919b400592dd2adbf8c17b718ec3a31649c042"
+    },
+    {
+      "name": "libSceNgs2.native.prx",
+      "sha256": "7daf7fce90af7b3015e2d16b4c419d76b9805ab1bb1c44a2f18a123b8aea24d9"
+    },
+    {
+      "name": "libSceNgs2.prx",
+      "sha256": "1922e06de31b8a7cc0d9308128959926b53febb7ef8ee9aa3497f8f1c1faf26e"
+    },
+    {
+      "name": "libSceNpAuth.prx",
+      "sha256": "66273a729b46e3f40d4b8ff8fa784b1d431a03604c1b82c1c531c5dd9af0bfea"
+    },
+    {
+      "name": "libSceNpCommerce.prx",
+      "sha256": "99e3e3632463b823d261629fde30d78c39d6370f3f6236dd48497bcb258fb5ac"
+    },
+    {
+      "name": "libSceNpEntitlementAccess.prx",
+      "sha256": "cb53091d68e5a1ebb5f11918dce40372cf8adbf21b6f975bdf5c9bea4bc1db1a"
+    },
+    {
+      "name": "libSceNpGameIntent.prx",
+      "sha256": "6995fe28fdc0f6e7dda389833e90142b9ec7696dd12940378566a64c53d00f92"
+    },
+    {
+      "name": "libSceNpManager.prx",
+      "sha256": "14f2b3290ad296036769fd11f8738e6c143b10e99c14b29e163bd05a54eee007"
+    },
+    {
+      "name": "libSceNpPartner001.prx",
+      "sha256": "1553e014777391c1c949438ff09475960cd115675f9ed1aac5719c9f1312a2aa"
+    },
+    {
+      "name": "libSceNpSessionSignaling.prx",
+      "sha256": "58113729f5d9edd73273a4e10eda8040acc6ecd25fed552762f6266f48dd0346"
+    },
+    {
+      "name": "libSceNpTrophy2.prx",
+      "sha256": "6f1e129a9d5ddc52db921753cdad57fd61b087c6c61eec8d283b3d00b487ecfd"
+    },
+    {
+      "name": "libSceNpUniversalDataSystem.prx",
+      "sha256": "11ed8c4ba6112842fef5648aece866b88d0443417e31604a37e69186c6795c48"
+    },
+    {
+      "name": "libSceNpUtility.prx",
+      "sha256": "503d51dd2d28f682afae12804f2c4b68eccd235c80ebdb0b28109032d54a909f"
+    },
+    {
+      "name": "libSceNpWebApi2.prx",
+      "sha256": "393032437c57f19de9612e80a343e6d7c414b981c323405587f3789c421f868a"
+    },
+    {
+      "name": "libScePad.prx",
+      "sha256": "12e7ae785e9735246c32c07ce8d4f185e18f09377460f158bd5086362e4898a7"
+    },
+    {
+      "name": "libScePlayerInvitationDialog.prx",
+      "sha256": "ba87214e05eb13bc714d513de171b143f473dcc66badacf28b8e1e0b4cf5cdee"
+    },
+    {
+      "name": "libScePlayerSelectionDialog.prx",
+      "sha256": "397757436635157e0df4696f91366cc34b8036a0653b0790d5e9a310dc6cd275"
+    },
+    {
+      "name": "libScePlayGo.prx",
+      "sha256": "3dfbcedab4d865c25d6395066bbb81a85d815503233ea981d307a91ff0300a63"
+    },
+    {
+      "name": "libScePlayGoDialog.prx",
+      "sha256": "3da7fb1889c0c514df4152c6300d4ed945bbfb964db2a92b0119c7e10850d8da"
+    },
+    {
+      "name": "libScePngDec.prx",
+      "sha256": "150d89e969a7a95dab4efa801245f63339bfdbe6ccfa94c55eea64941df0c137"
+    },
+    {
+      "name": "libScePngEnc.prx",
+      "sha256": "4d4b969ad08b8dbd25ab53224f605ef61f09e000a8fc2114b38d00fd3f1204ad"
+    },
+    {
+      "name": "libScePosixForWebKit.prx",
+      "sha256": "7e9b90bb8bf12d5b7767a26366a0380fd9e833a47836294ef0d6f31609af8276"
+    },
+    {
+      "name": "libSceProprietaryVoiceChatHelperPrx.prx",
+      "sha256": "bc002eb0c0815a767c6392fa1b5f2be36971acdbcde41fc3b40ffba2ae3a33ed"
+    },
+    {
+      "name": "libScePsml_debug.prx",
+      "sha256": "ebfd1123b1c82a82553f16765128d74c9475eb9ce02d48ace3ad844c35d17f98"
+    },
+    {
+      "name": "libSceRandom.prx",
+      "sha256": "3bd1a6987d40fd27cbd3140624e0fce784bee0a8992588ad8349793ad41b3953"
+    },
+    {
+      "name": "libSceRazorCpu.prx",
+      "sha256": "586ef1593d325e39f1573b9fa572723202a122a1ef9f36725fbd64b74885ddb2"
+    },
+    {
+      "name": "libSceRemoteplay.prx",
+      "sha256": "cd1e0e30571bc61cf00cc5737b2d9ee9b39c069c7b65bde8becaaa8dce960147"
+    },
+    {
+      "name": "libSceRtc.prx",
+      "sha256": "eb2414612a2e37ade55377d5eecb79311e3e4bf13d933236f00db796069c911a"
+    },
+    {
+      "name": "libSceRudp.prx",
+      "sha256": "35ab89db9ca48452e4705c003a0335493917f03f044980946610d875f5ac9bc6"
+    },
+    {
+      "name": "libSceSaveData.native.prx",
+      "sha256": "a879d8d10a50ac284e2c2464eb724e968db1e35a4030c21f4d3af8cff20271e7"
+    },
+    {
+      "name": "libSceSaveData.prx",
+      "sha256": "b9418855c89ed4c412c145e9b4e964fbe082f5de37511985253f564a117da9f8"
+    },
+    {
+      "name": "libSceSaveDataDialog.native.prx",
+      "sha256": "ce832720189da2c9b0508c8298cf327a0cb3632f59ec2daa809e7d35fe2a98cf"
+    },
+    {
+      "name": "libSceSaveDataDialog.prx",
+      "sha256": "eedf54b4550914f1690af9022bb720b0ddb51ac551215d40b2d3091bf37e54ee"
+    },
+    {
+      "name": "libSceShare.native.prx",
+      "sha256": "251b0dbf4dbf388f4538399df40399df243c7f18a61dc1806ce05a02c8ae4e65"
+    },
+    {
+      "name": "libSceShare.prx",
+      "sha256": "f8a0cf365615fc07396d51b25c4a525ed3c404d3a9eacc5e5f98d14243cb3c6e"
+    },
+    {
+      "name": "libSceSharePlay.prx",
+      "sha256": "b16e54adbd6096c078c2817b4ad390a3a87fb78adb7fbfe79697eae533146c1d"
+    },
+    {
+      "name": "libSceSigninDialog.prx",
+      "sha256": "035e53e3e1200fb5705560b047f1d3fcb72306fb9f3c6e4d081abce1fccaa524"
+    },
+    {
+      "name": "libSceSsl.prx",
+      "sha256": "1d4efc5c669a1f2de82ca53e7ca86c728bc8e74389723e0f1c8f254b057b6d77"
+    },
+    {
+      "name": "libSceSysmodule.prx",
+      "sha256": "e6037dc609f3a8605a224a45ed793b94b8fa9fb134a293974de4e940eb0d48af"
+    },
+    {
+      "name": "libSceSystemGesture.prx",
+      "sha256": "c4574d358c621d759b36064e016002052c622bee8d6e1c2724ca9d41a7a1035e"
+    },
+    {
+      "name": "libSceSystemService.prx",
+      "sha256": "0c647423321268450a91f023a16c163f29abf03311baa5550d3f681e7ecf92a9"
+    },
+    {
+      "name": "libSceTextToSpeech2.prx",
+      "sha256": "aa185f6999119370155f3d9f95186797ebdb84e25256f100adc6c5ca39f7ee68"
+    },
+    {
+      "name": "libSceUlt.prx",
+      "sha256": "974de0639dc179b34095efef7cdd51a3ae665e991cb9db742b70c1bf90115239"
+    },
+    {
+      "name": "libSceUsbd.prx",
+      "sha256": "98941c4e893cf5f984c606f72318916b1937f11f3d05eadf605d286b388b7f80"
+    },
+    {
+      "name": "libSceUserService.prx",
+      "sha256": "99105677f6ebd5bab5d1c800073de479e6fbbb6d5755ee698f820c4bc3d59568"
+    },
+    {
+      "name": "libSceVdecsw.prx",
+      "sha256": "da656659f2d8cd0e2f6bda3925cff878a20f496fb039eb14dbb1ceac765fd083"
+    },
+    {
+      "name": "libSceVideodec2.prx",
+      "sha256": "9092287fc45b1d9a904decd06625fa3cc240927269c571f0cb0d48662cc4d073"
+    },
+    {
+      "name": "libSceVideoOut.prx",
+      "sha256": "317ab904315b6fe9acfbf80ba477c165b6a55594ef0ccd99c6ec0f3662ae5076"
+    },
+    {
+      "name": "libSceVideoRecordingP.prx",
+      "sha256": "cc6092d4f937c589850de720049a5f3068d63966877a4e2bb920341dd5a64775"
+    },
+    {
+      "name": "libSceVoice.prx",
+      "sha256": "b8819f1ee8c3a7db962c00b6e008856f773f9f17b54473ba4d7e188bfa570863"
+    },
+    {
+      "name": "libSceVoiceChat.prx",
+      "sha256": "655720381af48818423c4c465ab232d82857fa28258059ae9f7d0a243e5f0913"
+    },
+    {
+      "name": "libSceVoiceQoS.prx",
+      "sha256": "0765174c73e74dac10e19b1e1aa7b84a07d9d1e3d49cc4c7873fba195d31b954"
+    },
+    {
+      "name": "libSceVrSetupDialog.prx",
+      "sha256": "e96a876af19e26a39b0741827a5ade51e4d8887b157af3c21ade286fb50ee1d6"
+    },
+    {
+      "name": "libSceVrTracker2.prx",
+      "sha256": "790c61589dbaef4201a7a5c8b9f81eefda9a4adc60725c317d3869085fafd354"
+    },
+    {
+      "name": "libSceWebBrowserDialog.prx",
+      "sha256": "bedd9779a7b25d20b7e47f72c410a6530e910d38380d5681569027faefc9e952"
+    },
+    {
+      "name": "ulobjmgr.prx",
+      "sha256": "c892f49750bb17cc713524a740b93e128a74c0f1bac9411e5e396bf45c9e9be3"
+    }
+  ],
+  "source_tree": "e533a3532f8ee9be2cdd705601bc54a14c8b5f41",
+  "source_dirty_detail": "Untracked audit documentation; no modified tracked source files at run start"
+}

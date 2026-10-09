@@ -1,0 +1,52 @@
+{
+  "applications": [
+    {
+      "id": "PPSA69420",
+      "repository": "https://github.com/Marice/ScreenTester5",
+      "version": "01.000.000",
+      "release_url": "https://github.com/Marice/ScreenTester5/releases/tag/01.000.000",
+      "asset_url": "https://github.com/Marice/ScreenTester5/releases/download/01.000.000/PPSA69420.zip",
+      "archive_sha256": "49a5c6d7bbb08f5a1539feb65b7fd2b537b6d7b304bdd3eed1c923e4ccbec8fd",
+      "input": "PPSA69420/eboot.elf",
+      "input_sha256": "e900c4b95978c2e5ae94ee5d6e651a9e02135cfc2cd7f8546f2f7725d0f369ca",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "a5411d6a6eb6ab3d71106b6bd654b937c30a794aaffc9a20b2b3889f4474bfa2"
+    },
+    {
+      "id": "PPSA99005",
+      "repository": "https://github.com/blackbearreloaded/ps5-opengl",
+      "version": "v1.0.1",
+      "release_url": "https://github.com/blackbearreloaded/ps5-opengl/releases/tag/v1.0.1",
+      "asset_url": "https://github.com/blackbearreloaded/ps5-opengl/releases/download/v1.0.1/ps5-opengl-showcase-1.0.1-PPSA99005.zip",
+      "archive_sha256": "d16eb7f779d382d21e7f3374a3871e54cce3dea150a9e7de1603a9011833c9f9",
+      "input": "PPSA99005/eboot.elf",
+      "input_sha256": "704e39509d73afb1a89f998958d61df84429dc09941e982a89eadab9b5acff99",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "09f4387004c4b62ec881194a67df7326f2d8532ec81b5a5c90b99215c163a2f8"
+    },
+    {
+      "id": "PPSA99039",
+      "repository": "https://github.com/sainsaji/EVO-PLAYER-PS5",
+      "version": "v0.12.0",
+      "release_url": "https://github.com/sainsaji/EVO-PLAYER-PS5/releases/tag/v0.12.0",
+      "asset_url": "https://github.com/sainsaji/EVO-PLAYER-PS5/releases/download/v0.12.0/EVOPlayer-v0.12.0-PPSA99039.zip",
+      "archive_sha256": "98788be10b3d2fe2909f6e353e2e09409ad29e46c2bc37112e2f35d9baa00d8a",
+      "input": "PPSA99039/eboot.elf",
+      "input_sha256": "a8bd09bd26492c78b43ee3e487c326ab777ee9cf540327efc0fff730d4d032ba",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "313abfb90bfc616ea1b3a0eef1828b9b6ceff435ce3c2aa9f2c5cd31f3c7f021"
+    },
+    {
+      "id": "PPSA99001",
+      "repository": "https://github.com/blackbearreloaded/ProsperoRadio",
+      "version": "01.000.010",
+      "release_url": "https://github.com/blackbearreloaded/ProsperoRadio/releases/tag/01.000.010",
+      "asset_url": "https://github.com/blackbearreloaded/ProsperoRadio/releases/download/01.000.010/PPSA99001.zip",
+      "archive_sha256": "413011fcaf2cee3b1ce796388f3c9b13d3a0ac2e1a1a2b5bc5bba1adcd0fc020",
+      "input": "PPSA99001/eboot.elf",
+      "input_sha256": "7c154a26f52312f700f52aaa9ececf3e29d6e8f05c2593511529bb8f319aabd2",
+      "license": "GPL-3.0; test input only",
+      "packaged_input_sha256": "16541c81c3aa39bf7def6c17debf63048fc47559ef2321c9eff726f677c412a4"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26200"
+  },
+  "cpu": {
+    "Name": "AMD Ryzen 5 5600G with Radeon Graphics         ",
+    "NumberOfCores": 6,
+    "NumberOfLogicalProcessors": 12
+  },
+  "gpu": {
+    "Name": "AMD Radeon RX 6600",
+    "DriverVersion": "32.0.21045.5002"
+  },
+  "memory_bytes": 16504717312,
+  "disk": {
+    "Used": 827275653120,
+    "Free": 171826429952
+  },
+  "vulkan_probe": [
+    "device=AMD Radeon RX 6600 vendor=4098 api=4211003 driver=8388961 subgroupSize=64 subgroupOps=1791",
+    "heap=8252358656 flags=0",
+    "heap=8573157376 flags=3",
+    "layer=VK_LAYER_AMD_switchable_graphics",
+    "layer=GalaxyOverlayVkLayer",
+    "layer=GalaxyOverlayVkLayer_VERBOSE",
+    "layer=GalaxyOverlayVkLayer_DEBUG",
+    "layer=VK_LAYER_VALVE_steam_overlay",
+    "layer=VK_LAYER_VALVE_steam_fossilize",
+    "layer=VK_LAYER_OW_OVERLAY",
+    "layer=VK_LAYER_OW_OBS_HOOK",
+    "layer=VK_LAYER_EOS_Overlay",
+    "layer=VK_LAYER_EOS_Overlay"
+  ],
+  "compiler": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r7) 15.2.0",
+  "cmake": "cmake version 4.3.1",
+  "ninja": "1.13.2",
+  "python": "Python 3.13.3"
+}

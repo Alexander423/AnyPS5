@@ -1,0 +1,118 @@
+{
+  "upstream": "d70b89989473ba1f6ae13e44e079e67f1f8a44b0",
+  "method": "merge-base, ancestry counts, stable patch-id, file diffs; not semantic validation",
+  "complete": false,
+  "repositories": "fork-branches.json",
+  "parts": [
+    {
+      "field": "tips",
+      "file": "fork-tips-00.json",
+      "sha256": "8454a9e77e1d9583a083f7a50772b39ee934607a37dca3f59871bdb16edea314"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-01.json",
+      "sha256": "4e3d2b84654cbcbf33ff0d664810f225ade1e0b843a5c61e86135c16ea84b79b"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-02.json",
+      "sha256": "5e5c568b6756b3853b550e26858205b28dd5376c50407b75df9e339a32cfa0cd"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-03.json",
+      "sha256": "34889585b4f6d402ea65d963ec191aac99de8afd9c7dc443d3a1d6a77f36cb67"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-04.json",
+      "sha256": "549fe8eeff633bc07cedcc7da9226b6c55431b2cf638aeb4a0c887bb105c8a34"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-05.json",
+      "sha256": "2884ad49b3801dc7a83738bd30976d48e30b4c617e7e281fc7a863e684bc9bf8"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-06.json",
+      "sha256": "de5fc4650bcada6ef1aa140dba4a6783d14240bdd04c78b1eec764b272e62488"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-07.json",
+      "sha256": "3ba9fd8dd7cd765f4c59a68c0247e05b0200c55db974827dbb13648fc810a18a"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-08.json",
+      "sha256": "36dde67857de3370bfcbc7e199f948eaeae9923254ee5915da0955640291f2eb"
+    },
+    {
+      "field": "tips",
+      "file": "fork-tips-09.json",
+      "sha256": "36458028a28b896059476c266d647c13449cda092e35ed86a93402a649d91cbe"
+    },
+    {
+      "field": "commit_metadata",
+      "file": "fork-commit_metadata-00.json",
+      "sha256": "a734112583b2b5a861631e9f3254e4350e8c7760d55d58ade4837829f8f5ab76"
+    },
+    {
+      "field": "commit_metadata",
+      "file": "fork-commit_metadata-01.json",
+      "sha256": "c781621018ec50f58586cd373ddce7dc866aeeee222f87fc4cd66b9668786dd8"
+    },
+    {
+      "field": "commit_metadata",
+      "file": "fork-commit_metadata-02.json",
+      "sha256": "2868cd499e6283ec130bc6f527c0fd2b67dd74ec65504f5d44cc69e8179030ca"
+    },
+    {
+      "field": "commit_metadata",
+      "file": "fork-commit_metadata-03.json",
+      "sha256": "77f2f7a607fe6c33118075a41a97aeb8b3a9f8d2ea06c5dce829986bdae5c58c"
+    },
+    {
+      "field": "commit_metadata",
+      "file": "fork-commit_metadata-04.json",
+      "sha256": "303093691067fea17a8cf1988b89d9ce655a1f3422eab85b99a749134bb7b461"
+    },
+    {
+      "field": "commit_metadata",
+      "file": "fork-commit_metadata-05.json",
+      "sha256": "300df07af4b48c6f6f7dc0e98888c61aa6c481da64faa438c549676d2280de01"
+    },
+    {
+      "field": "patch_ids",
+      "file": "fork-patch_ids-00.json",
+      "sha256": "eecb6b93259803d434f6ede26ff79be0f18a456fbfa5f07414921edd79ce3de4"
+    },
+    {
+      "field": "patch_ids",
+      "file": "fork-patch_ids-01.json",
+      "sha256": "5cfeb9b629512f1915c2ae629fd355526345f8a558fe0a56397c1fe080720786"
+    },
+    {
+      "field": "patch_ids",
+      "file": "fork-patch_ids-02.json",
+      "sha256": "c5749a317c203e18cfefdef36e3e52944bd4deea93ec30a703dcd106871615ce"
+    },
+    {
+      "field": "patch_ids",
+      "file": "fork-patch_ids-03.json",
+      "sha256": "faa9436b0e092b2db343bda0997a109642fd230aaa36c4cb2f6d955e7c08df90"
+    },
+    {
+      "field": "patch_ids",
+      "file": "fork-patch_ids-04.json",
+      "sha256": "23e7da37ff5598b27b9f3006da70d5c382ae9a3af6950e17e3cb67099d37ef7a"
+    },
+    {
+      "field": "patch_ids",
+      "file": "fork-patch_ids-05.json",
+      "sha256": "7c9b4d2e18bf0e49570ef429f09f5334812b416ee1909b7574c09e410641cf64"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="40"
+	failures="1"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="34"
+	timestamp="2026-10-09T15:08:34"
+	>
+	<testcase name="pr_overlap_encoding" classname="pr_overlap_encoding" time="2.00447" status="run">
+		<properties/>
+		<system-out>........
+----------------------------------------------------------------------
+Ran 8 tests in 0.647s
+
+OK
+</system-out>
+	</testcase>
+	<testcase name="progress_report" classname="progress_report" time="1.49064" status="run">
+		<properties/>
+		<system-out>..
+----------------------------------------------------------------------
+Ran 2 tests in 0.127s
+
+OK
+</system-out>
+	</testcase>
+	<testcase name="import_audit" classname="import_audit" time="9.84566" status="run">
+		<properties/>
+		<system-out>.............
+----------------------------------------------------------------------
+Ran 13 tests in 8.437s
+
+OK
+</system-out>
+	</testcase>
+	<testcase name="hardware_oracle" classname="hardware_oracle" time="1.65709" status="run">
+		<properties/>
+		<system-out>s.......
+----------------------------------------------------------------------
+Ran 8 tests in 0.232s
+
+OK (skipped=1)
+</system-out>
+	</testcase>
+	<testcase name="windows_dependency_diagnostics" classname="windows_dependency_diagnostics" time="1.06447" status="run">
+		<properties/>
+		<system-out>Windows dependency machine-code tests passed
+</system-out>
+	</testcase>
+	<testcase name="amd64_only_windows" classname="amd64_only_windows" time="1.32733" status="run">
+		<properties/>
+		<system-out>AMD64-only Windows tests passed (57088 lowered sequences executed)
+</system-out>
+	</testcase>
+	<testcase name="autorun_exit_status" classname="autorun_exit_status" time="0.719606" status="run">
+		<properties/>
+		<system-out>
+Exit code: 42
+
+Press Enter to exit...
+
+Exit code: 42
+
+Press Enter to exit...
+</system-out>
+	</testcase>
+	<testcase name="cli_args" classname="cli_args" time="0.300407" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="buffer_bounds" classname="buffer_bounds" time="0.300681" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="amd64_only_converter" classname="amd64_only_converter" time="0.176063" status="run">
+		<properties/>
+		<system-out>AMD64-only converter tests passed
+</system-out>
+	</testcase>
+	<testcase name="elf_offsets" classname="elf_offsets" time="1.20006" status="run">
+		<properties/>
+		<system-out>ELF offset tests passed
+</system-out>
+	</testcase>
+	<testcase name="dynamic_segment" classname="dynamic_segment" time="1.61745" status="run">
+		<properties/>
+		<system-out>Dynamic segment tests passed
+</system-out>
+	</testcase>
+	<testcase name="rela_size" classname="rela_size" time="1.84584" status="run">
+		<properties/>
+		<system-out>RELA size tests passed
+</system-out>
+	</testcase>
+	<testcase name="optional_plt" classname="optional_plt" time="1.1354" status="run">
+		<properties/>
+		<system-out>Optional PLT integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="empty_tls" classname="empty_tls" time="0.784116" status="run">
+		<properties/>
+		<system-out>Empty TLS integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="tls_function_coverage" classname="tls_function_coverage" time="30.0091" status="fail">
+		<failure message="Timeout"/>
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="tls_diagnostics" classname="tls_diagnostics" time="0.609467" status="run">
+		<properties/>
+		<system-out>TLS diagnostics integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="linux_load_alignment" classname="linux_load_alignment" time="0.428294" status="run">
+		<properties/>
+		<system-out>Linux load alignment test passed
+</system-out>
+	</testcase>
+	<testcase name="linux_eh_frame_header" classname="linux_eh_frame_header" time="0.343813" status="run">
+		<properties/>
+		<system-out>Linux eh_frame header test passed
+</system-out>
+	</testcase>
+	<testcase name="linux_dynamic_strings" classname="linux_dynamic_strings" time="0.287522" status="run">
+		<properties/>
+		<system-out>Linux dynamic string tests passed
+</system-out>
+	</testcase>
+	<testcase name="executable_segments" classname="executable_segments" time="0.592774" status="run">
+		<properties/>
+		<system-out>Executable segment tests passed
+</system-out>
+	</testcase>
+	<testcase name="linux_entry_argv" classname="linux_entry_argv" time="0.206916" status="run">
+		<properties/>
+		<system-out>Linux entry argv test passed
+</system-out>
+	</testcase>
+	<testcase name="windows_gui" classname="windows_gui" time="0.378292" status="run">
+		<properties/>
+		<system-out>Windows GUI subsystem integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="windows_address_space" classname="windows_address_space" time="0.504471" status="run">
+		<properties/>
+		<system-out>Windows address space integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="windows_icon" classname="windows_icon" time="1.75695" status="run">
+		<properties/>
+		<system-out>Transferring control to ELF entry point
+Transferring control to ELF entry point
+Transferring control to ELF entry point
+Transferring control to ELF entry point
+Transferring control to ELF entry point
+Windows icon integration tests passed (5 images, 11 malformed files, missing icon)
+</system-out>
+	</testcase>
+	<testcase name="guest_intel_trampolines" classname="guest_intel_trampolines" time="0.711491" status="run">
+		<properties/>
+		<system-out>Guest Intel trampoline integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="guest_tls" classname="guest_tls" time="0.352683" status="run">
+		<properties/>
+		<system-out>Guest TLS integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="guest_needed_modules" classname="guest_needed_modules" time="0.680947" status="run">
+		<properties/>
+		<system-out>Guest needed module tests passed
+</system-out>
+	</testcase>
+	<testcase name="guest_module_directories" classname="guest_module_directories" time="1.64236" status="run">
+		<properties/>
+		<system-out>Guest module directory integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="guest_symbol_names" classname="guest_symbol_names" time="0.287631" status="run">
+		<properties/>
+		<system-out>Guest symbol name tests passed
+</system-out>
+	</testcase>
+	<testcase name="guest_host_libc" classname="guest_host_libc" time="0.485841" status="run">
+		<properties/>
+		<system-out>Guest host libc integration tests passed
+</system-out>
+	</testcase>
+	<testcase name="guest_absolute_symbols" classname="guest_absolute_symbols" time="0.479627" status="run">
+		<properties/>
+		<system-out>Guest absolute symbol tests passed
+</system-out>
+	</testcase>
+	<testcase name="windows_import_modules" classname="windows_import_modules" time="8.05159" status="run">
+		<properties/>
+		<system-out>Windows module-scoped import tests passed
+</system-out>
+	</testcase>
+	<testcase name="elf_header" classname="elf_header" time="0.383173" status="run">
+		<properties/>
+		<system-out>ELF header tests passed
+</system-out>
+	</testcase>
+	<testcase name="input_magic" classname="input_magic" time="0.417164" status="run">
+		<properties/>
+		<system-out>Input magic diagnostics tests passed
+</system-out>
+	</testcase>
+	<testcase name="string_table_bounds" classname="string_table_bounds" time="0.619522" status="run">
+		<properties/>
+		<system-out>Dynamic string table bounds tests passed
+</system-out>
+	</testcase>
+	<testcase name="call_registry" classname="call_registry" time="2.81076" status="run">
+		<properties/>
+		<system-out>Call registry JSON tests passed
+</system-out>
+	</testcase>
+	<testcase name="jmprel_table_bounds" classname="jmprel_table_bounds" time="0.654209" status="run">
+		<properties/>
+		<system-out>Jump relocation table bounds tests passed
+</system-out>
+	</testcase>
+	<testcase name="windows_icon_resource" classname="windows_icon_resource" time="0.302397" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="strict_nid_filter" classname="strict_nid_filter" time="0.192199" status="run">
+		<properties/>
+		<system-out>Strict reachability: 28 instructions; conservative indirect transfers=0
+Function graph: 2/4 live regions; address-taken roots=1; unwind functions=0
+Strict reachability: 28 instructions; conservative indirect transfers=0
+Function graph: 2/4 live regions; address-taken roots=1; unwind functions=0
+Strict reachability: 1 instructions; conservative indirect transfers=1
+Function graph: 1/3 live regions; address-taken roots=0; unwind functions=0
+Strict NID filter tests passed
+</system-out>
+	</testcase>
+</testsuite>

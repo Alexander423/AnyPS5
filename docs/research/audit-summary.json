@@ -1,0 +1,23 @@
+{
+  "baseline": "d70b89989473ba1f6ae13e44e079e67f1f8a44b0",
+  "repositories": 1513,
+  "unavailable_repositories": [
+    "OverkillLabs/AnyPS5",
+    "OverkillLabs2/AnyPS5",
+    "u0dc4847c20/AnyPS5"
+  ],
+  "advertised_branches": 4096,
+  "distinct_tips": 2451,
+  "comparable_tips": 2444,
+  "unrelated_histories": 7,
+  "upstream_ancestor_tips": 995,
+  "distinct_nonmerge_commits_outside_baseline": 5116,
+  "patch_equivalent_upstream_commits": 270,
+  "duplicate_community_patch_groups": 336,
+  "limits": [
+    "Fork endpoint membership not independently proven recursive",
+    "Per-fork PR/issues/discussions not exhaustively reviewed",
+    "Static ancestry/patch comparison is not semantic verification",
+    "No third-party fork binaries executed"
+  ]
+}

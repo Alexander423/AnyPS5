@@ -1,0 +1,3577 @@
+{
+  "0e13f8f6428b2ef16f2ed821309b19e05e9c07e6": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T10:38:39-04:00",
+    "subject": "Merge branch 'main' into nahshongraham97-anyps5-ci-coverage"
+  },
+  "71f6df507572f990993247035358ac05e5762202": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T10:27:00-04:00",
+    "subject": "Merge branch 'boykopovar:main' into main"
+  },
+  "00af8c1e0b49f9f9559101e2cd1b44bd6eaf464d": {
+    "author": "Copilot App",
+    "author_date": "2026-09-28T10:00:43-04:00",
+    "subject": "Expand Windows CI test coverage"
+  },
+  "797543ebb312f0b6eadf3006c3ffcd60b276f8e6": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T09:49:12-04:00",
+    "subject": "Merge upstream AnyPS5 and integrate payload runtime"
+  },
+  "761187d0759cabfe2543c4e0e0f189163097e884": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-28T13:37:26Z",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "78bf17684b5c33407a14697d1260f368be02b989": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T08:45:34-04:00",
+    "subject": "Implement guest FILE scanning with SysV arguments"
+  },
+  "de2e595392003a7874889e6a116ba1635e866922": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T08:35:01-04:00",
+    "subject": "Export guest C-locale maximum multibyte length"
+  },
+  "38ede4e4a3a6ba17e779c4e4411b3a80df9d2e8b": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T08:30:49-04:00",
+    "subject": "Implement C-locale byte and guest wide collation"
+  },
+  "c0cd802939821b32649ea83c193f9c591bff7d2f": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T08:26:04-04:00",
+    "subject": "Implement guest-allocated vasprintf using SysV formatting bridge"
+  },
+  "4c684456b21f4133a7bb8fb3fa4a758e6b9dad84": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T07:34:37-04:00",
+    "subject": "Complete C-locale guest multibyte conversion family"
+  },
+  "7fe03006baf8d3c1c3e23e543c105c91ceec718c": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T07:32:00-04:00",
+    "subject": "Implement guest C-locale mbrtowc conversion"
+  },
+  "b927f9335f756aa3f764ae703af6e668dc6f0972": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T07:20:42-04:00",
+    "subject": "Implement guest C-locale wcstombs with wide string tests"
+  },
+  "f11ce18d12ee59e1a8a65b8aa93102a7425af521": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-28T06:46:43-04:00",
+    "subject": "Model simple guest sigaction dispositions and reject unsupported modes"
+  },
+  "4d2d7014792dda339fecb1dc34b9023a076c64bb": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T23:27:24+13:00",
+    "subject": "fix(json2): referValue returns null for a missing member, numeric getters return references"
+  },
+  "b9963b013a901f9a723dea2a737a5b47a4bb1a9f": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:21:40+03:00",
+    "subject": "feat(audio): software NGS2 mixer with real System/Rack/Voice model"
+  },
+  "5d37aa3b10a6dc69006ff98dda65674346a1995f": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T23:17:29+13:00",
+    "subject": "fix(json2): return Value::getBoolean by reference"
+  },
+  "83ec97e9a76d9a63be1bc28ec9fa1cdf6e6411ea": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T23:17:09+13:00",
+    "subject": "feat(agc): track guest memory writes on Linux with async userfaultfd write protection"
+  },
+  "b3958d088a37f04abe80e8bf6f8ee55f957e668c": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T23:12:47+13:00",
+    "subject": "fix(shader): make s_getpc_b64 return the shader's absolute address"
+  },
+  "21b607db7fe0aa5d6fff9c28f2cef0180af0b903": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:13:17+03:00",
+    "subject": "prx: implement scePlayGoGetInstallChunkId for real"
+  },
+  "a548f9c4a823163bc9dd390e5f2b3486726c4e42": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:12:47+03:00",
+    "subject": "prx: implement real libScePngEnc PNG encoder"
+  },
+  "9f65643f86c6831a920eb6a0d97cbb3d0c691e74": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:12:35+03:00",
+    "subject": "3rdparty: vendor stb_image_write.h (public domain / MIT)"
+  },
+  "2b56e7ca8230e2868df4895e2360228c4a04ddbd": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:12:00+03:00",
+    "subject": "prx: add libSceVoiceChat offline-safe HLE stub"
+  },
+  "8d9b2893341be735564255b8e406f96654f81e9b": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:11:51+03:00",
+    "subject": "prx: add libSceConvertKeycode HLE module"
+  },
+  "ecd84ac98e33e6946e617edf30898af03b7d5bfc": {
+    "author": "OverkillLabs",
+    "author_date": "2026-09-28T13:11:40+03:00",
+    "subject": "core/libs: add HitLog.hpp rate-limited HLE hit logging helper"
+  },
+  "6aaec16e560eca2139510fafc703b36cdfab30bc": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T22:42:26+13:00",
+    "subject": "fix(agc): keep unit shadows off where the write tracker cannot prove them fresh"
+  },
+  "af9baaf8714866e55b8da7bb4a2274d17408a281": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T22:42:26+13:00",
+    "subject": "fix(agc): keep a render target's results under its own DCC clear keys"
+  },
+  "367e9f1d57b2867eff3ec6f4aa4ae4a7e6d494ce": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T22:03:39+13:00",
+    "subject": "build(font): build FreeType from a submodule instead of requiring a system package"
+  },
+  "671daba4c442906feb57790a957d9a690a2cc43b": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T22:02:37+13:00",
+    "subject": "build: register the fiber test once after the upstream merge"
+  },
+  "e455cd763a68fc5e0218561be5d1f82320de762f": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T22:01:28+13:00",
+    "subject": "Merge remote-tracking branch 'origin/main' into astrobot"
+  },
+  "fb4eeb90812478c859cdc00a366fd28e39d8cecb": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T21:56:33+13:00",
+    "subject": "fix(avplayer): report the right crop from the pitch, as the title computes width = pitch - crops"
+  },
+  "ac94700de20cc43f1957101d62ea5cf98d055ee4": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T21:34:40+13:00",
+    "subject": "fix(agc): bind misaligned buffer views through copies of their own"
+  },
+  "fbe39fad9b6e3d6b2d54726fae5e40c320c89910": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T21:15:02+13:00",
+    "subject": "chore(agc): name the view and its owner in the storage offset alignment error"
+  },
+  "61ed007bf54e8333337a3e8f886bebbc95980dec": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T21:08:06+13:00",
+    "subject": "fix(recompiler): only pixel stages consult the pixel interpolation info"
+  },
+  "1069ab052132bfdd8c3d10556b996386b48f7c89": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T20:59:13+13:00",
+    "subject": "test(agc): draw NGG geometry programs as mesh shaders on the GPU"
+  },
+  "5bf901f6fd61b0578deb3ec730cb1e46a20eb04e": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T21:02:54+13:00",
+    "subject": "fix(recompiler): serialize requests as version 4 now that both version 3 additions are present"
+  },
+  "cb08cc917ce4e929b914ce717f308c6f33c4260e": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T20:59:03+13:00",
+    "subject": "feat(shader): translate NGG geometry programs to mesh shaders"
+  },
+  "a4ffda85b5504ec8e1296a7dd71ac07baaab33e8": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T20:20:33+13:00",
+    "subject": "fix(recompiler): decorate pixel parameters NoPerspective by the I/J pair their v_interp reads"
+  },
+  "539447e74efe8f704a92884738b2fa59941dae8b": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T20:15:36+13:00",
+    "subject": "feat(agc): centroid-interpolated pixel shader inputs"
+  },
+  "0318ea98b4bde6ce7f2f9b1d9c1202a74cee52c4": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T20:07:55+13:00",
+    "subject": "Merge remote-tracking branch 'origin/main' into astrobot"
+  },
+  "8c3bef21d5a9cda1d85ae2d480b8c93e2e119fb8": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T20:01:49+13:00",
+    "subject": "chore(agc): name the values in pixel-input and mesh-configuration errors"
+  },
+  "40b5af873ad2d8f56e8aa11731fa84159491b888": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:57:44+13:00",
+    "subject": "feat(agc): packed 10:10:10:2 and 11:11:10 vertex formats, render CMASK fast-clear targets uncompressed"
+  },
+  "4ac84304709c23913dc5b0f6e7c46e589a214c01": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:57:44+13:00",
+    "subject": "fix(agc): give fused shaders a self-contained header in their scratch memory"
+  },
+  "695e755891d163a4b382ac7be284e6ce8aa7bdc7": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:50:13+13:00",
+    "subject": "feat(agc): GPU-resident depth/stencil targets"
+  },
+  "40fa90b19c699419a7231f06be0e101ee2489b33": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:47:20+13:00",
+    "subject": "test(agc): link agc_driver_graphics_tests again and bring its stale expectations up to date"
+  },
+  "6a0b188d8c5123967a64de8ab561063ae36e4e61": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:19:01+13:00",
+    "subject": "feat(agc): persistent shader disk cache and Vulkan pipeline cache"
+  },
+  "4d40df62ab35b043522cd5d29dd9560871696f99": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:15:10+13:00",
+    "subject": "feat(agc): primitive restart with an all-ones index for strips, and for lists with VK_EXT_primitive_topology_list_restart"
+  },
+  "adcede346b1973d3ad5ca0da1cc2a051e281b375": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T19:15:10+13:00",
+    "subject": "fix(avplayer): PS5 numbers video streams 1 and audio streams 0"
+  },
+  "dd59382b1e07b283a5e82c2ef1ae40119088615a": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T18:56:19+13:00",
+    "subject": "feat(agc): PFP WRITE_DATA, pixel pipe stat events reported as visible, opt-in latched label waits (APS5_LATCH_WAITS)"
+  },
+  "e9ea5c8572c9ef753234415f005c42acd28841e1": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T18:56:19+13:00",
+    "subject": "fix(avplayer): the stream info struct is 32 bytes on PS5"
+  },
+  "bdcbe8e0cf0828d10aad5bd1294e70be9a591464": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T18:16:50+13:00",
+    "subject": "fix(agc): deliver end-of-pipe interrupts to the issuing queue's event after draining"
+  },
+  "83d280c230380028d994f9593b9281f5146e7a7b": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T17:36:46+13:00",
+    "subject": "fix(agc): accept the core Sampled1D and Image1D SPIR-V capabilities"
+  },
+  "704fa96b4e9ab17c1b202c4a8f46a16a92eecb97": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T17:32:42+13:00",
+    "subject": "fix(agc): accept depth writes that the disabled depth test makes inert"
+  },
+  "f1900bf3c5facb8e42623c114b9838c6c95319d8": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T17:32:42+13:00",
+    "subject": "fix(agc): don't let a queue worker record on a device the presenter is replacing"
+  },
+  "9c8e7fd99002b7ccc1bb91be769eac9116764b04": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T17:14:41+13:00",
+    "subject": "feat(avplayer): ffmpeg playback for libSceAvPlayer and libSceAvPlayer.native"
+  },
+  "8270197a1b04d7b635a471a7389e2df6506e11ad": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:55:15+13:00",
+    "subject": "fix: rewind getdents when the first entry does not fit, complete the restart test state"
+  },
+  "f2719b704a9c5c0920cd1c30d0a494eabdc3fa8a": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:49:47+13:00",
+    "subject": "feat: glyph attributes and direct-only audio propagation rays, paths and render"
+  },
+  "68ec38f55b6e7be35231d508c344b81b12e5aaa3": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "feat: ime keyboard, mouse, pad outputs, content export init, savedata transfer mount and audio propagation objects"
+  },
+  "578a817b34292cbfbedf0ebc450c9218ca75e397": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "feat(agc): acb markers, unbinding the index buffer, dma_data cache policy and gds, primitive restart only for indexed draws, retain replaced devices"
+  },
+  "e392ed35ccc4d4c2f215c64e9d460cadc1b5440e": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "feat(agc): indexed indirect draws (from #40)"
+  },
+  "f3094fee4212391d3a9d7f0ac3580d1d6471bbe9": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "feat(libkernel): pread, pwrite and getdents on linux"
+  },
+  "ddc4a2181c1f623c67a20fcb7b459ec23a71d75c": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "fix(kernel): use SCE kernel error codes in equeue (from #26)"
+  },
+  "b7ee8288195b4ed0114a86dd62f7b50646e17eb2": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "feat(libc): sscanf_s and an O(log n) mspace allocator"
+  },
+  "eb2d5b822f0eb0b68f6ee94232f429aafab1fa45": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T16:23:22+13:00",
+    "subject": "feat(relinker): lower register-form EXTRQ and relocate following instructions for short sites"
+  },
+  "fd559561a58f33b0077879e818c97831f9d005a1": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T22:40:35-04:00",
+    "subject": "Build fresh NID-patched PRXs before payload deployment"
+  },
+  "8534545b2e55648b1af614c63f7c6b8efeac4457": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T22:37:16-04:00",
+    "subject": "Fix Windows condition test PATH setup"
+  },
+  "9725a06a19bc879919bf2fff9600f4489e2a5a89": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T15:27:26+13:00",
+    "subject": "feat(font): port shadPS4's sceFont and sceFontFt on FreeType"
+  },
+  "d273d41578ecfb574328d714bd7f7e59db1525a1": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T15:27:26+13:00",
+    "subject": "feat(json2): implement sce::Json values, strings, arrays, objects, parser and null-access callback"
+  },
+  "01055aba558b6594dca76ce6ab0e3ac6d79d5902": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T22:25:48-04:00",
+    "subject": "Implement condition waits and notifications with busy tracking"
+  },
+  "8d3ee941e47ff5d0ea52c4e4a7813370793e110d": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T22:20:52-04:00",
+    "subject": "Implement POSIX condition init and destroy for guest payloads"
+  },
+  "abad77228ed5f403cf1687680489f8174f8cb2a3": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T21:57:20-04:00",
+    "subject": "Implement numeric hardware sysctl for payload SDL fallback"
+  },
+  "9d70c1932334b35a3ddfa1690d803b0f11c24714": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:44:11+13:00",
+    "subject": "feat(rudp): library initialization, internal io thread and event handler state"
+  },
+  "8c54efafc02a2e46a435803b0b881131bb06b4c5": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:44:11+13:00",
+    "subject": "feat(systemservice): report sdr tone-map luminance"
+  },
+  "1036a9eed2830abde08c4f513ec72955ceae4df7": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:44:11+13:00",
+    "subject": "feat(libkernel): accept priority-inheritance mutexes"
+  },
+  "17d9816bb9b0c8b3e50499ef698c339b9a9c3240": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:44:11+13:00",
+    "subject": "feat(agc): fuse geometry shader halves"
+  },
+  "f85cc9f65ba010f97dbcdae2f4cad1c773029d85": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T21:33:23-04:00",
+    "subject": "Run payload startup audit tests in Windows CI"
+  },
+  "fedf6a3494b4676b0671611f2da4392fd5145339": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T21:32:12-04:00",
+    "subject": "Audit SDK payload startup contract and syscall candidates"
+  },
+  "d44563dee9d5332eaefecdd35161545aef4de00d": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:22:19+13:00",
+    "subject": "test(relinker): check the linux image base keeps the guest segment alignment"
+  },
+  "a69710fb116dd2f6f2fb96a5a0b7f459c75fd28c": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:21:29+13:00",
+    "subject": "test: cover fibers, mspace, bounds-checked functions and named or hinted mappings"
+  },
+  "8a49db242b30408c8c97891ce186db0caf049e04": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:15:49+13:00",
+    "subject": "fix: make range names, mspace peak usage and __cxa_finalize real"
+  },
+  "76bbcb234e0e8b350e2266b473cc3d12b9bfdb0b": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:09:19+13:00",
+    "subject": "feat(agc): register driver eq events and deliver graphics end-of-pipe interrupts from RELEASE_MEM"
+  },
+  "8e0d66688ca4c5c8ad1a4c4046b0a6e17f715116": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:52+13:00",
+    "subject": "feat(userservice,videoout): user name and number, accessibility defaults, videoout open param"
+  },
+  "15497545af687b9add9d4eb0fea05a0e29146e32": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:52+13:00",
+    "subject": "feat(libc): operator new/delete, bounds-checked string and printf functions, char locale facets and runtime helpers"
+  },
+  "6dbf58f79d2331790bd584ecd4594a1c4768c81e": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:52+13:00",
+    "subject": "fix(libc): don't walk guest frame pointers when reporting an unhandled exception"
+  },
+  "d9a7b4eba05fff00e7695b77ba313672440b1ef7": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:51+13:00",
+    "subject": "feat(libc): mspace memalign, malloc stats, thread-unsafe flag and nested mspaces"
+  },
+  "f1343e0ce3ab50eb99d1814f5a18bc28adee6efa": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:51+13:00",
+    "subject": "feat(libkernel): hinted and no-overwrite mappings, virtual range names and usleep on linux"
+  },
+  "d0b7975edf9f82876ed43c1d96492f5670f6db89": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:51+13:00",
+    "subject": "feat(fiber): implement fibers on linux"
+  },
+  "1d6064c3d6d01d231bcca9f65d4643447712051d": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T14:05:51+13:00",
+    "subject": "fix(relinker): align the linux header load segment to the largest segment alignment"
+  },
+  "9ff33ac2207b17d96dd9e74d34d4a2c7cd3b15e7": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T21:56:45-03:00",
+    "subject": "fix(shader): saveexec combines exec masks bitwise"
+  },
+  "af64fedbf740959c0881e0d6bc2ad4a9c595c308": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T21:47:28-03:00",
+    "subject": "feat(libSceAgcDriver): run hardware queues independently"
+  },
+  "c9a8b5b5e2af68f50a6b219b869d0ecefd5293f5": {
+    "author": "Dean Galvin",
+    "author_date": "2026-09-28T13:33:23+13:00",
+    "subject": "Merge branches 'fix/linux-virtualquery' and 'fix/linux-guest-dynlibdata' into astrobot"
+  },
+  "a2bdaa846aa2da4d9c43e0ad62dbb8199d5f1c29": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T20:27:33-04:00",
+    "subject": "Model basic sysctlbyname queries and contain scanner errors"
+  },
+  "723a52ab97bf18c59cfc0d0b48e7d0244995d748": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T21:27:10-03:00",
+    "subject": "feat(libSceAgcDriver): indirect buffer calls and conditional branches"
+  },
+  "29f691ed06b968df02f8bee79cd7c8c0852e329d": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T21:16:10-03:00",
+    "subject": "feat(libSceAgc): indirect argument bases, indirect dispatch and indexed draws"
+  },
+  "4f5beb1439479f726faa110f88e6fc7a836c4a4a": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T21:09:22-03:00",
+    "subject": "feat(libSceAgcDriver): release memory after depth data flushes"
+  },
+  "3cdbba685512f4795c7936b80b0c347731146045": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T21:09:22-03:00",
+    "subject": "feat(libSceAgc): fuse shader halves"
+  },
+  "95d4347fd650946a626560a3b96770d8d6597421": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:59:00-03:00",
+    "subject": "feat(libSceAgc): conditional command buffer jumps"
+  },
+  "b46de3c566ee80a5bfe4947f12f4985d13f4de6e": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:48:21-03:00",
+    "subject": "fix(libSceAgcDriver): accept DMA_DATA cache policies"
+  },
+  "d92fde4a2ba06b08416bd5245ed9802b62aca697": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:45:57-03:00",
+    "subject": "fix(libSceAgcDriver): accept thread-trace markers on compute queues"
+  },
+  "03aa5196c9774676f1b8f81b76b770698b9f7186": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:42:58-03:00",
+    "subject": "feat(libSceNpTrophy2): trophy sets from the game's trophy package"
+  },
+  "267f88a44720a17d5d1ad2eb2e2b5b41755530ec": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:33:27-03:00",
+    "subject": "fix(libSceSaveData): mount save data at /savedataN"
+  },
+  "363b75e3e4dea5ef4155e6144ae995620573e53e": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:33:26-03:00",
+    "subject": "fix(libSceNpWebApi2): nothing to time out while requests are unimplemented"
+  },
+  "c857fda9c89a70417093d9115e923b6d65c09b2d": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:26:36-03:00",
+    "subject": "feat(libSceErrorDialog): error dialog status and logging"
+  },
+  "24e768ea4de9af27646d585bb653dc9d874e464f": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:23:32-03:00",
+    "subject": "fix(libSceAudioOut): pace deviceless ports and null outputs"
+  },
+  "8e549e32a2a8afbf3ed8efb46e7f635183223217": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:21:17-03:00",
+    "subject": "feat(libSceAgcDriver): sampled 3D textures"
+  },
+  "4d371a4cd596fda989b5f2d6e6b40fd51141717a": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:13:46-03:00",
+    "subject": "fix(libSceAvPlayer): drop late video frames instead of slowing down"
+  },
+  "48a317931062619f7f1529420002cf6363dbce00": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T20:07:59-03:00",
+    "subject": "fix(libSceAvPlayer): pad NV12 rows to the GPU's linear pitch"
+  },
+  "1f0c8b29384d0ed8def810a5a3c9e45d9069e4f0": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:59:19-03:00",
+    "subject": "feat(libScePad): adaptive trigger effects, pad read and light bar reset"
+  },
+  "7411d96264a078772e3f83497e252bc18faf4334": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:53:09-04:00",
+    "subject": "Validate guest scanf widths and reject unsupported ABI forms"
+  },
+  "535cb90bc9f79fa7007a5af6a540932aad08e5fc": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:47:23-04:00",
+    "subject": "Implement guest SysV vsscanf and Windows scanning bridge"
+  },
+  "f36794344da38a00a85e6604e2659d58ec56cbbf": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:42:09-03:00",
+    "subject": "feat(libSceIme): keyboard open, close and update"
+  },
+  "a40ecbfd75a5e8f370abca57968f6a1968b73b65": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:41:18-04:00",
+    "subject": "Implement 16-bit PS5 guest wide-string routines"
+  },
+  "7a8a409f826097ec6b7f403fc102e480cfde4997": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:37:06-04:00",
+    "subject": "Implement guest pthread cancellation mode settings"
+  },
+  "21c0a2815e129efbbab81070dea4fe819332e479": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:35:23-03:00",
+    "subject": "feat(libSceAgcDriver): sample DCC-compressed texture views uncompressed"
+  },
+  "65e3edd798d67bd228dd0cdb80f0f0e778b309e6": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:34:17-04:00",
+    "subject": "Model guest per-thread signal masks for pthread_sigmask"
+  },
+  "1bb61ea5eabfe8c6d1e30871ace093622d5ba1e2": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:30:19-04:00",
+    "subject": "Implement FreeBSD guest signal set operations"
+  },
+  "60adb5055cf8c857d052cfc92905855092c897f4": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:27:45-03:00",
+    "subject": "feat(libSceAudioOut): AudioOut2 contexts and ports"
+  },
+  "bef3c166b611593fc4263f1295d2625d9d63439b": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T18:24:29-04:00",
+    "subject": "Implement guest pthread thread naming"
+  },
+  "9eb166acf66de1b93230bf0f45c9b324cfeca46a": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:07:41-03:00",
+    "subject": "feat(libSceAgcDriver): render DCC-enabled color targets uncompressed"
+  },
+  "416cc1769784f47476eb5a73fb2e39b2b50d6a8e": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:07:41-03:00",
+    "subject": "test(libSceAgcDriver): build and run the graphics tests on Windows"
+  },
+  "505f2d52836b8f5901c1453387d922fedb1378a6": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T19:07:24-03:00",
+    "subject": "feat(libSceAjm): audio job manager with ATRAC9 decoding"
+  },
+  "42e4d520305d9d51d12cfc0025b233e91c9d3aab": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T18:40:35-03:00",
+    "subject": "fix(libSceAvPlayer): PS5 stream info layout"
+  },
+  "bf7d3bada7b609001665ba4cf1641f0af0b6640a": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T18:31:49-03:00",
+    "subject": "feat(libSceAgcDriver): 10-bit, float and 16-bit color targets"
+  },
+  "44e339231d820936c7256e2a8d01cdfbd6f1c7e7": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T18:31:49-03:00",
+    "subject": "feat(libSceAgc): unnamed index-size setter -KRzWekV120"
+  },
+  "a2953ec7cf44423476ff3a01d19e94d7f2f5b919": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T18:13:06-03:00",
+    "subject": "feat(libSceAgc): debugger markers and index count"
+  },
+  "506e59f35d9da3473ade955b975ef26b53adf32c": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T18:13:06-03:00",
+    "subject": "feat(libSceAvPlayer): video playback with FFmpeg"
+  },
+  "9001e87470a58ab728fdefb003220696f9b25a0f": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T18:13:06-03:00",
+    "subject": "fix: run thread-exit destructors without MinGW's thread_local support"
+  },
+  "574754fb7b965354d262ad66f0462abce52e3ede": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-27T20:54:46Z",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "cc6e1a950cdd9fec66c017a705bfdddf135285e6": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:54-03:00",
+    "subject": "feat(net,systemservice): offline DNS resolver and system name"
+  },
+  "c5fb3ddb0a3fe0f497c9fb882f4637e5abb63cf2": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:54-03:00",
+    "subject": "feat(libSceAgcDriver): shader storage images"
+  },
+  "70084441daaf03341094cbc91cdfb8c0662cf54e": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:54-03:00",
+    "subject": "fix(shader): place compute workgroup ids after the user SGPRs"
+  },
+  "b0080725300a67f76af90ee547ab2f564fedeaff": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:54-03:00",
+    "subject": "feat(libScePad): vibration, light bar and vibration mode"
+  },
+  "08d40b3ad7f725e2321d58d4c201460fc4057c4c": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:53-03:00",
+    "subject": "feat(libSceVideoOut): 10-bit scanout and window mode margins"
+  },
+  "2b0d73ba028cfa101aaff2997f60784bb36430cf": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:53-03:00",
+    "subject": "feat(libSceAgcDriver): RELEASE_MEM, WAIT_REG_MEM and GPU queue interrupts"
+  },
+  "ea25a2c23305114c884ff9a79b932a333369168f": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T17:38:53-03:00",
+    "subject": "fix(libSceAgc): deferred packet addresses, 48-bit ACQUIRE_MEM and DCB rendering waits"
+  },
+  "5d392571a42c9d8135c4c6094eb89c7f2bcff06c": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:40:23-04:00",
+    "subject": "Implement pthread thread-specific keys and expose kernel runtime to payloads"
+  },
+  "82fab93eadc49428d3e676f302f3f0dc5ec61836": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:28:05-04:00",
+    "subject": "Implement guest C locale selection for payload startup"
+  },
+  "b673a912730a3443bd5d326f195ab7e460eec41a": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:22:58-04:00",
+    "subject": "Expose libc runtime for SPRX payload dependencies"
+  },
+  "993422d9b5b4bf8634d974545814d326a5bced15": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:19:34-04:00",
+    "subject": "Implement Windows system service browser launch"
+  },
+  "411c7ce7b0271c517661cdc0e435ffa9b4e890ee": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:14:05-03:00",
+    "subject": "feat(libs): export remaining Unreal Engine imports as not implemented"
+  },
+  "223a4c6e3014f1d0d9e714ef9ac8209dee6d277a": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:14:05-03:00",
+    "subject": "feat(libSceJson2): initializer and allocator setup"
+  },
+  "c1dc33c116530a64e6dfddec9717e9494f72405c": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:14:05-03:00",
+    "subject": "feat(libSceAgcDriver,libSceAmpr): resource registration and graphics event queues"
+  },
+  "f81f1c6e1375ebe4a8c7bb9a6511ff81952f8149": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:56-03:00",
+    "subject": "feat(np): signed-out PSN services"
+  },
+  "10ed8dea5c898df15124a0e73bb89879223b2160": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:55-03:00",
+    "subject": "feat(net): offline network contexts"
+  },
+  "a52523cad98ee6f343413e1b53688eb321a50939": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:47-03:00",
+    "subject": "feat(libSceAppContent,libScePlayGo): support titles installed without PlayGo chunks"
+  },
+  "0acd92a09849c18e951a5ef1d65f3eabdbe17198": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:47-03:00",
+    "subject": "feat(libkernel): directory descriptors, synchronous AIO and filesystem mutations"
+  },
+  "044c05ea600cf9f079b958b21671a147fe7ee102": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:38-03:00",
+    "subject": "feat(libkernel): complete pthread synchronization and POSIX thread wrappers"
+  },
+  "579ad3fc99c671b08a2c04ecefdcf557f213fa15": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:38-03:00",
+    "subject": "feat(libc): emulate SHA-NI instructions on hosts without them"
+  },
+  "005d13db55aec9b282e8d9b9852db1159ded590b": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:28-03:00",
+    "subject": "feat(libc,libkernel): commit guest memory on demand"
+  },
+  "706e9cf2cf9c22d7f27eb6f98122f6510831f175": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T16:13:28-03:00",
+    "subject": "fix(relinker): keep guest-provided modules ahead of host libraries"
+  },
+  "5ff3b1b5eeaf4969163b96f5ad52ab990637973b": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:12:13-04:00",
+    "subject": "Export system service browser entry point for payload imports"
+  },
+  "91011bf7efc9dd008ddf3dfa2d1813fb1b0c0080": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:08:42-04:00",
+    "subject": "Document regenerating Crispy Doom executable with current relinker"
+  },
+  "1d5b5022df9707c78f89680b12f3008a7046245e": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T15:06:04-04:00",
+    "subject": "Use concrete Windows deployment paths and script-free commands"
+  },
+  "d447dcfd18f1faa963ea3ad8b3028071780e7f95": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T14:55:50-04:00",
+    "subject": "Document clean Windows payload build and deployment recovery"
+  },
+  "4cb62650999ebfabcdcf20ba079ba15b2f4deffb": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:33:12-03:00",
+    "subject": "fix(libkernel): avoid redefining NOMINMAX in host module lookup"
+  },
+  "9c218543bb88c172b283a295fda3536c06f93723": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:33:12-03:00",
+    "subject": "feat(libSceVideoOut): accept strict colorimetry buffers and report rejected attributes"
+  },
+  "37e9185045f20d0afba37013f0aa985f924bfc1b": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:33:12-03:00",
+    "subject": "feat(libSceNgs2): implement the Ngs2 sampler, reverb and mastering engine"
+  },
+  "691b87682d5646c89e2b690576901fe47ff3c7a0": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:09-03:00",
+    "subject": "fix(libSceNgs2): export functions declared by the native variant"
+  },
+  "2ad04e41219f55b36e0c2e55b5b85b0fcee2986d": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:09-03:00",
+    "subject": "feat(libkernel): implement thread priority, names and identity"
+  },
+  "8311d29b5eda8a8320a7ec092dfb15e6c2313042": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:08-03:00",
+    "subject": "feat(libkernel): convert between local time and utc with host timezone"
+  },
+  "afad899c16679e980472e9a82d942d36ab390fa8": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:08-03:00",
+    "subject": "feat(libkernel): implement event flags"
+  },
+  "2c8ef3cfe96d4eee34156f150f6dd89b3fbd788e": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:08-03:00",
+    "subject": "feat(libkernel): track thread atexit counts and module info by address"
+  },
+  "aebe26d3260dfab6c85c64a833b800ed078c1f7d": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:08-03:00",
+    "subject": "feat(libSceCesCs): initialize SJIS profiles and MBCS contexts"
+  },
+  "a71c425ca665c4e97cf05ef18804209c17e98fd8": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:08:08-03:00",
+    "subject": "feat(libSceMsgDialog): show user message dialogs natively"
+  },
+  "919d65fe658e795c5f7677c6e23c70a86b2d01d5": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:07:56-03:00",
+    "subject": "feat(libkernel,libSceAmpr): implement APR file reads"
+  },
+  "f68410c159583e7f2aabdca1c182fc8e4f8797e5": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:07:41-03:00",
+    "subject": "fix(relinker): map -module stub names to their system library"
+  },
+  "0b020d08e9f991b628969072d293a40f34060f97": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T13:07:34-03:00",
+    "subject": "fix(relinker): skip note segments truncated from guest modules"
+  },
+  "42e3cf067e4ce7ba60e166288f463400b73e8e87": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T18:02:31+02:00",
+    "subject": "libc: aligned_alloc via ApplicationHeap (malloc family already existed)"
+  },
+  "d6155b496a4ba2777ad114c941be246cfcf615b5": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T17:42:17+02:00",
+    "subject": "Pthread prio storage + Setprio/Getprio"
+  },
+  "c267cad10323340d74eb1960240cf50a5bfd2348": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T17:40:42+02:00",
+    "subject": "Merge idea/reprotect-inplace"
+  },
+  "6fa404166a128b9350f116aca500b1f6a8026b63": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T17:40:19+02:00",
+    "subject": "PthreadGetname/Rename: real name storage"
+  },
+  "57a44409e148468e6a47e94b3e1f872ff554406c": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T17:37:26+02:00",
+    "subject": "fix(win32): in-place reprotect for 16K fixed mappings inside committed views"
+  },
+  "b451959cfb04775f25ef9c7b2540b46b1fe362c5": {
+    "author": "JhonataGust",
+    "author_date": "2026-09-27T12:31:37-03:00",
+    "subject": "feat(libScePad): add SDL game controller input"
+  },
+  "bc9460d9b3c7cc9c261bf45882e1339f3555e004": {
+    "author": "Buddy",
+    "author_date": "2026-09-27T15:22:38Z",
+    "subject": "refactor(pad): shrink input-config diff, keep InputMapping/PadInput headers untouched"
+  },
+  "07493ec8094393029bd38759505ed60e8dd84ed1": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T17:19:03+02:00",
+    "subject": "fix(relinker): correct Windows TLS End/ZeroFill for tbss-only segments"
+  },
+  "38f43255f48525360025aa0a07584afd7f2db9b4": {
+    "author": "Buddy",
+    "author_date": "2026-09-27T15:08:31Z",
+    "subject": "feat(pad): load key/mouse input mapping from controls.cfg"
+  },
+  "53cdc0a27e57861457d6734ae3177823118e1990": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-27T11:06:23-04:00",
+    "subject": "Merge pull request #1 from GautamMIH/merge/upstream-main"
+  },
+  "29826772ae65f5ed8176d16f28834e08bd333fad": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-27T10:59:24-04:00",
+    "subject": "Merge upstream/main into the runtime-modules work"
+  },
+  "1a633d766adc38253276433160d34c8735f1594e": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T15:56:49+02:00",
+    "subject": "prx: Bink2PS5 convert silent stubs to throwing stubs"
+  },
+  "cbd16ca5e6d7903b17aa82cdb86640c8a101fe5a": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-27T09:52:07-04:00",
+    "subject": "Add a command list for testing a new game"
+  },
+  "2c3590ef9b2731cc8f713c495248d14a218c0f66": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T15:45:35+02:00",
+    "subject": "Rebase on upstream: keep TLS/lazy, stub policy via LazyStubs trampolines"
+  },
+  "776405eb7f0d907397bdcee3968dfed127735e71": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T15:07:06+02:00",
+    "subject": "Update granularity: diagnostics + reserve fallback"
+  },
+  "4d4ff8d04e1f5d383f82087b45f5b7d95898515f": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T15:07:03+02:00",
+    "subject": "Diagnose unaligned fixed views + reserve-then-reuse fallback"
+  },
+  "6e77cf999d5fab041a9fe94b7d5d8e1c3bf3a2a1": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T14:53:48+02:00",
+    "subject": "Merge idea/granularity (resolve: keep ReuseFixedMapping)"
+  },
+  "d522fd0751b8d4aaf2735c8e9e07827e8ab91b2d": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T14:48:48+02:00",
+    "subject": "fix(granularity): reuse covering backing for 16K fixed mappings inside 64K reservations"
+  },
+  "30dc7cf0be167658a644ca59f62d5759d1e93fd7": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T08:33:49-04:00",
+    "subject": "Add bounded guest syscall and kernel memory model"
+  },
+  "432d08555ba378d663ee612dfa2295d1cb3334a5": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T08:28:50-04:00",
+    "subject": "Integrate upstream main changes while retaining fork workflow"
+  },
+  "00242fd7479567261fd60809be7dc9fe5077423d": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T14:28:27+02:00",
+    "subject": "fix(kernel): allow fixed mappings to consume covering PROT_NONE reservations"
+  },
+  "4b5750f1dc5dbba8d41fc546a6217c304241f442": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T08:00:59-04:00",
+    "subject": "Implement SDK kernel symbol lookup through host module registry"
+  },
+  "c617bba66c2962f0b98371c9fc1ded6f03756c55": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T08:00:49-04:00",
+    "subject": "Implement SDK kernel symbol lookup through host module registry"
+  },
+  "7f37676c004a34396fda4bf62a8e1fbc7eb11189": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T08:00:42-04:00",
+    "subject": "Implement SDK kernel symbol lookup through host module registry"
+  },
+  "f3be998b462fcacf5ebf4953efeeb19dc9c560ae": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:53:45-04:00",
+    "subject": "Document payload startup requirements and import audit"
+  },
+  "bcd7ce5017dbc296a5f9cc5146ccbac84f16b940": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:53:43+02:00",
+    "subject": "libkernel pthread: implement rwlock family (sce + posix)"
+  },
+  "c152f974564d1254bed4883495f07c30ec651ca5": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:53:32-04:00",
+    "subject": "Add reusable Windows PRX import audit for payload ELFs"
+  },
+  "c17659e9c937029f36499c44be92c44721e8c88f": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:53:27-04:00",
+    "subject": "Add reusable Windows PRX import audit for payload ELFs"
+  },
+  "f3a8a3a36307a38319c539648c22c444854df6d2": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-27T11:52:08Z",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "8b978880a83c89a6779e29e4337f3f19e6d41587": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:44:25-04:00",
+    "subject": "Test foreground user compatibility"
+  },
+  "934eb90b0b0399d5e7e749f2807b740b61be77b6": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:44:05-04:00",
+    "subject": "Add tested foreground-user compatibility for PS5 payloads"
+  },
+  "d4f7bdb07ca1bfd7aeb09a81a07c6a8c7a844566": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:43:58-04:00",
+    "subject": "Add tested foreground-user compatibility for PS5 payloads"
+  },
+  "388c1cd80045c2f4553a7ad734b341c02754819f": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:36:25+02:00",
+    "subject": "Update alias: warn on version-only libs"
+  },
+  "78be3362edd6f2eb6273e283ccb8a0f4a0f78f4c": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:36:22+02:00",
+    "subject": "NID library check: warn instead of fatal for version-only libs"
+  },
+  "9e4bfbb8ca0b4d83c53b8d320ef898d63731c6cb": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:29:04-04:00",
+    "subject": "Resolve patched PRX NIDs and deploy patched libraries"
+  },
+  "3cbce1ff2d0fad0fb64e5b027fe173d00552f26f": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:28:58-04:00",
+    "subject": "Resolve patched PRX NIDs and deploy patched libraries"
+  },
+  "bf640b581495c720a452d0bc06c9b22b59fa7f3b": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:28:52-04:00",
+    "subject": "Resolve patched PRX NIDs and deploy patched libraries"
+  },
+  "e832d9a5e0c380dd0b7087cf87ea4c53071bed79": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:28:46-04:00",
+    "subject": "Resolve patched PRX NIDs and deploy patched libraries"
+  },
+  "c21940e9110db0f031619197b04341361aa6315f": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:33+02:00",
+    "subject": "Merge idea/stub-policy"
+  },
+  "ae4f68972836c054e154480a95957f13f1ff21fc": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:25+02:00",
+    "subject": "Merge idea/self-unwrap"
+  },
+  "597da586f3fe802e92d9d6cdcc1a510742cf2f89": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:25+02:00",
+    "subject": "Merge idea/alias-agc-ssl"
+  },
+  "86f0dbadec298b4131389b1d780837b2b4ede38b": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:17+02:00",
+    "subject": "Merge idea/prx-npcppwebapi"
+  },
+  "a5230e1d342f710b07b841ab51a133b83bc40468": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:17+02:00",
+    "subject": "Merge idea/prx-cohtml"
+  },
+  "da7bc7c57f0689684a71acfcb20f98e445ab7fed": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:17+02:00",
+    "subject": "Merge idea/prx-fmod"
+  },
+  "87a313b062caa2255398b2e3050d91b4a2c98429": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:06+02:00",
+    "subject": "Merge idea/prx-bink"
+  },
+  "c05928f785fb8ad4576d9c1c30f69a8193f1e78a": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:28:06+02:00",
+    "subject": "Merge idea/prx-renoir"
+  },
+  "5fb1ca05045e4111e6176132e977863f8bcc234f": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:27:58+02:00",
+    "subject": "Merge idea/gpu-samplec"
+  },
+  "87f309c1c08be0397a806657df07e967a3203690": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:25:08+02:00",
+    "subject": "feat(relink): fill NID Library via SCE suffix and GNU verneed; fix glslang Debug postfix; note 26 missing NIDs"
+  },
+  "7b3c8cc9252d5ce440c1f0f0167b2e1fa1011b3a": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:21:27-04:00",
+    "subject": "Use pinned WinLibs toolchain in Windows CI"
+  },
+  "69a0b4c49a20a57b2d60cf6ebcf94e4d09bcec54": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:18:37+02:00",
+    "subject": "relinker: fix strict filter + static relocs found by SELF round-2 matrix"
+  },
+  "574fd029bce83c35a8d76e3987699107df77cd96": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:11:31-04:00",
+    "subject": "Fetch required submodules in Windows CI"
+  },
+  "5b6a3f59e6ad5caa679a0f1341e3dae31fe6ab29": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:08:24-04:00",
+    "subject": "Export host PRX helpers for MinGW cross-library linking"
+  },
+  "ea4201659b18284057ab0e125423ac162509bc91": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:08:11-04:00",
+    "subject": "Export host PRX helpers for MinGW cross-library linking"
+  },
+  "270d0fd13d5a49c211f2d3daf1738a16d0ee8ebd": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T07:08:06-04:00",
+    "subject": "Export host PRX helpers for MinGW cross-library linking"
+  },
+  "44580c02f18bc5ac6123a7d57b6b21c4bd76fba3": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:01:00+02:00",
+    "subject": "feat(prx): home misattributed Net/Ssl/SystemService NIDs to right libs"
+  },
+  "6159bdeb9a1e2a9f171273fb397568e4014bc221": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T13:00:38+02:00",
+    "subject": "windows: align lazy binding to ret-0 stubs and cover addend corner"
+  },
+  "60e1223193824913a94fc5652625a15434c861a1": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:58:35+02:00",
+    "subject": "shader: force Depth 0 for ALU depth-compare, emulate 1D gather with dref, clarify cube-unnorm"
+  },
+  "16feb13ebe16be23517825157e346a85bd882751": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:57:43+02:00",
+    "subject": "prx: fix libs aggregate glslang dep, add reusable Bink2PS5 harness"
+  },
+  "f6579a71ff1c005c85222dd30c200d4c05ccd43c": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:49:21+02:00",
+    "subject": "docs(nid-coverage): remove STALE JoBqSQt1yyA, add Round 2 real-run numbers"
+  },
+  "dbb3dfa981123dcbbd93cae763d36099e6897880": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:11:53+02:00",
+    "subject": "feat(nid): alias Agc/AgcDriver/Ssl imports to host providers"
+  },
+  "567bb3da707006a9e76ab0fcb06bd15dd2457216": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:11:52+02:00",
+    "subject": "shader: emulate SAMPLE_C with plain sample plus ALU compare, normalize unnormalized coords"
+  },
+  "110f8e9527cf63bff8bb62261f703863f64e89e2": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:08:56+02:00",
+    "subject": "windows: bind unresolved ELF imports to emulator-style stubs instead of failing boot"
+  },
+  "683387e6be758baffa216f889339bb31f729c59e": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:05:37+02:00",
+    "subject": "feat(npcppwebapi): add libSceNpCppWebApi stub prx"
+  },
+  "3945234de0b2e834c9222767d922a37c9c24125a": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T12:00:11+02:00",
+    "subject": "relinker: accept PS5 SELF (plaintext) by unwrapping to ELF in memory"
+  },
+  "e2c433fb901071d1f4de014835c945e27e8cc0c3": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T11:58:14+02:00",
+    "subject": "prx: add Bink2PS5 stub module (18 NIDs for Minecraft Legends eboot)"
+  },
+  "8a1c9acde509948eebdf11798a9db71d7c283dd4": {
+    "author": "Pouare514",
+    "author_date": "2026-09-27T11:54:30+02:00",
+    "subject": "feat(tools): check NID coverage against diagnostics and known-missing JSON"
+  },
+  "da377582f55f37c9cead54634a87499a2cb38579": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-27T00:37:23-04:00",
+    "subject": "Tile storage images on the GPU over shared guest memory"
+  },
+  "7f32ac95423bd50bdbac9ec7bb95dc226b1234dc": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T00:16:41-04:00",
+    "subject": "Add GitHub Actions workflow for building AnyPS5 libraries"
+  },
+  "f575a6d8838d3439cec5ad28663d45396e6fe08a": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-27T00:16:01-04:00",
+    "subject": "Add GitHub Actions workflow for building AnyPS5 libraries"
+  },
+  "377a8ac314dde736cd06d0b2f146cabd0412e59f": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-27T00:12:01-04:00",
+    "subject": "Stop texture cache thrashing; profile texture cache lookups"
+  },
+  "1a0a68e45470d32d2c195b6f4b5005179fd6b713": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T23:53:44-04:00",
+    "subject": "Share guest memory with the GPU instead of copying it per draw"
+  },
+  "022fac82ed7323eeed844b38f2cce00cb0b3beff": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T23:30:39-04:00",
+    "subject": "Add libSceVideodec2 with FFmpeg H.264/HEVC decoding"
+  },
+  "3e8c31e88c12c3f57f75163a561837e537a1efc8": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T22:56:22-04:00",
+    "subject": "Decode AAC in libSceAudiodec; execute conditional command-buffer branches"
+  },
+  "0c6c16b11d539b266e5dda81965845c3f0f28e26": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T22:17:27-04:00",
+    "subject": "Pick texture views from the shader's shape; add pad output and HTTP/2 SSL setters"
+  },
+  "0ee48ef453112e5de7a2bc199ab0a998e9a15a31": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T21:49:20-04:00",
+    "subject": "Implement indirect draws and dispatches; fix user, save-data and NP services"
+  },
+  "246dc4e104ba0dd945ddb1a12cff46b541c317b5": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T20:58:17-04:00",
+    "subject": "Rework guest virtual memory to the PS5 model"
+  },
+  "dc599f3417934874a6ffc38c9ffa74713cac212b": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-26T20:47:39-04:00",
+    "subject": "fix(windows): checkpoint homebrew libc dependency coverage"
+  },
+  "8ec98b9958dca40941e86ea98de05899e8552d25": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-26T20:47:33-04:00",
+    "subject": "fix(windows): checkpoint homebrew libc dependency coverage"
+  },
+  "8e20a508cfc8590ef092590bc1e8fdc4a8ce5883": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-26T20:47:28-04:00",
+    "subject": "fix(windows): checkpoint homebrew libc dependency coverage"
+  },
+  "5093d7095ab322ca48a70a77980f67a12199225e": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-26T20:47:21-04:00",
+    "subject": "fix(windows): checkpoint homebrew libc dependency coverage"
+  },
+  "56a05db31f86d6c249079e7c949a2d804c1e0596": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T20:21:04-04:00",
+    "subject": "Guest memory spanning lookups, mesh draw parameters, driver error context"
+  },
+  "295a37bf1df3f7847a223f2bf8924dbdc6ffc283": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T19:18:32-04:00",
+    "subject": "AGC: layered render targets, spliced geometry halves, mesh-stage plumbing"
+  },
+  "fecffa264d0c7766842e602b477e3e338246a2a4": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T18:10:46-04:00",
+    "subject": "AGC driver: prefer the discrete GPU, cached readback memory, aligned buffer views"
+  },
+  "3944a86641f433a25e9578faf7560dd1fcf888bc": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T17:33:16-04:00",
+    "subject": "AGC: MRT, fast clears, DCC reads, shader fusion; structured early returns; library fixes"
+  },
+  "99ad31da4a62609c90f42adeb5af20acb199314c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T07:29:36+10:00",
+    "subject": "fix(agc): complete native submissions after GPU fences"
+  },
+  "6ba478377c250d44b0f84e612545640d1c865dcd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T07:15:35+10:00",
+    "subject": "fix(libc): avoid full arena scans in mspace allocation"
+  },
+  "86f62be80ce8378115c54f38910b927d5db0c35d": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T07:11:16+10:00",
+    "subject": "fix(shader): reuse compiled code across native registrations"
+  },
+  "4aec954dd82744a5cf17ecb239f00d3fffbd9904": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T22:54:50+02:00",
+    "subject": "wip(libc): take PR #14 libstdc++ ABI interposition instead of Windows-only aliases"
+  },
+  "355007fd850be20efe3831f5da09c3726ff50314": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T06:51:36+10:00",
+    "subject": "fix(agc): release superseded native register bindings"
+  },
+  "ff1b4e57e3c50f5bbacb9b0ead7d2732cd546064": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T06:46:30+10:00",
+    "subject": "feat(agc): lower indirect bindings into native draw state"
+  },
+  "50664b13f3e0309009afe1e773f17b2ab61f2656": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T06:12:08+10:00",
+    "subject": "fix(native): preserve packaged library dependencies on Windows"
+  },
+  "0f3af2a550987e3a88f5608a1519fd88048a1bbb": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:54:40+10:00",
+    "subject": "fix(agc): preserve completion ordering around native flips"
+  },
+  "cab0b63228cd51c2831e086e703b61e9f77be0d7": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:51:45+10:00",
+    "subject": "feat(agc): support terminal flips in native submissions"
+  },
+  "0cee3bdb5615473f1a34443516543a9e71eae9ff": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T21:44:31+02:00",
+    "subject": "wip(agc): IB call semantics, per-queue EOP events, compute retire interrupts"
+  },
+  "87469a32b831c84fd0ea2da5d7af3378216e4e6c": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T21:00:35+02:00",
+    "subject": "wip: first Smurfs frames on PR #5; host exceptions on Linux"
+  },
+  "3f2c56a9b6a3177597e9d4714c10cc1d707f94dc": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T20:32:23+02:00",
+    "subject": "wip: predicated chained jumps, AGC predication emitters, libc unhandled-throw log fix"
+  },
+  "bbd36fd7e6e18915ed4ae32cd4973a6307b480a5": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T20:27:37+02:00",
+    "subject": "wip: port WriteData patch-address and pad output no-ops onto PR #5"
+  },
+  "55d5d6a05f9a8367f8d33ba2a8cb9586c08dafe1": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:07:19+02:00",
+    "subject": "wip: Smurfs Dreams bring-up ported onto PR #5"
+  },
+  "35fcd5215dc89a689178cf8f7df6e28b23193efb": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:43:37+10:00",
+    "subject": "feat(agc): honor native rendering waits before submission"
+  },
+  "587e4b25215d62779da0b57a5679803a7d014995": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:39:15+10:00",
+    "subject": "fix(relinker): allow indirect calls through native imports"
+  },
+  "39a55e008982f308c7df36c2002acdce1265aac1": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:36:37+10:00",
+    "subject": "test(agc): verify native completion after queued GPU rendering"
+  },
+  "2565ba4778a2857417bddb576edd40bfdcdf91a6": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:31:25+10:00",
+    "subject": "feat(agc): complete terminal releases after native submission"
+  },
+  "e23bc4698c7a8c839579c29492d3a29a5c7d8f57": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:25:05+10:00",
+    "subject": "fix(agc): accept equivalent direct auto draw modifier"
+  },
+  "7b5748a94df96eb2f7c0b27868c8a4d0470e6a1b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:19:01+10:00",
+    "subject": "feat(relinker): filter imports after validating native bindings"
+  },
+  "310a8e52b38f13cf9355eb36804bce50bbf816ed": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:13:54+10:00",
+    "subject": "feat(relinker): model native replacements in strict reachability"
+  },
+  "c0919652978d18f633dc01ff65c4741e17b93c70": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:08:50+10:00",
+    "subject": "fix(relinker): decode POPCNT and BTC operands without losing instruction boundaries"
+  },
+  "c3e6fa40dea8b631dda84d7a6bddde19b6e4a222": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:04:28+10:00",
+    "subject": "fix(relinker): reject direct branches into replacement interiors"
+  },
+  "4dd2268e55664d6895872f6c303489493ba72a7b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:02:11+10:00",
+    "subject": "test(relinker): execute native function imports through the PE loader"
+  },
+  "504fd9cfba71775495d046885d6efee665f5ba5f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T05:00:07+10:00",
+    "subject": "test(relinker): execute offline native replacements on Windows"
+  },
+  "f5b35e1a4fd328fa79d45423f4e0a3cfb21995ba": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:55:25+10:00",
+    "subject": "fix(native): identify queued command state by storage bounds"
+  },
+  "ac357c7b163578908cdeb9dcc18651a59ad384be": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:53:58+10:00",
+    "subject": "fix(native): retain submission bounds beyond guest descriptor lifetime"
+  },
+  "02b6f039020b8eeaeecca59ee78740cab751d98a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:48:32+10:00",
+    "subject": "fix(native): reserve draw storage before recording and reject ignored modifiers"
+  },
+  "8a1fb4843012aec3ecb1a6fcc9222445a362fcdd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:46:33+10:00",
+    "subject": "fix(native): preserve direct register range storage and snapshots"
+  },
+  "8a097b9e248810a175f12d095dd7093b939a914b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:44:59+10:00",
+    "subject": "fix(native): preserve scalar command spans and allocation callbacks"
+  },
+  "837b99a0717e003f1207bcb5cae9a2ee8ba78540": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:42:26+10:00",
+    "subject": "fix(native): validate command token bounds and reserved space"
+  },
+  "f6c52d6df5032e268807947da3935d870b24fa55": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:33:27+10:00",
+    "subject": "feat(native): bind suspend points and preserve asynchronous failures"
+  },
+  "75e348b677f45817665ae23fd5cee0a0d4d4f745": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:31:40+10:00",
+    "subject": "fix(relinker): report complete native AGC coverage failures"
+  },
+  "e3ec0f45cc486664ff8e58f411c013e7f364c7c1": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:29:29+10:00",
+    "subject": "feat(native): expose register defaults with stable guest layout"
+  },
+  "327704eb80ea4bf3fc7733a8ef5d4d6669dc1d0e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:29:01+10:00",
+    "subject": "feat(native): bind shader linking with metadata validation"
+  },
+  "d8b9d5412835327868029a6cecf8add1900758ed": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:26:04+10:00",
+    "subject": "feat(native): bind AGC initialization without command interpretation"
+  },
+  "ed1acf0e55a5fb691eaa72061a64f0b3eee8f051": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:26:04+10:00",
+    "subject": "fix(libc): align default heap callbacks with upstream ABI"
+  },
+  "b80a3dcaf4160305ea5eee012ac43054daff2da5": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-27T04:26:03+10:00",
+    "subject": "fix(native): support Windows host exception construction and unwinding"
+  },
+  "99f5b9c867d471260c64b51b195b1e12875a4f51": {
+    "author": "Sam",
+    "author_date": "2026-09-26T21:02:02+10:00",
+    "subject": "docs(native): default to native mode and record verified porting limits"
+  },
+  "11d8448c397fff63dd933d9e022d1ec56415a770": {
+    "author": "Sam",
+    "author_date": "2026-09-26T20:55:44+10:00",
+    "subject": "fix(native): preserve stage arguments and propagate asynchronous failures safely"
+  },
+  "06beb74eafd426737be18fc51b3ff692d89e6161": {
+    "author": "Sam",
+    "author_date": "2026-09-26T20:40:59+10:00",
+    "subject": "feat(relinker): emit verified native function-entry bindings offline"
+  },
+  "b7d7ade96d6b9fa6baafa572acdfe381b4a45f9c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T20:32:59+10:00",
+    "subject": "fix(relinker): resolve qualified AGC imports and real native call sites"
+  },
+  "5380d0d03564600824255b94b88d9063026b1e2e": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-26T10:14:16Z",
+    "subject": "fix(build): validate native PRX linkage and interpreter exclusion"
+  },
+  "406b81fd05e910784b67cc03f23ac228a03d5d43": {
+    "author": "Sam",
+    "author_date": "2026-09-26T20:14:10+10:00",
+    "subject": "ci: publish the verified native build patch atomically"
+  },
+  "f4fee3ed63aa7629b9e88e1d4371507afaa47758": {
+    "author": "Sam",
+    "author_date": "2026-09-26T20:13:21+10:00",
+    "subject": "stage: tested native build and linkage corrections"
+  },
+  "20bd84cca9b6f40c8e61a358256873063b1a0d81": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:53:49+10:00",
+    "subject": "fix(libc): keep Linux host exceptions on the native unwinder"
+  },
+  "01debe63852255c36ac5a8b35a202d0ff10d4230": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:48:51+10:00",
+    "subject": "test: retain homebrew container input when ELF inspection is unavailable"
+  },
+  "5ee3a5cef059a4ba5abe65efb8b5031d96735c90": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:43:25+10:00",
+    "subject": "test: capture pinned Quake executable metadata for native lowering"
+  },
+  "78d5864c86b176195ea2bc30033e79e45dabf486": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:42:13+10:00",
+    "subject": "fix(build): separate host platform callbacks and dynamic library linkage"
+  },
+  "dded99cf3e8532618cb95b720498d38fcaad700e": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:26:53+10:00",
+    "subject": "ci: build and audit native relinker branch"
+  },
+  "ba14b9a8bafc1bff85e654ff6149930bec10721c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:22:17+10:00",
+    "subject": "build(agc): add interpreter-free native relinked mode"
+  },
+  "c0f3525a24352584c5162372cc47da112c3cdcfd": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:22:05+10:00",
+    "subject": "build: add native export registry dependencies"
+  },
+  "34d540aa5b1e50ff79e2d7333353e1994b054f18": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:21:59+10:00",
+    "subject": "relink(agc): add native-only driver exports without PM4 runtime"
+  },
+  "5f5e594defa50cbe827df970bd25f4a5169e4a4e": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:21:14+10:00",
+    "subject": "refactor(agc): delete legacy Driver presentation ownership"
+  },
+  "dd20a603a095df17fa30d798d0831d45854f4240": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:21:06+10:00",
+    "subject": "relink(agc): remove Driver from presentation path"
+  },
+  "44231514145d1ba3a2182a458549b853df28d6e3": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:20:58+10:00",
+    "subject": "relink(agc): present directly through native Vulkan runtime"
+  },
+  "fc28e7ed32525eef04f46d2b5d2ecae3488e279d": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:20:55+10:00",
+    "subject": "relink(agc): make native runtime own presentation"
+  },
+  "509e983432b2ea695668c35aa824066b14ac60f6": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:20:00+10:00",
+    "subject": "relink(video): synchronize native renderer directly before flip"
+  },
+  "072ebdc919e43ffda959083ce8f57d8274835dc6": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:19:57+10:00",
+    "subject": "relink(agc): synchronize native draws without command packets"
+  },
+  "30dc71dae17a2c0bf3a4ba9d1a036e90209e3d0a": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:19:54+10:00",
+    "subject": "relink(agc): expose native graphics completion synchronization"
+  },
+  "e16e9c69b5605ef522f9b4fc535ab8cf9810156e": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:19:44+10:00",
+    "subject": "relink(video): submit flips natively without synthetic PM4 packets"
+  },
+  "6da009290e6646804ddfda16ddff6dc717e4732f": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:18:42+10:00",
+    "subject": "relink(agc): use shared native Vulkan runtime for direct submissions"
+  },
+  "d6aef4a7f35ad71b0cc815645765e6e418b599c2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:18:39+10:00",
+    "subject": "build: compile shared native graphics runtime"
+  },
+  "16668e817122f3f152f90c1fa9feabf9f1d6f873": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:18:30+10:00",
+    "subject": "relink(agc): add shared native Vulkan runtime service"
+  },
+  "e5e991675d1f98ae00ad84e32f42811c5ba60352": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:18:16+10:00",
+    "subject": "relink(agc): add shared native Vulkan runtime service"
+  },
+  "2681ff3c618bae019cac166642a871799502fe80": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:17:43+10:00",
+    "subject": "relink(agc): translate depth state directly to Vulkan-facing data"
+  },
+  "021831a557de1a21ca635878e7e86859febaf868": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:17:29+10:00",
+    "subject": "relink(agc): add direct native depth-state inputs"
+  },
+  "f26ffb1fa8be6c4da726dd3711a262197d5b95e2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:17:21+10:00",
+    "subject": "refactor(agc): explicitly use legacy depth adapter"
+  },
+  "57b3e96b1a888e1368ab6c61a8db9c82f3f23f43": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:17:18+10:00",
+    "subject": "refactor(agc): confine register decoding to legacy depth adapter"
+  },
+  "04afd059475c11046880ed3d386f9f80337c7ffd": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:17:15+10:00",
+    "subject": "refactor(agc): make depth state native graphics data"
+  },
+  "a7d1bad8f021084f6784c7d624b186412ee5cc17": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:17:12+10:00",
+    "subject": "refactor(agc): isolate legacy depth register decoder"
+  },
+  "9a5493f4ba4becd3a82d24298e12717b60c7d9b1": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:16:11+10:00",
+    "subject": "perf(agc): release native state lock before Vulkan submission"
+  },
+  "05c9a465d144642153218aa0f8fd0624bac17512": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:16:01+10:00",
+    "subject": "relink(agc): submit typed native draws directly to Vulkan compiler"
+  },
+  "b65a28f4c3ad33413d8feec01a8f0e03b172a336": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:15:45+10:00",
+    "subject": "relink(agc): translate pixel stage directly into compiler metadata"
+  },
+  "77a5e7b0ad23d200e99a269b854d41f447cd2878": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:15:31+10:00",
+    "subject": "relink(agc): retain typed pixel-stage source fields at native boundary"
+  },
+  "e99c50462febb7d0f4d40bed190031f07d6a3559": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:14:53+10:00",
+    "subject": "relink(agc): only record complete host-native draws"
+  },
+  "aafa9e2465acc174f908215e7e28bb8e7b9819ea": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:14:47+10:00",
+    "subject": "relink(agc): validate native host graphics state before recording draw"
+  },
+  "0fe97f0d79e3a8c87c4dbfc3165f18dcaa0c4c0c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:14:41+10:00",
+    "subject": "relink(agc): expose typed native graphics draw readiness"
+  },
+  "7493fcb6867deb0d64c36d0143df741c365f3c2c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:14:30+10:00",
+    "subject": "relink(agc): use opaque native command tokens instead of PM4 bytes"
+  },
+  "0937619920f387ee45bee16d0f3ab7badc168e0e": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:14:20+10:00",
+    "subject": "relink(agc): record ordered typed native draw calls"
+  },
+  "02a883d0cc3a1119532537dbecab2be757a836e2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:13:31+10:00",
+    "subject": "relink(agc): require canonical native lowering for every AGC import"
+  },
+  "74ee07a31e8eaf4a1e3705811b090d060d1ff36c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:13:07+10:00",
+    "subject": "relink(agc): centralize supported native AGC import table"
+  },
+  "37663649c7af88010540f96a55a85ed452eb050f": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:12:57+10:00",
+    "subject": "relink(agc): expose canonical native import lookup"
+  },
+  "a9cb9a61118fc689500f65c448ef598c866b07d3": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:12:48+10:00",
+    "subject": "build: link NID computation into relinker AGC lowering"
+  },
+  "0a5fb5342345e20997f5b214ba299c194e031334": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:12:41+10:00",
+    "subject": "relink(agc): lower stripped AGC NIDs deterministically"
+  },
+  "fb0539932e7728fd8aec3bd8a315d6bfe385cb46": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:12:20+10:00",
+    "subject": "relink(agc): capture compiler shader metadata in native shader object"
+  },
+  "b50a45c0e91658237c82faf150eab78d511633a7": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:11:38+10:00",
+    "subject": "relink(agc): store native shader user constants as typed contiguous data"
+  },
+  "499ae9606259ee1883707cc20c17a9360c783597": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:11:24+10:00",
+    "subject": "build: compile native draw compiler"
+  },
+  "4381293ae149afa0422cdd2b31ba68dd3991ff7c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:11:16+10:00",
+    "subject": "relink(agc): extract native shader specialization and Vulkan draw compilation"
+  },
+  "37b7f9036b56d27c2aff2b45dd592e3653f879a6": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:11:03+10:00",
+    "subject": "relink(agc): define PM4-independent native draw compiler"
+  },
+  "479851478bcd628e274db9972c619a08cbe837c2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:10:17+10:00",
+    "subject": "relink(agc): associate submissions with authored native command state"
+  },
+  "bf472c8f807bcd5e6cf9996d59f92deedfe3f584": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:09:54+10:00",
+    "subject": "relink(agc): bind native shaders at API boundary"
+  },
+  "02016a08ba0784367f9016018ceebba00451e943": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:09:17+10:00",
+    "subject": "fix(agc): keep shader binding metadata out of graphics state translation"
+  },
+  "9bed449ef084334880b124f06e04fa4fc62df5be": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:09:05+10:00",
+    "subject": "relink(agc): translate color target and blend directly to Vulkan state"
+  },
+  "33623e9fa6f323420c95e23d40a6ccbbfbc350bd": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:08:46+10:00",
+    "subject": "relink(agc): add typed native color and blend state inputs"
+  },
+  "c78d4d6d0c4772fdc7e39c3400163f8d010deae1": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:08:10+10:00",
+    "subject": "relink(agc): replace native fake register maps with typed graphics state"
+  },
+  "b88bce832c10ed83c87883e5528f48f492d602e3": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:08:07+10:00",
+    "subject": "build: compile native graphics state translator"
+  },
+  "c015f6c0254fbf1625744c7f486344b54147a981": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:07:57+10:00",
+    "subject": "relink(agc): translate fixed graphics state at native API boundary"
+  },
+  "77f6512e609b3db934d0b063b7d61bedcb60281d": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:07:54+10:00",
+    "subject": "relink(agc): translate fixed graphics state at native API boundary"
+  },
+  "0f5fa49b59173ca82c0a684923f4db511d5d09de": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:06:52+10:00",
+    "subject": "relink(agc): retain native shader and user state directly"
+  },
+  "3c9976b4d9c4e48288d22df81d0b9e69c392668a": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:06:40+10:00",
+    "subject": "relink(agc): expose native register state ABI"
+  },
+  "11fa61d73ce4373230572d9847df824b01a219c5": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:06:32+10:00",
+    "subject": "relink(agc): lower register state APIs to native state"
+  },
+  "3d26e2b47fdbd7561c588d4a2e7e1ee1aa940236": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:06:23+10:00",
+    "subject": "build: link shared AGC shader ABI helpers into native driver"
+  },
+  "4793744f768c5bfee1a3673221516e1a5e3e557f": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:06:17+10:00",
+    "subject": "fix(agc): preserve shader creation ABI mutations"
+  },
+  "c0fb13b928f180c38a7b5cf1720f52cd772d7378": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:06:02+10:00",
+    "subject": "relink(agc): create immutable native shader objects"
+  },
+  "6163ea02d8fc95f6ee7fc644c671cdb45b5b7d43": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:05:51+10:00",
+    "subject": "relink(agc): expose native shader creation ABI"
+  },
+  "e6e6f92e310c91ce21f01e9eaac7a332a5edae95": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:05:46+10:00",
+    "subject": "relink(agc): lower shader creation to native API"
+  },
+  "93c9c4a462e01d002d1851159552e723ada50f16": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:52+10:00",
+    "subject": "refactor(agc): explicitly use legacy state decoder only in old driver"
+  },
+  "ca2cf0e3db3596a0514ac32e3f27e1e5fe64977d": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:48+10:00",
+    "subject": "refactor(agc): move QueueState dependency behind legacy decoder"
+  },
+  "6fb1471d8196a97e70ff712d3ddec0e7f37b8206": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:45+10:00",
+    "subject": "refactor(agc): make graphics state native data only"
+  },
+  "e4b8008aa370138779d593ce0661f5225314622a": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:43+10:00",
+    "subject": "refactor(agc): isolate legacy state decoder"
+  },
+  "373d2bbe5f2bcaebd7f2e10bc86daccda3b88603": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:30+10:00",
+    "subject": "refactor(agc): make Vulkan draw entry PM4-independent"
+  },
+  "42880f9c281760004439e0109282cf2b6b0f1649": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:27+10:00",
+    "subject": "refactor(agc): return native draw parameters from legacy decoder"
+  },
+  "7490636f7fe5ae9a2bb66317fb37bb1c54b7c7e2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:14+10:00",
+    "subject": "refactor(agc): remove PM4 type from Vulkan device API"
+  },
+  "fe7fee89284221ac6392cde66b079e39791e462e": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:11+10:00",
+    "subject": "refactor(agc): use native draw parameters in Vulkan backend"
+  },
+  "341f7875cf28057fe5d2185bb8431035e36b7a8c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:08+10:00",
+    "subject": "refactor(agc): remove PM4 dependency from graphics draw backend"
+  },
+  "b312aa39169a469f3b2f66908ed8a42d38e66b75": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:05+10:00",
+    "subject": "refactor(agc): make PM4 produce native draw parameters"
+  },
+  "08d69ff8ac2589bf52fdc8909416743d68afed99": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:04:03+10:00",
+    "subject": "refactor(agc): make draw parameters native graphics data"
+  },
+  "c75de6d93dbd982832e0c01a4fae013317d83090": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:03:18+10:00",
+    "subject": "build: compile native AGC ABI"
+  },
+  "04a7244d37d970b1ea9ec6ee0d0240167c5ec7e3": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:03:13+10:00",
+    "subject": "relink(agc): add native graphics ABI surface"
+  },
+  "837b949b62284695402485986e52e4df0586388b": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:02:59+10:00",
+    "subject": "relink(agc): add native graphics ABI surface"
+  },
+  "23000dd4e9a3459cfaf8ff2613f9fdc1ee42c319": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:02:42+10:00",
+    "subject": "build: compile AGC import lowering"
+  },
+  "6fcabf0e3134750028977fe430c74120c4f4bfaf": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:02:39+10:00",
+    "subject": "relink(agc): lower supported imports to native symbols"
+  },
+  "132d90df8930b5214548011300dde982fa365de5": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:02:30+10:00",
+    "subject": "relink(agc): map supported imports to native host symbols"
+  },
+  "f55494f3d4c579fb12a4cfc2621c3c9c3fac2f47": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:02:28+10:00",
+    "subject": "relink(agc): map supported imports to native host symbols"
+  },
+  "755a9b02afcab1073c37b6d38e62e8d3cee6b0e3": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:01:41+10:00",
+    "subject": "build: compile native AGC lowering analyzer"
+  },
+  "15fc25a433328b5729475819afb32bc03118158c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:01:38+10:00",
+    "subject": "relink(agc): analyze AGC calls during relink"
+  },
+  "4ac08509a90d4c58cbb14201e6423d0017aea1a0": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:01:36+10:00",
+    "subject": "relink(agc): carry native lowering sites in relink result"
+  },
+  "677b7672062c1bffe10a9af72a4a1ecbee1f0f6a": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:01:25+10:00",
+    "subject": "relink(agc): add strict native AGC lowering analysis"
+  },
+  "5205ecf4644d4b52a894629c7075b25badff1f03": {
+    "author": "Sam",
+    "author_date": "2026-09-26T19:01:23+10:00",
+    "subject": "relink(agc): add strict native AGC lowering analysis"
+  },
+  "3b3be317baf6bef768580dae42b8fd93d51c8119": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:53:08+10:00",
+    "subject": "perf(agc): consume validated draw packets directly"
+  },
+  "fbf9c058cc902d749c9cdd507fa8e61cb892a266": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:53:05+10:00",
+    "subject": "perf(agc): avoid revalidating predecoded draws"
+  },
+  "66af2a87c20f39090f4e221223897f6f190ce88a": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:53:02+10:00",
+    "subject": "perf(agc): expose validated draw resolution"
+  },
+  "49b5cb19eae90c7bbfca43a13024f74f0951e27b": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:52:49+10:00",
+    "subject": "perf(agc): execute predecoded native submission plan"
+  },
+  "6bdb2f759694224826fa2dafeea30eb4ce8e86d0": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:52:37+10:00",
+    "subject": "perf(agc): predecode validated submission packet plan"
+  },
+  "00e7f636e82bf81a206e5492cc29e6e7e2971783": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:49:02+10:00",
+    "subject": "perf(agc): key pipelines by generated shader identity"
+  },
+  "c4568fc5a62520a36a057946d4fb1cd254739757": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:59+10:00",
+    "subject": "perf(shader): assign generated program identities"
+  },
+  "16fd2eb7627a00f6f4cba6df325f22e54ede15b9": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:56+10:00",
+    "subject": "perf(shader): expose generated specialization identity"
+  },
+  "83cb2d5c12966d8736598e260ad7cf2a8ea1dfd7": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:35+10:00",
+    "subject": "perf(agc): identify immutable registered shader sources"
+  },
+  "14576b2540e606aa2f2b654aec7b9aa5a5f022e1": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:25+10:00",
+    "subject": "perf(shader): make registered source lookup constant size"
+  },
+  "326998b8aaf4667fd6e7e29ac554080a2bab3c98": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:22+10:00",
+    "subject": "perf(shader): support stable generated source identities"
+  },
+  "2eedfe9d9bdbc7c7de9159c2e0a6b47c1e79f08f": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:44:29+10:00",
+    "subject": "perf(agc): remove duplicate vertex layout validation per draw"
+  },
+  "e4f77c952338d1583701a92c9ec41d33ac498b97": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:43:18+10:00",
+    "subject": "perf(agc): wait for translated draws instead of idling device"
+  },
+  "d9398226a4de1af623bbce76e38ddd2a19fdd8c8": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:41+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "ec0b393c6c2f1700b8c24360d03459819cf5f43c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:39+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "a723f88d2a373e84ee7593308ccbd971d5fb1801": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:36+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "c6f50f595b87408c402948274589747b883d73c6": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:34+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "945f87adf4c08823d0ed481cd92fc0f0383bc21c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:31+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "11ad3f88e74a8ad472eb047dcb7da489c5b5066a": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:28+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "597a4d77d927764c53cd1af68bb3c9fc9fe9c763": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T18:05:49+10:00",
+    "subject": "perf(agc): queue draws instead of idling the GPU per packet"
+  },
+  "28f305b81b1812fc84807a8607cb31ef9b662c9b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T17:39:23+10:00",
+    "subject": "perf(agc): stop copying render targets on every release"
+  },
+  "6947733caf09e1365df070d4fc23c54f84a9b2bd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T17:39:14+10:00",
+    "subject": "perf(agc): keep depth surfaces resident across draws"
+  },
+  "86536e4f64b6dc706b2d5b9c05e154a1cc1a853f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:40:26+10:00",
+    "subject": "perf(agc): distinguish guest mapping checks from memory resolution"
+  },
+  "a56d34c05d25e0df59d475460b7ce79c921816f8": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:32:16+10:00",
+    "subject": "fix(build): include shader memory test in testing builds"
+  },
+  "46d8971afb3e865ca534203595af97e0ba31f311": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:18:58+10:00",
+    "subject": "fix(agc): separate depth read timing from index uploads"
+  },
+  "18c39f16fb5e53c19be0fcff319b72af95054966": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:01:28+10:00",
+    "subject": "perf(agc): preserve resident color targets after memory release"
+  },
+  "5459c88d477216cc3ecc25be7fc41fcb648d8113": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:55:22+10:00",
+    "subject": "perf(agc): prefer cached host memory for GPU readback"
+  },
+  "cfecd48d9d856b12088fdd5e808f65bf87c00f28": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:42:58+10:00",
+    "subject": "perf(agc): accelerate tiled depth surface transfers"
+  },
+  "8c2a2b8c46c13d3421505aa3807d1840a25263b5": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:35:36+10:00",
+    "subject": "feat(shader): support signed short execution-mask comparisons"
+  },
+  "b392291dd1829914b6ddb8aa79317bd012964d47": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:29:43+10:00",
+    "subject": "fix(shader): accept floating comparison source modifiers"
+  },
+  "558c5c49a54d1a745abc397a5e070c1a7f5d57c0": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:25:28+10:00",
+    "subject": "feat(shader): classify half values for execution-mask comparisons"
+  },
+  "74bb5c81f5878438c682e91cdf1705356aff6418": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:17:59+10:00",
+    "subject": "feat(agc): execute direct indexed draw packets"
+  },
+  "fddbeea4a6f005f09817821ae5c67de8710de53b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:13:54+10:00",
+    "subject": "fix(agc): emit the index buffer count command"
+  },
+  "7f2b765ab952745369e8b62cf3920949b2898b7b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:12:06+10:00",
+    "subject": "fix(libc): reserve low guest mappings before driver allocations"
+  },
+  "1acbc76c821a6a782062bbe70f4af0a38c341d80": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:01:37+10:00",
+    "subject": "test(agc): verify distinct initialization export ABIs"
+  },
+  "9286953949e4d4fe14da0a033cc90dee259ab6c9": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:54:59+10:00",
+    "subject": "fix(agc): separate named and state initialization exports"
+  },
+  "4f73b77c0f2fb8e9c6e743f4c96cb585f879ebd8": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:29:06+10:00",
+    "subject": "fix(agc): support depth-only shaders with owned input state"
+  },
+  "c47dce9a8c3dbea50bdf06b0840a96f74bf7ee4c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:11:41+10:00",
+    "subject": "fix(agc): identify missing shader registers in diagnostics"
+  },
+  "6277104c9679d090f6ca2eb666084ed6d2775c5a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:11:41+10:00",
+    "subject": "feat(agc): render single-sample D32 depth attachments"
+  },
+  "116a7d12f594d8e4516b9b41bc673549e8bd8c03": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:00:19+10:00",
+    "subject": "feat(agc): decode single-sample D32 depth state"
+  },
+  "8bc2baf31a493cac7bc3b4eaaa7443fdfd541296": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:53:58+10:00",
+    "subject": "feat(agc): add tiled D32 depth surface conversion"
+  },
+  "f0a4beff61b271ccb0cd9eccb67f0a856c4384a0": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:47:23+10:00",
+    "subject": "feat(kernel): support superpage-aligned anonymous mappings"
+  },
+  "8f4de68495a429c94f090c18184f74fdc3147068": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:38:52+10:00",
+    "subject": "fix(shader): decode buffer address operands independently"
+  },
+  "4856eaad6a2c5413958dd2c2e695abf02dd40df1": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:30:48+10:00",
+    "subject": "fix(shader): initialize passthrough vertex lane count"
+  },
+  "98d36cb6af783b39ef7a8975ed30c522eb339fcd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:14:04+10:00",
+    "subject": "fix(shader): preserve pixel input register layout"
+  },
+  "7ccdc73f2ef1b2ce88301c8a1cf35dcea5d7e462": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:03:50+10:00",
+    "subject": "fix(agc): align shared buffer views with shader byte offsets"
+  },
+  "71ca48a84679538b161823975c8b64a535789aaa": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:56:10+10:00",
+    "subject": "feat(agc): support non-seamless cube-map samplers"
+  },
+  "499987bfdcb2efba495428240109dbae85bdb0f6": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:52:18+10:00",
+    "subject": "feat(shader): implement legacy floating-point multiply"
+  },
+  "ee1fa138422b263e27771060283d980c96439ee7": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:43:42+10:00",
+    "subject": "feat(shader): support RDNA memory clause markers"
+  },
+  "2a948941591707152f4e72686ba86bc24ea5a891": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:36:44+10:00",
+    "subject": "fix(agc): read serialized shader metadata without tail padding"
+  },
+  "4de734cf6d2e28dd7ec304b8124d3246954ca61a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:32:27+10:00",
+    "subject": "fix(agc): accept disabled dual-quad color optimization"
+  },
+  "226d85c4a23286090a93e23e34d9a676e9d7370e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:29:40+10:00",
+    "subject": "feat(agc): preserve last-vertex flat shading in Vulkan pipelines"
+  },
+  "ee2278bd04a049e0e3cdeaa027afdbcc8cac3e3b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:24:31+10:00",
+    "subject": "fix(agc): accept Vulkan-compatible linear attribute clipping"
+  },
+  "76295e05ca5d27c7dc16fadbd782595d030ead46": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:21:07+10:00",
+    "subject": "fix(agc): accept render-backend tile distribution settings"
+  },
+  "3b5d1671b3caf23e9b3c774807126d2210cd009d": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:17:43+10:00",
+    "subject": "fix(agc): accept vertex primitive-group scheduling state"
+  },
+  "502a730199fb642b0254667fa8357dfdb45a60b5": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:13:29+10:00",
+    "subject": "feat(agc): execute ordered PM4 memory releases"
+  },
+  "3499f01a12bbb6990275fce0b8bf528e968cabfe": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:08:53+10:00",
+    "subject": "fix(agc): ignore inactive GDS fields in memory releases"
+  },
+  "059c15fd8c3d32929b6e33ce741c5e103a03e3fd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:06:34+10:00",
+    "subject": "feat(video): support per-output 119.88 Hz vblank timing"
+  },
+  "a6d0dad51dd60f4f6d8f94f3f56268faaf2359be": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:59:51+10:00",
+    "subject": "fix(libc): invoke guest destructors with the System V ABI"
+  },
+  "0252f146dacb324a76063fb14195c4690a00980b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:52:57+10:00",
+    "subject": "fix(agc): validate only consumed primitive output registers"
+  },
+  "2a37fa8542cd63dc6077deaf2673a3e1d59586db": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:49:47+10:00",
+    "subject": "fix(agc): use the single-argument initialization ABI"
+  },
+  "7f5c93decf24d37b23b57b681c9d753c0ae0d8f3": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:47:28+10:00",
+    "subject": "fix(libc): preserve guest jump contexts without host buffer overflow"
+  },
+  "5ad6bc9bef18572405c655485ad9694c422b322b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:38:36+10:00",
+    "subject": "feat(pad): track virtual controller vibration mode"
+  },
+  "54b0f1bf999d3bdf77675a56bdf8ec5aca5a44ec": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:35:39+10:00",
+    "subject": "feat(user): expose the local user's display name"
+  },
+  "d1d46dd4f9157a76fdfefe34fcfbadbd7f069086": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T10:35:08+10:00",
+    "subject": "fix(kernel): report unsupported thread scheduling without throwing"
+  },
+  "3a9e1e7be692dd13d9c7fc44ecffb66901b0a3c9": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T10:33:14+10:00",
+    "subject": "fix(kernel): reject unsupported thread creation attributes"
+  },
+  "98f7c6a5b840c5dc2bd798ff7fd6a64885ef7e20": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T09:55:30+10:00",
+    "subject": "feat(kernel): implement guest pthread attributes"
+  },
+  "a44496dae409beb2d2b65454ef31fdd2519173fb": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T09:44:24+10:00",
+    "subject": "fix(kernel): correct mutex synchronization and semaphore sharing"
+  },
+  "fc99090c77f7bd1aea3da19d38ccdcd38afd496c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:50:53+10:00",
+    "subject": "feat(kernel): implement guest POSIX semaphores"
+  },
+  "40bd5851d6badeb5b6e59c0db225072233bb7121": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:46:40+10:00",
+    "subject": "feat(kernel): expose guest pthread mutexes"
+  },
+  "2f5d193673c9e60aaa822a5b32c849be3ca16fd6": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:42:53+10:00",
+    "subject": "feat(kernel): implement guest thread-specific keys"
+  },
+  "c14b46ff3e2c995d34345a5b47f5b07ccdab0461": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:32:02+10:00",
+    "subject": "fix(libc): return guest errors when a file open fails"
+  },
+  "788bb8a6e301eaa63f0ea85116379526fc8ec2ef": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:55:48+10:00",
+    "subject": "feat(kernel): provide guest stat metadata and filesystem errors"
+  },
+  "51c08e9aaeb29447946695e14c9f33b07f1e909e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:49:16+10:00",
+    "subject": "feat(kernel): create guest directories with filesystem errors"
+  },
+  "ae0deadc94114cbb4bcaf0acbcc850fb7ab623ad": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:42:46+10:00",
+    "subject": "feat(libc): use tracked guest heap for empty replacement tables"
+  },
+  "5a18ce3468eee8f87b3d0129fa4807ff529dec75": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:39:09+10:00",
+    "subject": "feat(libc): query usable size through the application heap"
+  },
+  "5b2110ca411ec869446d736ee661b90984a06c41": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:35:47+10:00",
+    "subject": "feat(libc): adapt restartable guest multibyte conversions"
+  },
+  "3196461f2eb227a324267ece35b2e96f8d655151": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:32:39+10:00",
+    "subject": "feat(kernel): track guest thread cancellation settings"
+  },
+  "78bddb7d11ac9a87e5c88e5a6f8a58bd050b6111": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:30:00+10:00",
+    "subject": "feat(system-service): launch web URLs through SDL"
+  },
+  "3ca62cc1b67642b4de547d83d3deb8b924af523f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:27:13+10:00",
+    "subject": "feat(libc): convert guest wide strings to multibyte output"
+  },
+  "f6b53155708f8ab88d7e8cd1741bb9a44314f409": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:25:50+10:00",
+    "subject": "feat(user-service): expose the foreground local user"
+  },
+  "b5cb12eea8c53542f8b3a023b5634ba8d0be2f0b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:24:04+10:00",
+    "subject": "feat(libc): bridge guest scanf arguments and integer widths"
+  },
+  "465ab0c52ae047c5386ee940450ed1c24fc4cf9e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:19:36+10:00",
+    "subject": "feat(kernel): implement guest signal actions and handler masks"
+  },
+  "7bc18cfd72437fe029ecf7568f0cbdf0bf59b276": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:15:15+10:00",
+    "subject": "feat(kernel): resolve named CPU and page size queries"
+  },
+  "a77546b17d0972a4146bb767badfefd8afbcfe4f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:13:11+10:00",
+    "subject": "feat(libc): format PS5 wide strings with guest varargs"
+  },
+  "641d745d2adfc6af6c5fa9805cbd4c3de25808f2": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:07:00+10:00",
+    "subject": "feat(libc): convert guest wide floating point numbers"
+  },
+  "da72474dfe99e4fc6e220610ef44e6af0f5cc996": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:05:18+10:00",
+    "subject": "feat(libc): preserve PS5 widths in wide integer conversion"
+  },
+  "aa811c23e79403c3f820692eb9e4688724fe2762": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:03:02+10:00",
+    "subject": "feat(libc): implement wide strings with the PS5 16-bit ABI"
+  },
+  "711cd1dfd2c438e1dcc3f0e2fd30f8186497a070": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:59:37+10:00",
+    "subject": "feat(libc): allocate aligned blocks through the application heap"
+  },
+  "32873dead5d78cdb6dca1f0e1ddfcb53cf7d0426": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:57:58+10:00",
+    "subject": "feat(kernel): implement owned POSIX read write locks"
+  },
+  "9e3a8b67dc183068417330486640f43ab4f07003": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:55:06+10:00",
+    "subject": "feat(libc): format and route guest syslog diagnostics"
+  },
+  "8fbba9f48a4219e4483ec3afc885d777ca2330c9": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:53:27+10:00",
+    "subject": "feat(kernel): support microsecond sleeps without early truncation"
+  },
+  "111193e8fd5123647b52f9a6a289eba7d7b084e9": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:51:29+10:00",
+    "subject": "feat(libc): wrap file descriptors as guest streams"
+  },
+  "88179069a33097ed47895d3ae3db3c93460c845a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:49:31+10:00",
+    "subject": "feat(libc): implement program name queries and updates"
+  },
+  "83daacf1ba2cb6d16610e33019844787bbfa7d25": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:48:17+10:00",
+    "subject": "feat(kernel): implement reusable guest thread barriers"
+  },
+  "7ce8ca3648bdd6700505707156a10957e04e91eb": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:46:58+10:00",
+    "subject": "feat(kernel): expose lifetime-bound thread CPU clocks"
+  },
+  "90afbdd88e5bab3408703178e5ebd9bd7d35976a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:44:20+10:00",
+    "subject": "feat(kernel): apply guest thread names to host threads"
+  },
+  "ebf302535ce958921fc5f3bc0710ec131ca57cba": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:43:03+10:00",
+    "subject": "feat(kernel): preserve guest thread signal masks and pending raises"
+  },
+  "4879d300a7e276c869aa40de833a96af8eb551ac": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:40:54+10:00",
+    "subject": "feat(kernel): implement guest signal set operations"
+  },
+  "0361be0118b875e2f88a3eb1338d8954e85450b2": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:39:37+10:00",
+    "subject": "feat(libc): provide host-backed user and group identity queries"
+  },
+  "f1ae1655a43ad77ecbf5ccb9bd0ee6dc451d566e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:37:51+10:00",
+    "subject": "feat(libc): check guest file access permissions"
+  },
+  "c4cdbac8e7eeaa47890e447c227a387a93f230ec": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:34:25+10:00",
+    "subject": "feat(kernel): implement guest terminal descriptor checks"
+  },
+  "b7c979f5cce573ab986f67406f98ec7d3d6d9e49": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:31:22+10:00",
+    "subject": "feat(libc): support guest allocated formatted strings"
+  },
+  "7aa9d8b65d370788a0f79eb2b5d10e069cf73caa": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:26:27+10:00",
+    "subject": "feat(kernel): expose scheduler yield to guest code"
+  },
+  "d60334335b527071d7baf2fb256513caf6dc3a52": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:25:47+10:00",
+    "subject": "feat(kernel): bridge POSIX thread creation and identity"
+  },
+  "93ae1ec532ec6902942058d9b3334bb941dbfd1d": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:22:23+10:00",
+    "subject": "feat(kernel): implement POSIX condition variable lifecycle"
+  },
+  "3c367808b8f1209cbd274c3b4ba9a0ca2a9c5f31": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:18:54+10:00",
+    "subject": "feat(libc): duplicate bounded strings on the application heap"
+  },
+  "ee5f425ca1c8c515922bc913b097b3f7f847c259": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:17:34+10:00",
+    "subject": "feat(kernel): expose supported guest resource limits"
+  },
+  "b6360f5fbff4caaec7be9889e0a7286dbd7eb4bd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:14:59+10:00",
+    "subject": "feat(kernel): support guest system information queries"
+  },
+  "c981c3ce680a457674064d5d063698cf6b9056ed": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:12:10+10:00",
+    "subject": "feat(libc): add independent FreeBSD-style random state"
+  },
+  "f0dbd92844262ddd8801a16cc738d77511e913d1": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:10:33+10:00",
+    "subject": "feat(libc): unlink guest files without removing directories"
+  },
+  "ed7a86afc17d0476348b353f510ea456f4c534e0": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:08:30+10:00",
+    "subject": "feat(libc): create exclusive guest temporary files"
+  },
+  "9ef638f79634fbac61c9b08bf2f3ea3ad87dbde1": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:06:42+10:00",
+    "subject": "feat(libc): report unavailable guest command processor"
+  },
+  "2d4a13c84cd35267347076812bd0234a21f89567": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:03:50+10:00",
+    "subject": "fix(agc): share memory access scope across module boundaries"
+  },
+  "4eaa159da5c2739eb244d8ae460bec1431354453": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T20:13:53+02:00",
+    "subject": "fix(kernel): query host mappings through /proc/self/maps on Linux"
+  },
+  "664b36ea15e3cba1398a5d6e19c6a8f58c00424b": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:15:16+02:00",
+    "subject": "fix(build): link guest library tests dynamically on Linux"
+  },
+  "1ef40b920984a650e12749eb6766d0c4e3fd462c": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:15:16+02:00",
+    "subject": "fix(libc): register the main guest image on Linux"
+  },
+  "ad072a4e896a05b6efa57b8a0abfb5a0e7bdc821": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:15:16+02:00",
+    "subject": "fix(kernel): map SCE protections to readable host pages"
+  },
+  "11e1ecad62f6077eadef9d2fa3b04cc278059482": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:15:16+02:00",
+    "subject": "fix(libc): swap calloc and realloc slots of the malloc replacement table"
+  },
+  "0dd3ccdee92e5310f592ed4a1e57cef69d874dbc": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:15:16+02:00",
+    "subject": "fix(videoout): drop __stdcall from the window procedure"
+  },
+  "de43b73b4c4c392e0644f1ece8515d443e095a1f": {
+    "author": "Pacuka",
+    "author_date": "2026-09-26T11:15:16+02:00",
+    "subject": "fix(build): configure bundled SDL2 without static executable linking"
+  },
+  "6351f08389859f08f7bf907e841403457d1c3a61": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T14:04:19-04:00",
+    "subject": "AGC: predication, indirect-buffer jumps and 3D textures"
+  },
+  "4ca073f1c74336f8c2a7fd9c384e8bb1a33dd7f3": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T13:36:04-04:00",
+    "subject": "AGC: storage images; cache guest mapping checks"
+  },
+  "257859917d607147e003c44b8a12d74984f02c4c": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T13:20:55-04:00",
+    "subject": "Colour write masks, gather offsets, device protection bits, usleep, frame dumps"
+  },
+  "7b40abb03d9c9b9955408e688287728006ffa2f8": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T13:05:10-04:00",
+    "subject": "AGC: tolerate unused descriptors and stale pixel inputs like the hardware"
+  },
+  "8e2a5c5a24534782d43d87af2ec89f1fbb9b0ca8": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T12:22:19-04:00",
+    "subject": "Recompiler: share pixel inputs that read the same parameter"
+  },
+  "8f747f369eb54de13498db40d1992af8964fa3ca": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T19:06:03+03:00",
+    "subject": "feat(libkernel): add __progname str value"
+  },
+  "4be5591a0fc6cd14d1be46c848e2e24f44674970": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T18:58:32+03:00",
+    "subject": "feat(libkernel): impl posix stdio wrappers, reusing sceKernel file ops"
+  },
+  "30972c96f8de95b9bfbc7ad3c60d3f41bd3e6a8e": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T11:58:17-04:00",
+    "subject": "AGC: colour formats, mip and mip-tail targets, depth bias; SSE4a emulation"
+  },
+  "b2b211483480a17a4bfa76bfeea4a9b0f197a911": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T18:48:40+03:00",
+    "subject": "fix(libkernel): handle clock_second 13 in clock_gettime and clock_getres"
+  },
+  "01422c40ab5dbb8c10b5cbe097c52670b2d04fd0": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T18:35:20+03:00",
+    "subject": "feat(libkernel): impl file, time, process, signal for posix"
+  },
+  "cea29e2b94d796084a28d576f7b7aaf343df2884": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T11:26:02-04:00",
+    "subject": "AGC: indexed draws with explicit index buffers, depth-only passes, depth textures"
+  },
+  "a7e4d911508f43a3f043855dfe62da4e55bdab74": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T18:16:47+03:00",
+    "subject": "feat(libkernel): impl pthread condition variables + posix thread attribute queries"
+  },
+  "3944225cef588bfb41c354a53a81065446092ae0": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T11:12:12-04:00",
+    "subject": "Report real thread stacks; pad device class, vibration mode, orientation"
+  },
+  "a8e4b406ce0df9605e7ebd11e580bc459ba50986": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T11:04:36-04:00",
+    "subject": "Keep unwind tables and start runtime-loaded modules with their arguments"
+  },
+  "212a5f3517303e7b4d52f4fda86bc5702c55c9b9": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T17:43:44+03:00",
+    "subject": "feat(libkernel): implement posix mutex locking and timed waits"
+  },
+  "95f26c862c33ec6fd0f6a5a61754553a066ce491": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T17:37:29+03:00",
+    "subject": "feat(libc): implement heap trace info"
+  },
+  "963e2fa8554ce9de7952eb7d4016146b0ab36ee9": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T10:34:30-04:00",
+    "subject": "VideoOut: 10:10:10:2 display surfaces"
+  },
+  "99799ea38c089194551e34235650fee194d9b9ce": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T17:34:30+03:00",
+    "subject": "feat(libkernel): implement disabled address sanitizer state + replacement tables"
+  },
+  "172ae95dfa4b86670399c46aa41b9a355947246c": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T17:31:13+03:00",
+    "subject": "fix(libkernel): store rtld allocator table separately from application heap"
+  },
+  "c2d661c50cdaec419e06e8663aa74e60c64072d8": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T17:24:28+03:00",
+    "subject": "feat(libkernel): implement process, cpu, uuid, gpi, gpo, sync funcs"
+  },
+  "84215305e5c6dda0f5d1c5ac0ba1c2dd4eb44dc0": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T10:23:23-04:00",
+    "subject": "AGC: depth/stencil render targets"
+  },
+  "8d849238f3dd905ce0b626ced8ca0f0a67822d96": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T17:07:34+03:00",
+    "subject": "feat(libkernel): implement application heap and thread atexit registration"
+  },
+  "9a806ab6c2255d351cd6b72da31890c772a08298": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T16:54:43+03:00",
+    "subject": "feat(relinker): scan sce modules for syscalls"
+  },
+  "631655240b6000ca43319937d335cab1c9acfecd": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T16:45:41+03:00",
+    "subject": "feat(relinker): add --skip-sce-module flag"
+  },
+  "5ebbd284f85ca0b91f1ce036cf327ed7a7d77610": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T16:42:54+03:00",
+    "subject": "feat(libkernel): add memory segment, backtrace, heap error report definitions"
+  },
+  "bebfbd0cb3ca78472731cf86a5239981eeb54870": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T16:32:16+03:00",
+    "subject": "feat(libkernel): add new posix, pthread, semaphore, process funcs definitions"
+  },
+  "1df48759d19d40641907d33d6407bc2905e2791e": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T09:30:13-04:00",
+    "subject": "feat(libs): Json2 InitParameter2, VoiceQoS init, AGC write-data patch and Trinity query"
+  },
+  "ed1ff370cf170a147c4e202b93d0c18378a192ba": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T09:24:09-04:00",
+    "subject": "feat(libs): NP state callbacks, display safe area, AGC resource registration"
+  },
+  "1389bc56785973980b97ac57f563cab6010afaca": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T09:20:02-04:00",
+    "subject": "feat(libs): offline network, NP and service modules from upstream PR #5"
+  },
+  "dcf14b04760e7c83b162f9e514f70efe1192512b": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T09:12:46-04:00",
+    "subject": "fix(ajm): serve every AJM import from libSceAjm.native; fail loudly on missing codecs"
+  },
+  "8eff487c454722eac4f209830fe1d3bafcdae059": {
+    "author": "devilismyfriend",
+    "author_date": "2026-09-25T16:27:49-07:00",
+    "subject": "feat(audio): AudioOut2 SDL output queue, ATRAC9 decoder in libSceAjm.native"
+  },
+  "71428a707295a658336d8f2006890275c3dc4a38": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T09:08:04-04:00",
+    "subject": "fix(recompiler): drop duplicated compute workgroup-register assignment"
+  },
+  "bdb1a0126196f1488bfa59383b6e5dca39192d0b": {
+    "author": "devilismyfriend",
+    "author_date": "2026-09-25T16:27:49-07:00",
+    "subject": "fix(recompiler): saveexec operand order, atomic-zero rewrite, cache keys"
+  },
+  "1f91d669c8fa63f20a12678a8776b1d4547faae0": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T09:07:16-04:00",
+    "subject": "Merge upstream/main into feat/runtime-modules"
+  },
+  "5e46fddaaaaeba4a6f977ae61297539713c0a7dd": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:57:46+03:00",
+    "subject": "feat(libkernel): add definitions for standard guest libc imports"
+  },
+  "64c71bf8d6ce65362c1bcac448711983bc1ea2e5": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:46:16+03:00",
+    "subject": "fix(relinker): support operand-size prefixes on fs:[0] access"
+  },
+  "ff04e95b2e526fb1e3ff7cd44fd61976b3844fca": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:42:55+03:00",
+    "subject": "fix(codegen): decode int imm8 instruction length correctly"
+  },
+  "7dcab6ded0791c254551c943818ce2b75e19caa1": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:41:22+03:00",
+    "subject": "fix(relinker): scan reachable code for windows guest tls accesses"
+  },
+  "a25c70a8778ecbf38be67329247663cf40c3acb7": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:33:26+03:00",
+    "subject": "fix(relinker): support windows guest tls relocations and accesses"
+  },
+  "f318e2ea064685adb5b75001eca19133c85eeac9": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:19:40+03:00",
+    "subject": "fix(relinker): ignore non-loadable SCE segments outside file bounds"
+  },
+  "43dd923c4c804de929c5554ecd8ed4d8effef38c": {
+    "author": "boykopovar",
+    "author_date": "2026-09-26T15:10:21+03:00",
+    "subject": "feat(relinker): add native guest module loading with export priority"
+  },
+  "e365e04dad7a8fb070322c40018c6ed2ca712eaf": {
+    "author": "aashath0317",
+    "author_date": "2026-09-26T17:27:22+05:30",
+    "subject": "Merge and fix pipeline behavior for --to-intel"
+  },
+  "3ab4c4387fc917dc968589bce432c96aae2dc56a": {
+    "author": "aashath0317",
+    "author_date": "2026-09-26T17:26:42+05:30",
+    "subject": "Fix toIntel flag pipeline behavior"
+  },
+  "6e95b7f888611ff29aa331115f318d3eaeb244bd": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-26T11:13:07Z",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "2a98051c3b045bbf6ffc7d51e2797ec070cde026": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:56:54+10:00",
+    "subject": "fix(agc): consume native draw hints with command-buffer lifetime"
+  },
+  "0d689e32607cd98b6bfe56af191e4c8c5867ca2d": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:56:44+10:00",
+    "subject": "relink(agc): expose native draw registration bridge"
+  },
+  "acfd1d5d11b2794ce18fc65a9a5ae2c1db23a765": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:56:37+10:00",
+    "subject": "fix(agc): resolve dynamic index state in native draw path"
+  },
+  "505aa9b50cdddd159cb5ba76a35b2df7d36a2583": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:56:25+10:00",
+    "subject": "relink(agc): emit native sidecars for direct draw commands"
+  },
+  "0bd0ab763187b2ce6b3d04a6af0bf77746fee9a8": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:56:12+10:00",
+    "subject": "relink(agc): consume verified native draw sidecars"
+  },
+  "56c8761034de7b33e8cc842f9cc0898f465934a9": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:55:56+10:00",
+    "subject": "relink(agc): define native draw sidecar hint"
+  },
+  "80727abf3cc41c2eb855cf4a9cd94af9356782aa": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:53:08+10:00",
+    "subject": "perf(agc): consume validated draw packets directly"
+  },
+  "697656973237e03912fe1f1486615b06333591dd": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:53:05+10:00",
+    "subject": "perf(agc): avoid revalidating predecoded draws"
+  },
+  "1101f9423a28acc3aa978cfef0c84b3020d5ccd2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:53:02+10:00",
+    "subject": "perf(agc): expose validated draw resolution"
+  },
+  "ee28eadd8256c4b4d1ec0e3d048a76e0f1d23e13": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:52:49+10:00",
+    "subject": "perf(agc): execute predecoded native submission plan"
+  },
+  "4f0e45dc3bd504fe1bb4c6d3ae9b4781bff8110d": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:52:37+10:00",
+    "subject": "perf(agc): predecode validated submission packet plan"
+  },
+  "afe2c0732f12e6d9456fc4b53c5e654aff551391": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:49:02+10:00",
+    "subject": "perf(agc): key pipelines by generated shader identity"
+  },
+  "65459746266f92107e964fc5de32cc74c8797762": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:59+10:00",
+    "subject": "perf(shader): assign generated program identities"
+  },
+  "474fea8ba823bc595c6e61ddb0d2c2ed3fb2f2cf": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:56+10:00",
+    "subject": "perf(shader): expose generated specialization identity"
+  },
+  "893a0bb012c0769be9333ffa9c8550cc86cee42c": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:35+10:00",
+    "subject": "perf(agc): identify immutable registered shader sources"
+  },
+  "745af0f52f1adbcf7b0743d824d6e48bd5d33626": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:25+10:00",
+    "subject": "perf(shader): make registered source lookup constant size"
+  },
+  "dca44687528d924adf7a9eb54b0d53f0a0c129cf": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:48:22+10:00",
+    "subject": "perf(shader): support stable generated source identities"
+  },
+  "6240c3daaf99317a9ff5499cc3da1541165479fc": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:44:29+10:00",
+    "subject": "perf(agc): remove duplicate vertex layout validation per draw"
+  },
+  "65ee79961ef2df2216729c1bc5c3a7a8f7ea5a7d": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:43:18+10:00",
+    "subject": "perf(agc): wait for translated draws instead of idling device"
+  },
+  "3cfb2283d59bcd28c44a5c91e2ec328be8208d4f": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:58+10:00",
+    "subject": "perf(agc): batch up to 16 draws per Vulkan submission"
+  },
+  "21a9a5f3f82da3b96eb23171bddb4cfe4c083f37": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:41+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "7a2f33bc214e6f466135153cfb11f192af2ce3bb": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:39+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "77a0198bc382d9676f9867890f34ecd63ec111a2": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:36+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "ae0cb2204fcadf0f3cd2268ebd49c2a828533ede": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:34+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "cdc42e8639fcb8edc00ee508075d1a6406292968": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:31+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "b49a8f8dabbb45f6ae24a9535763c4b362a355c9": {
+    "author": "Sam",
+    "author_date": "2026-09-26T18:38:28+10:00",
+    "subject": "fix(agc): restore conservative GPU submission ordering"
+  },
+  "d0b8484726bb104d35b0c7a3ff48e83e55596d81": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T18:10:51+10:00",
+    "subject": "merge upstream/main into fork"
+  },
+  "ef7d867335000bc35157c327ebb816f75318075a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T18:08:57+10:00",
+    "subject": "merge main into codex/quake2-followup"
+  },
+  "4a47e2e382b2c0af97b3d040871ff170e52ff0b0": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T18:05:49+10:00",
+    "subject": "perf(agc): queue draws instead of idling the GPU per packet"
+  },
+  "2a1256fe88221e31efc19c439d15fd92f93914c2": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T17:39:23+10:00",
+    "subject": "perf(agc): stop copying render targets on every release"
+  },
+  "d9e5831841b3fafc52fdf58fc79489006709f0b5": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T17:39:14+10:00",
+    "subject": "perf(agc): keep depth surfaces resident across draws"
+  },
+  "49701a989dcc0937ec0ac3c5ff5c9e1b28889976": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:40:26+10:00",
+    "subject": "perf(agc): distinguish guest mapping checks from memory resolution"
+  },
+  "8e3996155013a4a684ca53109645aaa655e5e2f7": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:32:16+10:00",
+    "subject": "fix(build): include shader memory test in testing builds"
+  },
+  "309bb69b6b2ca0710cffe16e1ccb693fecf8fded": {
+    "author": "aashath0317",
+    "author_date": "2026-09-26T11:59:44+05:30",
+    "subject": "fix(relinker): prevent crash by returning 0 after --to-intel conversion"
+  },
+  "c1fce100ce7b7e15424ebf1c296f2472b8ecf016": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:18:58+10:00",
+    "subject": "fix(agc): separate depth read timing from index uploads"
+  },
+  "61a400805643ff2dc6857bcb2b3285bb84f08859": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T02:10:53-04:00",
+    "subject": "fix: compute workgroup IDs after user SGPRs; pad reads, IME keyboards"
+  },
+  "59b215ae1ea667697182acb61bdcffb65f758c5d": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T02:07:24-04:00",
+    "subject": "feat(libkernel): deliver guest exceptions to threads; munmap across mappings"
+  },
+  "ec89254d22d2d5b827051cd2482e2a147b44438c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T16:01:28+10:00",
+    "subject": "perf(agc): preserve resident color targets after memory release"
+  },
+  "3d5cc9441a3ae6c978f00f6c7d81e9cc941ced5a": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T02:00:38-04:00",
+    "subject": "docs: AMPR asset container format"
+  },
+  "8d0d6c1a8fd678c9ab9189eb3bf847bc968f9751": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T02:00:23-04:00",
+    "subject": "feat(libs): serve /app0 from AMPR asset containers; PlayGo and event accessors"
+  },
+  "e80e9cd74f0410e9fd179110ea1fcbf9e84c1f1d": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:55:22+10:00",
+    "subject": "perf(agc): prefer cached host memory for GPU readback"
+  },
+  "c10cb859e0b59dc8905666fe1e52314e93281e71": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:42:58+10:00",
+    "subject": "perf(agc): accelerate tiled depth surface transfers"
+  },
+  "f3ad577e258684bd70897384fa0302900aa072f8": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T01:42:03-04:00",
+    "subject": "feat(libs): semaphore cancel/delete, WRITE_DATA cache policy, file tracing"
+  },
+  "09e34ea0cd8aeaa77a2fb5d94f0a5be256066c33": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:35:36+10:00",
+    "subject": "feat(shader): support signed short execution-mask comparisons"
+  },
+  "1b36d39e841a29af3ef5577238d595f69c3fb3d5": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T01:34:20-04:00",
+    "subject": "feat(agc): GPU waits, release/acquire memory, markers and eq events"
+  },
+  "60e4393656efe22e41d04cec882205d1de8dde1f": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T01:34:10-04:00",
+    "subject": "fix(libc): stop libc.prx interposing the host C++ exception runtime on Linux"
+  },
+  "d6e1240f11a81433ce22f61af1b2b0ae2631297d": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T01:34:10-04:00",
+    "subject": "feat(libs): file-backed save-data memory and HDR tone-map luminance"
+  },
+  "a1dc50755207216edbc2b76466b8add6d42a2f5e": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T01:34:00-04:00",
+    "subject": "feat(libkernel): thread stack registry, IsStack and checked direct-memory release"
+  },
+  "3dbb82a1a1329380d8aea7ede6b31d0dd9338314": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:29:43+10:00",
+    "subject": "fix(shader): accept floating comparison source modifiers"
+  },
+  "485ca4a9bf03674d311c6595768968a9c0c5cd05": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:25:28+10:00",
+    "subject": "feat(shader): classify half values for execution-mask comparisons"
+  },
+  "5bda4c4a1ff1c54e8ea9af1f478bd658bc6f12e9": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:17:59+10:00",
+    "subject": "feat(agc): execute direct indexed draw packets"
+  },
+  "543ed89bac3a49a1f1095fd27880537ad0bca9e0": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:13:54+10:00",
+    "subject": "fix(agc): emit the index buffer count command"
+  },
+  "811628283eb13ced6993acfa5affa1bffa4d463b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:12:06+10:00",
+    "subject": "fix(libc): reserve low guest mappings before driver allocations"
+  },
+  "c942d4cf4857b52209f3c7856c582855d7542458": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T15:01:37+10:00",
+    "subject": "test(agc): verify distinct initialization export ABIs"
+  },
+  "5f46673b1d6a27a20d4246842e87c28df4e46d8a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:54:59+10:00",
+    "subject": "fix(agc): separate named and state initialization exports"
+  },
+  "55fb9aa6c89a4a7831c373d2384a97199efc40e1": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:40:11-04:00",
+    "subject": "feat(libs): AMPR command buffers and APR file streaming"
+  },
+  "4cb92a23dd894e0c7906ce9ae11f7d77bb31fbca": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:29:06+10:00",
+    "subject": "fix(agc): support depth-only shaders with owned input state"
+  },
+  "2141ac93d67d9d0948e78818908f56c3b334ac5f": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:25:58-04:00",
+    "subject": "feat(libkernel): asynchronous I/O requests and directory entries"
+  },
+  "eba6c0abf083577c2081301bf45766be019ee781": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:24:30-04:00",
+    "subject": "fix(libkernel): use SCE error codes for event queue results"
+  },
+  "e3f3bae011d877d372da4e494bd79e82ce37c9f1": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:15:57-04:00",
+    "subject": "feat(libs): RTC ticks, random numbers, wide printf and wctype"
+  },
+  "c2b0e8154d40eac55748335be9037cb70da88c6a": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:15:57-04:00",
+    "subject": "fix(video): accept PS5 VideoOut open parameters and GPU-only memory"
+  },
+  "1eb810ac98ce82bc75d3157c0582c29d088faf1b": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:15:57-04:00",
+    "subject": "feat(libkernel): event flags, clocks, exception handler registry"
+  },
+  "42a4dd357894932e39679a66156a03ac54e46fdd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:11:41+10:00",
+    "subject": "fix(agc): identify missing shader registers in diagnostics"
+  },
+  "ad5390fa9b306697424ca8179eb3c3a29790d052": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:11:41+10:00",
+    "subject": "feat(agc): render single-sample D32 depth attachments"
+  },
+  "0a4d5e80e24ae5f985cfb5bab328d4ebede613d9": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:04:59-04:00",
+    "subject": "feat(libs): user, NP, pad, mouse, app content and process services"
+  },
+  "711ca3b8939d17214078894ab8da483c58e661c7": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:04:59-04:00",
+    "subject": "feat(libc): 16-bit wide strings, math, stdio and string functions"
+  },
+  "afd6f1816f3d2256af7427fbe3c1cd33bcd09e6f": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:04:59-04:00",
+    "subject": "feat(libkernel): thread scheduling state, once and POSIX thread API"
+  },
+  "5456a4082d2ce2731d46903154a45d018ad42422": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:04:59-04:00",
+    "subject": "feat(libkernel): errno-correct file API and POSIX file functions"
+  },
+  "f6ba9b3f5ad3f222a6391c6a5d2803b249342b13": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:04:59-04:00",
+    "subject": "feat(libc): report the location of unhandled SIGSEGV faults"
+  },
+  "ee6ca2dc8c9a39c10daafc1e36ee4d4c702788a2": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-26T00:04:59-04:00",
+    "subject": "fix(libc): read calloc and realloc from the documented replacement slots"
+  },
+  "e54d5f9aef91855c068e171e7842bda042b509fd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T14:00:19+10:00",
+    "subject": "feat(agc): decode single-sample D32 depth state"
+  },
+  "7169a2bbb4882d06a5bfeebb99fcb1ce8b2dc221": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:53:58+10:00",
+    "subject": "feat(agc): add tiled D32 depth surface conversion"
+  },
+  "c7da692d489f52a582fb7669cb4781001db16cfc": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:47:23+10:00",
+    "subject": "feat(kernel): support superpage-aligned anonymous mappings"
+  },
+  "4f388efe5e1ab3068fbecc60240a506db139626d": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-25T23:46:27-04:00",
+    "subject": "feat(libc): default heap, operator new/delete and mspaces"
+  },
+  "f3664a128995edf3840db84c06e1df432db9313f": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-25T23:46:27-04:00",
+    "subject": "feat(memory): guest address space and MAP_FIXED replacement"
+  },
+  "afc7f293991802eb7476a7a22e176c65bcb6be20": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-25T23:46:27-04:00",
+    "subject": "feat(libkernel): load modules at runtime and complete pthread sync"
+  },
+  "7fff87d52be002d367e061e536e457b5c1b7bd11": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-25T23:46:27-04:00",
+    "subject": "feat(relinker): bind imports per PS library and stub unresolved ones"
+  },
+  "88e6b7456b2a88006d41f03ae7ed7c5bf802e22c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:38:52+10:00",
+    "subject": "fix(shader): decode buffer address operands independently"
+  },
+  "48e3277bdd4b5b08904031105ba50ed2dcb7714b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:30:48+10:00",
+    "subject": "fix(shader): initialize passthrough vertex lane count"
+  },
+  "35abae2f5613adbea07013f9aeb03304f92ff9d3": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:14:04+10:00",
+    "subject": "fix(shader): preserve pixel input register layout"
+  },
+  "77bbf469749138064893f070cd9cc0aba755900a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T13:03:50+10:00",
+    "subject": "fix(agc): align shared buffer views with shader byte offsets"
+  },
+  "2541c4db37f05bf4fce6889c7deaa69b9d975779": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:56:10+10:00",
+    "subject": "feat(agc): support non-seamless cube-map samplers"
+  },
+  "c860c14c6ae41bd10b0b32f23a99f1a24775ebbd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:52:18+10:00",
+    "subject": "feat(shader): implement legacy floating-point multiply"
+  },
+  "623f84fa964cb1674aea7a525d0d2bf7c231e103": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:43:42+10:00",
+    "subject": "feat(shader): support RDNA memory clause markers"
+  },
+  "810367e85eb6d2556b596f7793fa0eb24497d0c2": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:36:44+10:00",
+    "subject": "fix(agc): read serialized shader metadata without tail padding"
+  },
+  "4e00769639076ee1310baa165c1fcda60de2634e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:32:27+10:00",
+    "subject": "fix(agc): accept disabled dual-quad color optimization"
+  },
+  "be8b1081c3de12e22bcc6bc8b8476b3fab444d5a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:29:40+10:00",
+    "subject": "feat(agc): preserve last-vertex flat shading in Vulkan pipelines"
+  },
+  "9dc36822d959a5c22cf89a03129b00b86304bbbe": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:24:31+10:00",
+    "subject": "fix(agc): accept Vulkan-compatible linear attribute clipping"
+  },
+  "d4f88dd3d4ffd10877429f722fd907b9b03cf0f6": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-25T22:23:33-04:00",
+    "subject": "feat(relinker): relink SCE library modules and whole game dumps"
+  },
+  "f2565d318f7391c25df696d40e99702f1a8c163f": {
+    "author": "Gautam Mudbhari",
+    "author_date": "2026-09-25T22:23:33-04:00",
+    "subject": "feat(libkernel): export __tls_get_addr"
+  },
+  "e00791709d8de0cff2ff2fdb10f5420e5d26d41d": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:21:07+10:00",
+    "subject": "fix(agc): accept render-backend tile distribution settings"
+  },
+  "2faf6f44a2381aedca43877ad406a1a2ab665608": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:17:43+10:00",
+    "subject": "fix(agc): accept vertex primitive-group scheduling state"
+  },
+  "f0b6e37ce581c732fb2d28186e3817de2750ca26": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:13:29+10:00",
+    "subject": "feat(agc): execute ordered PM4 memory releases"
+  },
+  "8b45fa4443e65544ba2e13f3d4e6e60f4f7b8a55": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:08:53+10:00",
+    "subject": "fix(agc): ignore inactive GDS fields in memory releases"
+  },
+  "45d72299fb51285c8ce580abaa5075417207befd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T12:06:34+10:00",
+    "subject": "feat(video): support per-output 119.88 Hz vblank timing"
+  },
+  "c29e656e0996fd08c1c441ec2f90fde259451e25": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-25T22:04:14-04:00",
+    "subject": "test(relinker): add reproduction cases and native CI builds"
+  },
+  "04e3e70bbebd493fd539de42b7ef21a1cc33c8a5": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-25T22:04:04-04:00",
+    "subject": "fix(elf): reserve every synthetic program header slot"
+  },
+  "20eba6e7e2eb55631044b1383ea391f8297760a5": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-25T22:03:54-04:00",
+    "subject": "fix(cli): launch output directly and preserve child exit status"
+  },
+  "d6cfbf17fa4c8fe9433f7cf365a482dd9d38b7c7": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-25T22:03:45-04:00",
+    "subject": "fix(codegen): reject unsupported Intel substitutions and finish conversion"
+  },
+  "0c19f008a684ae21146f8cc85025b792dedbd9fd": {
+    "author": "nahshongraham97",
+    "author_date": "2026-09-25T22:03:17-04:00",
+    "subject": "fix(elf): validate file ranges before parsing"
+  },
+  "a50ec6bdcab8aa584127df59ab5833fbc1b4f0c5": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:59:51+10:00",
+    "subject": "fix(libc): invoke guest destructors with the System V ABI"
+  },
+  "a9b57bc6bd5aa5984e2b51a12a5790f175d3cce8": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:52:57+10:00",
+    "subject": "fix(agc): validate only consumed primitive output registers"
+  },
+  "13815963eb3a575c2e2fc4344cfff932a744d816": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:49:47+10:00",
+    "subject": "fix(agc): use the single-argument initialization ABI"
+  },
+  "2b9cda7e09e62355703231dc9a78c39bcd01da94": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:47:28+10:00",
+    "subject": "fix(libc): preserve guest jump contexts without host buffer overflow"
+  },
+  "882d580c07a4d9f12d3f699fbb71dd5168d38544": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:38:36+10:00",
+    "subject": "feat(pad): track virtual controller vibration mode"
+  },
+  "3ef7c32b8c706a31585d325970f2b0f4bd036d95": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T11:35:39+10:00",
+    "subject": "feat(user): expose the local user's display name"
+  },
+  "d1bd79ce4094d2296a9529ef70e689e2d0f6fb09": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T10:35:08+10:00",
+    "subject": "fix(kernel): report unsupported thread scheduling without throwing"
+  },
+  "e53ce980ec792121e3e5359ef13ff0017ed2de4c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T10:33:14+10:00",
+    "subject": "fix(kernel): reject unsupported thread creation attributes"
+  },
+  "ac3c65da2db33449213ad3b80928e2c8b7f92a93": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T09:55:30+10:00",
+    "subject": "feat(kernel): implement guest pthread attributes"
+  },
+  "9e24ba8495fab67d878fa8c705b2d4a9c6996f00": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T09:44:24+10:00",
+    "subject": "fix(kernel): correct mutex synchronization and semaphore sharing"
+  },
+  "cfeab680048c7a7daa8f461ed9cedac9194330f7": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:50:53+10:00",
+    "subject": "feat(kernel): implement guest POSIX semaphores"
+  },
+  "d88d1b9038876e7b57be2aa8cecfe9ac9ac74a44": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:46:40+10:00",
+    "subject": "feat(kernel): expose guest pthread mutexes"
+  },
+  "ceae9ca2160d9cbe9dd05221933aa598514fb48b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:42:53+10:00",
+    "subject": "feat(kernel): implement guest thread-specific keys"
+  },
+  "385aca1c602985f9c8e821523b119768c2fb1518": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T08:32:02+10:00",
+    "subject": "fix(libc): return guest errors when a file open fails"
+  },
+  "b438ec25f48eee919276a761bf1c8f89819abd7e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:55:48+10:00",
+    "subject": "feat(kernel): provide guest stat metadata and filesystem errors"
+  },
+  "8ee62cfc07b89dc1cdbc0cbfaf00a50392103b26": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:49:16+10:00",
+    "subject": "feat(kernel): create guest directories with filesystem errors"
+  },
+  "b80c1860885ce505441dde4fe3abbbe5de3c638f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:42:46+10:00",
+    "subject": "feat(libc): use tracked guest heap for empty replacement tables"
+  },
+  "b84bf52b5652800a05c4486dee22320217268ebf": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:39:09+10:00",
+    "subject": "feat(libc): query usable size through the application heap"
+  },
+  "ecd05f2640d594a9fe6357da589b17d1cadd912e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:35:47+10:00",
+    "subject": "feat(libc): adapt restartable guest multibyte conversions"
+  },
+  "9fd5d3e51ad798ff8f2307eaa8c17a3f7ca18a50": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:32:39+10:00",
+    "subject": "feat(kernel): track guest thread cancellation settings"
+  },
+  "a65a23967c173181f561678cad6c7981bdf8f1ed": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:30:00+10:00",
+    "subject": "feat(system-service): launch web URLs through SDL"
+  },
+  "5b6339b19836bd819ba8738059bab2c584ccd5cd": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:27:13+10:00",
+    "subject": "feat(libc): convert guest wide strings to multibyte output"
+  },
+  "df7c6ba9ece837eb358d53c2d7718dfc24e24832": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:25:50+10:00",
+    "subject": "feat(user-service): expose the foreground local user"
+  },
+  "a0a0db349a47ad83670cec22dcb7e62d648b5d00": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:24:04+10:00",
+    "subject": "feat(libc): bridge guest scanf arguments and integer widths"
+  },
+  "c9f6b1a843db7a52e9f67f9778f02a61597be74e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:19:36+10:00",
+    "subject": "feat(kernel): implement guest signal actions and handler masks"
+  },
+  "c951b0009e997b14a52e2f08e5420ae9c0552b9c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:15:15+10:00",
+    "subject": "feat(kernel): resolve named CPU and page size queries"
+  },
+  "affa47638d6cb44c5bc620f51dc0f6e78e82dddc": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:13:11+10:00",
+    "subject": "feat(libc): format PS5 wide strings with guest varargs"
+  },
+  "5099948b5e248e3e9b1c5b12ba3b624f6ab206e1": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:07:00+10:00",
+    "subject": "feat(libc): convert guest wide floating point numbers"
+  },
+  "eb43743f9d234abb4b5570c2a6b46267b1055598": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-25T21:06:48Z",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "70da2e41300fa5cf0dccde96188f61c5bd7877b2": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:05:18+10:00",
+    "subject": "feat(libc): preserve PS5 widths in wide integer conversion"
+  },
+  "edc18bc0fae5b30a41598d726c108f913e745c76": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T07:03:02+10:00",
+    "subject": "feat(libc): implement wide strings with the PS5 16-bit ABI"
+  },
+  "9ba7e512d575bb286cff16e0d579b95f708bae8e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:59:37+10:00",
+    "subject": "feat(libc): allocate aligned blocks through the application heap"
+  },
+  "a3b7f1203e9c3589c347c259536505f2df254e48": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:57:58+10:00",
+    "subject": "feat(kernel): implement owned POSIX read write locks"
+  },
+  "d1556b6c8858d1b173bf32c0fd4057dfd7d4a59b": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:55:06+10:00",
+    "subject": "feat(libc): format and route guest syslog diagnostics"
+  },
+  "1e9efd4b60819a82abae318eb575d4f6cfe4e893": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:53:27+10:00",
+    "subject": "feat(kernel): support microsecond sleeps without early truncation"
+  },
+  "af7b1a2f08f726a6ebf9ceff2d4faaf5bc41923f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:51:29+10:00",
+    "subject": "feat(libc): wrap file descriptors as guest streams"
+  },
+  "367673eae9197cff35ffe9be1dcf3a4a905da273": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:49:31+10:00",
+    "subject": "feat(libc): implement program name queries and updates"
+  },
+  "8144a4cc5f9d241dbe4344f0c80c4d109721c63a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:48:17+10:00",
+    "subject": "feat(kernel): implement reusable guest thread barriers"
+  },
+  "e2c923293bedd13c611fee93a1260bf72105e171": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:46:58+10:00",
+    "subject": "feat(kernel): expose lifetime-bound thread CPU clocks"
+  },
+  "35ee76d8d462e767797a3d274856e48dc1f66815": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:44:20+10:00",
+    "subject": "feat(kernel): apply guest thread names to host threads"
+  },
+  "3e13e3f0bb8f389e850aefbbd32263219269db6d": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:43:03+10:00",
+    "subject": "feat(kernel): preserve guest thread signal masks and pending raises"
+  },
+  "baf508d43e76a611ce266adbe324f385bc5004ec": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:40:54+10:00",
+    "subject": "feat(kernel): implement guest signal set operations"
+  },
+  "c6b6cebd156122a8c7788525f1e65705d119ae39": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:39:37+10:00",
+    "subject": "feat(libc): provide host-backed user and group identity queries"
+  },
+  "6fb3a4fe25b96d5aa65975fbf6bb70ec72b9e8dc": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:37:51+10:00",
+    "subject": "feat(libc): check guest file access permissions"
+  },
+  "0384847d8d3289b60b7534617d56949132dc1105": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:34:25+10:00",
+    "subject": "feat(kernel): implement guest terminal descriptor checks"
+  },
+  "3e8713e88beb631052d042d3ed5e95eba4566a50": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:31:22+10:00",
+    "subject": "feat(libc): support guest allocated formatted strings"
+  },
+  "8dfa549a6890a97d4304e5acdeef77d91cd98f7a": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:26:27+10:00",
+    "subject": "feat(kernel): expose scheduler yield to guest code"
+  },
+  "c4c47fe967bb240eca5719ae38d3012b64c1acf8": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:25:47+10:00",
+    "subject": "feat(kernel): bridge POSIX thread creation and identity"
+  },
+  "b299cc4904ff066306958c7af2a9aaea0252346e": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:22:23+10:00",
+    "subject": "feat(kernel): implement POSIX condition variable lifecycle"
+  },
+  "c04d18e49ccefe6104ce7dc88024e984c757f096": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:18:54+10:00",
+    "subject": "feat(libc): duplicate bounded strings on the application heap"
+  },
+  "a58e388579756a36441bc7a4c9d9ce937483a4e9": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:17:34+10:00",
+    "subject": "feat(kernel): expose supported guest resource limits"
+  },
+  "318eb66c17845b19925596c41722fd0adff5ae67": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:14:59+10:00",
+    "subject": "feat(kernel): support guest system information queries"
+  },
+  "9606ac0f99d3de6dfd97819a0986f7e8af662a4c": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:12:10+10:00",
+    "subject": "feat(libc): add independent FreeBSD-style random state"
+  },
+  "070a22e8b71fe6dfc7692c73c4294689ecc116d5": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:10:33+10:00",
+    "subject": "feat(libc): unlink guest files without removing directories"
+  },
+  "a8ccabb1c41da8f3beaef757772b06960df46be7": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:08:30+10:00",
+    "subject": "feat(libc): create exclusive guest temporary files"
+  },
+  "aba6f157e55c762dc393e80add3e7806b2696641": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:06:42+10:00",
+    "subject": "feat(libc): report unavailable guest command processor"
+  },
+  "a5c5e1c9d1232ae5664842c56e2ec80ededb8c1f": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:03:50+10:00",
+    "subject": "fix(agc): share memory access scope across module boundaries"
+  },
+  "dc0e4c96cf49e542319d33f666a61bbb890a4570": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:03:50+10:00",
+    "subject": "docs: move Yamagi investigation to pull request"
+  },
+  "8ec70e2dfde064870d20bbc694fee0d49d853be8": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T06:03:50+10:00",
+    "subject": "fix(build): make Python relinker tests optional"
+  },
+  "e928894b25c253f00d4621289d7caff349bf18f2": {
+    "author": "SamG-Coder",
+    "author_date": "2026-09-26T05:59:37+10:00",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "5a2935fa73ae0f14bed2aa17c5096b16efe74263": {
+    "author": "jplamy",
+    "author_date": "2026-09-25T09:52:30+02:00",
+    "subject": "Update sync workflow with additional cron schedule"
+  },
+  "483109a5a5baa584711f07eec8d2e2c598e9413b": {
+    "author": "github-actions[bot]",
+    "author_date": "2026-09-25T07:51:24Z",
+    "subject": "Merge remote-tracking branch 'upstream/main'"
+  },
+  "3fdef0ad48768ae8aec053d982c5cddbc8825175": {
+    "author": "jplamy",
+    "author_date": "2026-09-25T09:50:56+02:00",
+    "subject": "Add workflow to sync fork with upstream repository"
+  },
+  "a1d21751c7b6751f60d62c47a7f028a74bdb84de": {
+    "author": "Abdalrahman Gamal",
+    "author_date": "2026-09-24T18:59:57+03:00",
+    "subject": "Add GitHub Actions Windows build workflow"
+  },
+  "d32de91a4a4cc8a0da88064d4a8fbac594724d79": {
+    "author": "alanprzyvara",
+    "author_date": "2026-09-23T22:33:01-03:00",
+    "subject": "docs: add porting progress notes"
+  },
+  "d4d53c2e5aebe93572741bacbfef51952d0f8053": {
+    "author": "alanprzyvara",
+    "author_date": "2026-09-23T22:33:01-03:00",
+    "subject": "fix(relinker): decode two-byte ModRM opcodes 0F B8-BB"
+  },
+  "3932705eac7db7c957f15fba318e1e2265274195": {
+    "author": "alanprzyvara",
+    "author_date": "2026-09-23T22:33:01-03:00",
+    "subject": "fix(video): guard __stdcall behind APS5_STDCALL"
+  },
+  "e778ceb207241a84445cd971181e60b1b7c6a4fd": {
+    "author": "alanprzyvara",
+    "author_date": "2026-09-23T22:32:51-03:00",
+    "subject": "fix(build): scope static linking to MinGW"
+  },
+  "6c7ed44653ab9b05f14a2aef6ed14339003ba36c": {
+    "author": "alanprzyvara",
+    "author_date": "2026-09-23T22:32:51-03:00",
+    "subject": "fix(pad,user): return neutral state for benign stubs"
+  },
+  "fbbe46ce54a87d6d555db61dd17b429823eeef17": {
+    "author": "alanprzyvara",
+    "author_date": "2026-09-23T22:32:42-03:00",
+    "subject": "fix(libc): return a missing file as ENOENT instead of throwing"
+  }
+}
