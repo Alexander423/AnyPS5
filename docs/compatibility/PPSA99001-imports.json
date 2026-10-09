@@ -1,21 +1,21 @@
 {
-  "source_commit": "d03a024e1f6d9b63e6e62f841423ba86ce9710b7",
-  "source_dirty": true,
+  "source_commit": "9111f729d4f7f5098a8b65dca59ad000e70be981",
+  "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\final\\PPSA99001\\app.registry.json"
+    "..\\homebrew-results\\kernel-apis\\PPSA99001\\app.registry.json"
   ],
   "references": 488,
   "unique_imports": 455,
   "unique_by_class": {
-    "implemented": 390,
+    "implemented": 395,
     "stub": 2,
-    "absent": 63,
+    "absent": 58,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 422,
+    "implemented": 427,
     "stub": 2,
-    "absent": 64,
+    "absent": 59,
     "module": 0
   },
   "missing_libraries": {
@@ -355,16 +355,6 @@
       "name_verified": true
     },
     {
-      "nid": "+F7C-hdk7+E",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigemptyset",
-      "name_verified": true
-    },
-    {
       "nid": "04AjkP0jO9U",
       "library": "libkernel.prx",
       "references": 1,
@@ -475,16 +465,6 @@
       "name_verified": true
     },
     {
-      "nid": "JUimFtKe0Kc",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigaddset",
-      "name_verified": true
-    },
-    {
       "nid": "JZKw5+Wrnaw",
       "library": "libkernel.prx",
       "references": 1,
@@ -555,26 +535,6 @@
       "name_verified": true
     },
     {
-      "nid": "Nd-u09VFSCA",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigdelset",
-      "name_verified": true
-    },
-    {
-      "nid": "VkTAsrZDcJ0",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigfillset",
-      "name_verified": true
-    },
-    {
       "nid": "Wh7HbV7JFqc",
       "library": "libkernel.prx",
       "references": 1,
@@ -622,16 +582,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "pthread_getcpuclockid",
-      "name_verified": true
-    },
-    {
-      "nid": "oxMp8uPqa+U",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "pthread_set_name_np",
       "name_verified": true
     },
     {
@@ -3641,6 +3591,17 @@
       "name": null
     },
     {
+      "nid": "+F7C-hdk7+E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
       "nid": "+Pqub9HZCPo",
       "library": "libkernel.prx",
       "references": 1,
@@ -4180,6 +4141,17 @@
       "name": null
     },
     {
+      "nid": "JUimFtKe0Kc",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
       "nid": "K-jXhbt2gn4",
       "library": "libkernel.prx",
       "references": 1,
@@ -4241,6 +4213,17 @@
       "class": "implemented",
       "providers": [
         "libc.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "Nd-u09VFSCA",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
       ],
       "library_mismatch": false,
       "name": null
@@ -4403,6 +4386,17 @@
       "nid": "VAzswvTOCzI",
       "library": "libkernel.prx",
       "references": 2,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "VkTAsrZDcJ0",
+      "library": "libkernel.prx",
+      "references": 1,
       "class": "implemented",
       "providers": [
         "libkernel.prx"
@@ -4797,6 +4791,17 @@
     },
     {
       "nid": "oiT0vgzmW0M",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oxMp8uPqa+U",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",

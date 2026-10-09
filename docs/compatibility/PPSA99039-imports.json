@@ -1,21 +1,21 @@
 {
-  "source_commit": "d03a024e1f6d9b63e6e62f841423ba86ce9710b7",
-  "source_dirty": true,
+  "source_commit": "9111f729d4f7f5098a8b65dca59ad000e70be981",
+  "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\final\\PPSA99039\\app.registry.json"
+    "..\\homebrew-results\\kernel-apis\\PPSA99039\\app.registry.json"
   ],
   "references": 342,
   "unique_imports": 342,
   "unique_by_class": {
-    "implemented": 308,
+    "implemented": 310,
     "stub": 1,
-    "absent": 33,
+    "absent": 31,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 308,
+    "implemented": 310,
     "stub": 1,
-    "absent": 33,
+    "absent": 31,
     "module": 0
   },
   "missing_libraries": {},
@@ -182,16 +182,6 @@
       "name_verified": true
     },
     {
-      "nid": "+F7C-hdk7+E",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigemptyset",
-      "name_verified": true
-    },
-    {
       "nid": "2G6i6hMIUUY",
       "library": "libkernel.prx",
       "references": 1,
@@ -329,16 +319,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "mlock",
-      "name_verified": true
-    },
-    {
-      "nid": "oxMp8uPqa+U",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "pthread_set_name_np",
       "name_verified": true
     },
     {
@@ -2622,6 +2602,17 @@
       "name": null
     },
     {
+      "nid": "+F7C-hdk7+E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
       "nid": "+U1R4WtXvoc",
       "library": "libkernel.prx",
       "references": 1,
@@ -3569,6 +3560,17 @@
     },
     {
       "nid": "oiT0vgzmW0M",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oxMp8uPqa+U",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",

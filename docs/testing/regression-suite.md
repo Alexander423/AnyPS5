@@ -1,5 +1,15 @@
 # Regression suite
 
+## Kernel API continuation
+
+The full native build and patched libraries were rebuilt at local code `9111f729d` (published tree-equivalent code `a7dd9324c7623014a7f6a1f1bc2c51e0ed94f807`). Full CTest: **525 passed, 1 failed, 2 skipped out of 528**, in 77 seconds. Failure/skips are unchanged. New guest_signal_sets and existing guest_signals/guest_thread_self pass. Source conventions passed against develop before report updates; test-registration checking reports 447 executables, the two already recorded unrun executables, and no new omissions.
+
+signal-mask-before.xml records the new GuestSignals cases against the old production implementation: failure. signal-mask-after.xml records the same cases after correction: pass. kernel-api-full.xml records the full run. kernel-apis.xml and thread-name.xml contain focused results. The initial attempt used an incorrect build target; it was corrected and rebuilt before capturing the before/after evidence.
+
+Pixel interlock reproduces with APS5_SPIRV_OPT=none and separately APS5_BDA_BYTE_READS=1, both reporting the same wave64 BDA-fault pixel 0 write (1 instead of 0). The first three normal wave64 draws complete before DrawFault fails; later wave32 cases are not reached. These switches do not establish a root cause. Assertions and GPU implementation are unchanged. No Vulkan validation-layer run was performed. The Khronos validation-layer release inspected offers Android binaries; a suitable Windows tooling setup remains pending.
+
+Expanded Windows/Linux CI includes thread names, signal masking and signal sets alongside the prior relinker/ABI and Linux shader tests: [37941840109](https://github.com/Alexander423/AnyPS5/actions/runs/37941840109). Status is recorded in baseline.json.
+
 Baseline `d70b89989473ba1f6ae13e44e079e67f1f8a44b0`: native relinker built; 39/40 CTest tests passed, TLS function coverage exceeded 30 seconds. Commit `ff130a37` shards the same cases deterministically across 16 tests and preserves the 30-second cap. That suite passed 55/55; adding the report tests produced 56/56 passes. No cases were deliberately dropped. The unsharded script remains usable without optional shard arguments.
 
 `guest_atoll` and `guest_thread_atexit` passed against native MinGW system libraries. The full native system-library build also passed with SPIRV-Tools enabled. Full runtime, shader, sanitizer and Vulkan-validation suites are separate and not implied by these results.

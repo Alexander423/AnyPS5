@@ -1,5 +1,15 @@
 # Community patch catalog
 
+## Kernel API continuation
+
+- [Scott Schuster, PR1872](https://github.com/boykopovar/AnyPS5/pull/1872), source `25f95d9d5538a3f5b4f1bf3eed6653a18db1c1f3`, published `8660403cca5fc5f92bb66460cba6c48485938a82`: pthread_set_name_np delegates to the existing locked rename path, accepts a null name to clear it, and retains the void ABI. Tests cover main-thread rename, clearing and null handle. PR1593 instead throws for null names, unlike the [FreeBSD implementation](https://github.com/freebsd/freebsd-src/blob/stable/11/lib/libthr/thread/thr_info.c). Both PRs were closed for lacking a current title first-stop reproduction. No title startup claim is made here.
+- [Jan Slegl, PR1652](https://github.com/boykopovar/AnyPS5/pull/1652), source `28ec8f59bd8bb44a2c4124ce88a15cb15096da98`, published `1610e49371e0435112c5c70f0e1ba78914c81de7`: correct mask indexing to bit n - 1. New regression cases fail against the old implementation and pass after integration on this Windows host. They distinguish blocking SIGTERM from blocking its neighboring bit.
+- [Jan Slegl, PR1641](https://github.com/boykopovar/AnyPS5/pull/1641), source `e6a9b505126730bf1c9d91530cf621b879395b2a`, published `e5b250b7b228630089e7854d75867af416e3d330`: 128-bit sigemptyset/sigfillset/sigaddset/sigdelset/sigismember, integrated after its explicit PR1652 dependency. Tests cover all 128 membership bits, word boundaries, idempotence, invalid indices including integer extremes, unchanged contents on failure and guest errno preservation. Reference semantics: [FreeBSD operations](https://github.com/freebsd/freebsd-src/blob/releng/11.0/lib/libc/gen/sigsetops.c) and [layout](https://github.com/freebsd/freebsd-src/blob/stable/11/sys/sys/_sigset.h).
+
+All three source commits are retained as merge parents in published history, with cherry-pick trailers. No license files change. Signal-set data is caller-owned; naming delegates to existing synchronization. This does not repair the existing global signal mask, implement pending-signal delivery or add pthread_sigmask/sigaction. Null set pointers follow the project's exception policy. Live handle lifetime remains the caller's responsibility under the existing pthread implementation.
+
+The hw.ncpu-only sysctl candidate `18798620e8e9c7973130d35d6211023bafe6bf42` was inspected but not integrated: coverage is narrow, unsupported queries throw, and the title query sequence has not been established. Upstream main still pointed to `d70b89989473ba1f6ae13e44e079e67f1f8a44b0` at the start of this continuation.
+
 Comparison baseline `d70b89989473ba1f6ae13e44e079e67f1f8a44b0`. The JSON comparison stores authors, dates, hashes, changed files and patch-id classifications for every priority branch. A minus sign in `git cherry` means patch-equivalent to upstream, not an independent runtime verification.
 
 ## Integrated patch

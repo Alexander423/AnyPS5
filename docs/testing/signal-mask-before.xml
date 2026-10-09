@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="1"
+	failures="1"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="0"
+	timestamp="2026-10-09T16:05:42"
+	>
+	<testcase name="guest_signals" classname="guest_signals" time="0.210563" status="fail">
+		<failure message="Exit code 0xc0000409"/>
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+FATAL: abort() (SIGABRT) on thread 17988
+    #0 0x00007ff9f9bca1e7 libc.prx+0xa1e7
+    #1 0x00007ff9f9c404f9 libc.prx+0x804f9
+    #2 0x00000027c51ffc00
+  all threads:
+  thread 20508 '': rip 0x00007ffabcb65894 ntdll.dll+0x165894 rsp 0x00000027c53ff9b8 rbp 0x0000000000000000
+  thread 22768 '': rip 0x00007ffabcb65894 ntdll.dll+0x165894 rsp 0x00000027c55ff898 rbp 0x0000000000000000
+  thread 9588 '': rip 0x00007ffabcb65894 ntdll.dll+0x165894 rsp 0x00000027c57ff7a8 rbp 0x0000000000000000
+</system-out>
+	</testcase>
+</testsuite>

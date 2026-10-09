@@ -56,5 +56,19 @@
     "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37938980558",
     "windows": "PASS",
     "linux": "PASS"
+  },
+  "kernel_apis_native": {
+    "tests": 528,
+    "failed": 1,
+    "skipped": 2,
+    "passed": 525,
+    "junit": "kernel-api-full.xml"
+  },
+  "kernel_apis_source_commit": "9111f729d4f7f5098a8b65dca59ad000e70be981",
+  "kernel_apis_tree": "76e6662fc748d0282cdb2eb7401468b38f6b4204",
+  "kernel_apis_published_commit": "a7dd9324c7623014a7f6a1f1bc2c51e0ed94f807",
+  "kernel_apis_ci": {
+    "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37941840109",
+    "status": "IN_PROGRESS"
   }
 }

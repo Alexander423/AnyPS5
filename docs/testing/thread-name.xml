@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="1"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="0"
+	timestamp="2026-10-09T16:04:59"
+	>
+	<testcase name="guest_thread_self" classname="guest_thread_self" time="0.0439817" status="run">
+		<properties/>
+		<system-out>[time] scheduler tick raised to 0.5 ms (was 0.50 ms, now 0.50 ms, timed waits fine)
+[src/Thread.cpp:173 RunThread] RunThread entry=0x7ff69f8118d0 arg=00000054b1dff650 self=000001e909b6f8f0
+</system-out>
+	</testcase>
+</testsuite>

@@ -1,21 +1,21 @@
 {
-  "source_commit": "d03a024e1f6d9b63e6e62f841423ba86ce9710b7",
-  "source_dirty": true,
+  "source_commit": "9111f729d4f7f5098a8b65dca59ad000e70be981",
+  "source_dirty": false,
   "registries": [
-    "..\\homebrew-results\\final\\PPSA69420\\app.registry.json"
+    "..\\homebrew-results\\kernel-apis\\PPSA69420\\app.registry.json"
   ],
   "references": 208,
   "unique_imports": 208,
   "unique_by_class": {
-    "implemented": 199,
+    "implemented": 202,
     "stub": 0,
-    "absent": 9,
+    "absent": 6,
     "module": 0
   },
   "references_by_class": {
-    "implemented": 199,
+    "implemented": 202,
     "stub": 0,
-    "absent": 9,
+    "absent": 6,
     "module": 0
   },
   "missing_libraries": {},
@@ -29,16 +29,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "sceSystemServiceLaunchWebBrowser",
-      "name_verified": true
-    },
-    {
-      "nid": "+F7C-hdk7+E",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigemptyset",
       "name_verified": true
     },
     {
@@ -59,16 +49,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "sysctl",
-      "name_verified": true
-    },
-    {
-      "nid": "JUimFtKe0Kc",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "sigaddset",
       "name_verified": true
     },
     {
@@ -99,16 +79,6 @@
       "providers": [],
       "library_mismatch": false,
       "name": "sysctlbyname",
-      "name_verified": true
-    },
-    {
-      "nid": "oxMp8uPqa+U",
-      "library": "libkernel.prx",
-      "references": 1,
-      "class": "absent",
-      "providers": [],
-      "library_mismatch": false,
-      "name": "pthread_set_name_np",
       "name_verified": true
     },
     {
@@ -1652,6 +1622,17 @@
       "name": null
     },
     {
+      "nid": "+F7C-hdk7+E",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
       "nid": "+U1R4WtXvoc",
       "library": "libkernel.prx",
       "references": 1,
@@ -1884,6 +1865,17 @@
     },
     {
       "nid": "JGMio+21L4c",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "JUimFtKe0Kc",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",
@@ -2192,6 +2184,17 @@
     },
     {
       "nid": "oiT0vgzmW0M",
+      "library": "libkernel.prx",
+      "references": 1,
+      "class": "implemented",
+      "providers": [
+        "libkernel.prx"
+      ],
+      "library_mismatch": false,
+      "name": null
+    },
+    {
+      "nid": "oxMp8uPqa+U",
       "library": "libkernel.prx",
       "references": 1,
       "class": "implemented",
