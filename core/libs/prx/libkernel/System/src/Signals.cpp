@@ -11,9 +11,6 @@
 
 extern "C" int* APS5_VABI __error_nid_postfix();
 extern "C" Pthread APS5_VABI scePthreadSelf();
-#ifdef _WIN32
-extern "C" int APS5_VABI sceKernelRaiseException(Pthread thread, int signum);
-#endif
 namespace {
 using GuestHandler = void (APS5_VABI *)(int);
 std::atomic<GuestHandler> handlers[32]{};
@@ -39,18 +36,7 @@ int HostSignal(int guest) {
     return guest == GUEST_RAISED_SIGNAL ? HOST_RAISED_SIGNAL : NativeSignal(guest);
 }
 #endif
-void Dispatch(int native) {
-    int guest = 0;
-    for (int candidate : MappedSignals)
-        if (NativeSignal(candidate) == native) { guest = candidate; break; }
-    if (!guest) return;
-#ifdef _WIN32
-    // Preserve the guest's persistent registration across CRT delivery.
-    std::signal(native, Dispatch);
-#endif
-    const auto callback = handlers[guest].load();
-    if (reinterpret_cast<std::uintptr_t>(callback) <= IgnoredHandler) return;
-    auto* self = CurrentGuestThread();
+void RunHandler(PthreadPrivate* self, int guest, GuestHandler callback) {
     if (self == nullptr) {
         callback(guest);
         return;
@@ -67,6 +53,30 @@ void Dispatch(int native) {
     GuestSignalMask::DeliverUnblocked(*self);
 #endif
 }
+
+void Dispatch(int native) {
+    int guest = 0;
+    for (int candidate : MappedSignals)
+        if (NativeSignal(candidate) == native) { guest = candidate; break; }
+    if (!guest) return;
+#ifdef _WIN32
+    // Preserve the guest's persistent registration across CRT delivery.
+    std::signal(native, Dispatch);
+#endif
+    const auto callback = handlers[guest].load();
+    if (reinterpret_cast<std::uintptr_t>(callback) <= IgnoredHandler) return;
+    RunHandler(CurrentGuestThread(), guest, callback);
+}
+
+#ifdef _WIN32
+void DeliverCaught(PthreadPrivate& thread, int guest) {
+    const auto callback = handlers[guest].load();
+    const auto address = reinterpret_cast<std::uintptr_t>(callback);
+    if (address == IgnoredHandler) return;
+    if (address == 0) std::raise(NativeSignal(guest));
+    else RunHandler(&thread, guest, callback);
+}
+#endif
 
 #ifndef _WIN32
 const sigset_t& GuardedSignals() {
@@ -99,8 +109,8 @@ void DeliverUnblocked(PthreadPrivate& thread) {
     for (const int guest : MaskedSignals) {
         const std::uint32_t bit = GuestSignalBit(guest);
         if (GuestSignalBlocked(thread, guest) || (thread.pendingSignals.fetch_and(~bit) & bit) == 0) continue;
-        if (guest == GUEST_RAISED_SIGNAL) sceKernelRaiseException(&thread, guest);
-        else std::raise(NativeSignal(guest));
+        if (guest == GUEST_RAISED_SIGNAL) DeliverRaised(thread);
+        else DeliverCaught(thread, guest);
     }
 }
 #else

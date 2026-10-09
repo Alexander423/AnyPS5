@@ -253,6 +253,14 @@ void CALLBACK WaitingEntry(ULONG_PTR parameter) {
     Deliver(*delivery, context);
 }
 
+void DeliverHere(PthreadPrivate& thread, GuestExceptionHandler handler, int signum) {
+    Delivery delivery{handler, signum, {}, &thread, {}};
+    if (!Claim(thread, signum, delivery.interrupted)) return;
+    CONTEXT context{};
+    RtlCaptureContext(&context);
+    Deliver(delivery, context);
+}
+
 static_assert(HomeArea + 8 == 40, "Aps5RedirectedEntryStub finds the delivery 40 bytes above its stack pointer");
 static_assert(offsetof(Delivery, context) == 16 && offsetof(CONTEXT, Rax) == 0x78 && offsetof(CONTEXT, Rbp) == 0xa0 && offsetof(CONTEXT, R15) == 0xf0, "Aps5RedirectedEntryStub stores the live registers into the delivery's context");
 
@@ -261,12 +269,8 @@ bool Exited(HANDLE native) {
 }
 
 bool RaiseOn(Pthread thread, GuestExceptionHandler handler, int signum) {
-    if (thread == scePthreadSelf()) {
-        Delivery delivery{handler, signum, {}, thread, {}};
-        if (!Claim(*thread, signum, delivery.interrupted)) return true;
-        CONTEXT context{};
-        RtlCaptureContext(&context);
-        Deliver(delivery, context);
+    if (thread->nativeThreadId == GetCurrentThreadId()) {
+        DeliverHere(*thread, handler, signum);
         return true;
     }
     const auto native = static_cast<HANDLE>(thread->nativeHandle);
@@ -472,6 +476,16 @@ asm(".text\n"
     "    movq %r15, 296(%rsp)\n"
     "    leaq 40(%rsp), %rcx\n"
     "    jmp Aps5RedirectedEntry\n");
+
+namespace GuestSignalMask {
+
+void DeliverRaised(PthreadPrivate& thread) {
+    const auto handler = Handler(GUEST_RAISED_SIGNAL);
+    if (handler == nullptr) throw std::runtime_error("sceKernelRaiseException: no handler installed for the signal");
+    DeliverHere(thread, handler, GUEST_RAISED_SIGNAL);
+}
+
+}  // namespace GuestSignalMask
 #endif
 
 extern "C" {

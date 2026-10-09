@@ -13,6 +13,7 @@ Mask Stored(const PthreadPrivate& thread);
 void Store(PthreadPrivate& thread, Mask mask);
 #ifdef _WIN32
 void DeliverUnblocked(PthreadPrivate& thread);
+void DeliverRaised(PthreadPrivate& thread);
 #else
 void ReadHost(const sigset_t& host, Mask& mask);
 void WriteHost(const Mask& mask, sigset_t& host);

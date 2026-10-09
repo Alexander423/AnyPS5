@@ -87,6 +87,7 @@ struct PthreadAttrPrivate {
 struct PthreadPrivate {
 #ifdef _WIN32
     void* nativeHandle = nullptr;
+    unsigned long nativeThreadId = 0;
 #else
     std::thread _thr;
     pthread_t hostThread{};
