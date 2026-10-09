@@ -10,7 +10,7 @@ Our follow-up `f8267170f363f2c99b4f83b92e1dbcee2236e33e` supports hw.realmem by 
 
 The new regression fails on the CPU-only patch with unsupported MIB 6.12 and passes after the follow-up. It checks size queries, eight-byte output, named/numeric agreement, capacities 0 through 10, exact copied bytes, untouched guard bytes, error/errno behavior and read-only rejection. Unsupported names and MIBs still throw. No new global state, allocations on supported queries or synchronization are introduced.
 
-Next signal candidates were triaged, not integrated: PR1916 (`b9359477cd8fa1e6796b15fd7882106ab3c3f1c1`) records some sigaction handlers without delivering them or applying masks/flags; PR2106 (`e663325fa885115bac4c67b75a8aa372eae24b37`) inherits the process-wide mask; PR1431 (`77143010efe1555449b6f11ee6a91b1517fd4b6d`) proposes per-thread masks and Linux delivery across several files. Their interaction needs a separate correctness review before claiming signal compatibility.
+Next signal candidates were triaged, not integrated: PR1916 (`b9359477cd8fa1e6796b15fd7882106ab3c3f1c1`) records some sigaction handlers without delivering them or applying masks/flags; PR2106 (`e663325fa885115bac4c67b75a8aa372eae24b37`) inherits the process-wide mask; PR1431 (`77143010efe1555449b6f11ee6a91b1517fd4b6d`) describes per-thread masks, but the actual six-file merge-base diff does not change Signals.cpp, and that revision still contains the global blockedMask and bit-n check. Its current code must not be assumed to implement all behavior in its description. Their interaction needs a separate correctness review before claiming signal compatibility.
 
 ## Kernel API continuation
 
