@@ -4,7 +4,7 @@
 
 Local code `7f9770322`, published tree-equivalent code `29ebb25b0b9343e2dca2ed7e23220d63f2482b6e`: full native build and patched-library build pass. Full CTest remains **525 passed, 1 failed, 2 skipped out of 528** (73.37 seconds); the pixel-interlock failure and two skips are unchanged. Evidence: sysctl-full.xml. The CPU-only patch passes its focused test (sysctl.xml). The added memory fallback regression fails before implementation (sysctl-realmem-before.xml) and passes after (sysctl-realmem-after.xml). Source conventions and test-registration checks pass before the required report updates.
 
-Windows/Linux CI now includes guest_system_configuration: [37943953798](https://github.com/Alexander423/AnyPS5/actions/runs/37943953798); status is recorded in baseline.json. All four homebrew conversions and static import audits were repeated against clean source and freshly built libraries. No application was launched.
+Windows/Linux CI now includes guest_system_configuration: [37943953798](https://github.com/Alexander423/AnyPS5/actions/runs/37943953798) passed on both Windows and Linux, including the Linux shader checks, on 2026-10-09. Status is recorded in baseline.json. All four homebrew conversions and static import audits were repeated against clean source and freshly built libraries. No application was launched.
 
 ## Kernel API continuation
 

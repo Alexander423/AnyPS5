@@ -52,8 +52,8 @@
   "shader_local_commit": "b1419381a",
   "shader_remote_commit": "b3349d2d510e0f100cb2e415bf8f533eb14e2eaf",
   "latest_code_ci": {
-    "commit": "a7dd9324c7623014a7f6a1f1bc2c51e0ed94f807",
-    "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37941840109",
+    "commit": "29ebb25b0b9343e2dca2ed7e23220d63f2482b6e",
+    "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37943953798",
     "windows": "PASS",
     "linux": "PASS"
   },
@@ -85,6 +85,8 @@
   "sysctl_published_commit": "29ebb25b0b9343e2dca2ed7e23220d63f2482b6e",
   "sysctl_ci": {
     "url": "https://github.com/Alexander423/AnyPS5/actions/runs/37943953798",
-    "status": "IN_PROGRESS"
+    "status": "PASS",
+    "windows": "PASS",
+    "linux": "PASS"
   }
 }
