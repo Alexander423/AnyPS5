@@ -45,9 +45,9 @@ jobs:
       - name: Library ABI build
         run: |
           cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
-          cmake --build build --target guest_atoll_tests guest_thread_atexit_tests guest_thread_self_tests guest_signal_tests guest_signal_set_tests --parallel 2
+          cmake --build build --target guest_atoll_tests guest_thread_atexit_tests guest_thread_self_tests guest_signal_tests guest_signal_set_tests guest_system_configuration_tests --parallel 2
       - name: Library ABI regression
-        run: ctest --test-dir build --output-on-failure -R '^(guest_atoll|guest_thread_atexit|guest_thread_self|guest_signals|guest_signal_sets)$' --output-junit abi.xml
+        run: ctest --test-dir build --output-on-failure -R '^(guest_atoll|guest_thread_atexit|guest_thread_self|guest_signals|guest_signal_sets|guest_system_configuration)$' --output-junit abi.xml
       - name: Linux shader regression
         if: runner.os == 'Linux'
         env:
