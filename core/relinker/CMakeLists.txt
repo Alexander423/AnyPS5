@@ -205,8 +205,12 @@ if(BUILD_TESTING)
             ${CMAKE_CURRENT_SOURCE_DIR}/relinker/tests/test_optional_plt.py $<TARGET_FILE:relinker>)
         add_test(NAME empty_tls COMMAND ${Python3_EXECUTABLE}
             ${CMAKE_CURRENT_SOURCE_DIR}/relinker/tests/test_empty_tls.py $<TARGET_FILE:relinker>)
-        add_test(NAME tls_function_coverage COMMAND ${Python3_EXECUTABLE}
-            ${CMAKE_CURRENT_SOURCE_DIR}/relinker/tests/test_tls_function_coverage.py $<TARGET_FILE:relinker>)
+        foreach(shard RANGE 0 15)
+            add_test(NAME tls_function_coverage_${shard} COMMAND ${Python3_EXECUTABLE}
+                ${CMAKE_CURRENT_SOURCE_DIR}/relinker/tests/test_tls_function_coverage.py
+                $<TARGET_FILE:relinker> --shard ${shard} --shards 16)
+            set_tests_properties(tls_function_coverage_${shard} PROPERTIES TIMEOUT 30)
+        endforeach()
         add_test(NAME tls_diagnostics COMMAND ${Python3_EXECUTABLE}
             ${CMAKE_CURRENT_SOURCE_DIR}/relinker/tests/test_tls_diagnostics.py $<TARGET_FILE:relinker>)
         add_test(NAME linux_load_alignment COMMAND ${Python3_EXECUTABLE}

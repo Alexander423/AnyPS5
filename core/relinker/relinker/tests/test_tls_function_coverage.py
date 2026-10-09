@@ -1,4 +1,6 @@
+import argparse
 import os
+import zlib
 from pathlib import Path
 import platform
 import struct
@@ -389,11 +391,23 @@ def add_alias(image, size, begin=0x1200):
 
 
 def main():
-    relinker = Path(sys.argv[1]).resolve()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("relinker", type=Path)
+    parser.add_argument("--shard", type=int, default=0)
+    parser.add_argument("--shards", type=int, default=1)
+    args = parser.parse_args()
+    if args.shards < 1 or not 0 <= args.shard < args.shards:
+        parser.error("shard must be in [0, shards)")
+    relinker = args.relinker.resolve()
+
+    def selected(name):
+        return zlib.crc32(name.encode("utf-8")) % args.shards == args.shard
     with tempfile.TemporaryDirectory(prefix="anyps5-tls-coverage-") as directory:
         work = Path(directory)
 
         def convert(name, image, error=None, tls_address=0x1240, displacement=0, error_offset=None):
+            if not selected(name):
+                return False
             source = work / (name + ".elf")
             output = source.with_suffix(".exe")
             source.write_bytes(image)
@@ -421,6 +435,7 @@ def main():
                 entry = 0x10000 + struct.unpack_from("<Q", image, 24)[0]
                 executed = subprocess.run([sys.executable, str(RUNNER), str(output), hex(entry)], capture_output=True, timeout=30)
                 assert executed.returncode == 42, (name, executed.returncode, executed.stderr)
+            return True
 
         for metadata in ("unwind", "symbol"):
             for transfer in ("table", "register", "memory"):
@@ -472,18 +487,19 @@ def main():
             assert result.returncode == 0, (name, result.stdout, result.stderr)
             return output.read_bytes()
 
-        unreferenced = make_image("register", "unwind")
-        unreferenced[0x18f0:0x1900] = b"\xcc" * 16
-        unreferenced[0x1900:0x1900 + len(TLS_LOAD) + 4] = TLS_LOAD + bytes.fromhex("8b 40 f0 c3")
-        pe = convert_padded("unreferenced-padded-function", unreferenced)
-        assert pe_bytes_at(pe, 0x11900, 1)[0] == 0xe9, "unreferenced-padded-function"
-        assert pe_bytes_at(pe, 0x11850, len(TLS_LOAD)) == TLS_LOAD, "unreferenced-padded-function"
-        zero_filled = make_image("register", "unwind")
-        zero_filled[0x18f0:0x1900] = b"\xcc" * 16
-        zero_filled[0x1900:0x1910] = bytes(16)
-        zero_filled[0x1910:0x1910 + len(TLS_LOAD)] = TLS_LOAD
-        pe = convert_padded("zero-filled-after-padding", zero_filled)
-        assert pe_bytes_at(pe, 0x11910, len(TLS_LOAD)) == TLS_LOAD, "zero-filled-after-padding"
+        if args.shard == 0:
+            unreferenced = make_image("register", "unwind")
+            unreferenced[0x18f0:0x1900] = b"\xcc" * 16
+            unreferenced[0x1900:0x1900 + len(TLS_LOAD) + 4] = TLS_LOAD + bytes.fromhex("8b 40 f0 c3")
+            pe = convert_padded("unreferenced-padded-function", unreferenced)
+            assert pe_bytes_at(pe, 0x11900, 1)[0] == 0xe9, "unreferenced-padded-function"
+            assert pe_bytes_at(pe, 0x11850, len(TLS_LOAD)) == TLS_LOAD, "unreferenced-padded-function"
+            zero_filled = make_image("register", "unwind")
+            zero_filled[0x18f0:0x1900] = b"\xcc" * 16
+            zero_filled[0x1900:0x1910] = bytes(16)
+            zero_filled[0x1910:0x1910 + len(TLS_LOAD)] = TLS_LOAD
+            pe = convert_padded("zero-filled-after-padding", zero_filled)
+            assert pe_bytes_at(pe, 0x11910, len(TLS_LOAD)) == TLS_LOAD, "zero-filled-after-padding"
         for register in range(16):
             offset, body = register_load(register)
             image = make_image("register", "unwind", body=body)
@@ -501,6 +517,8 @@ def main():
                 for displacement in (0, 40, -8):
                     body = fs_alu(opcode, register, displacement) + b"\xc3"
                     case = f"alu-{name}-{register}-{displacement}"
+                    if not selected(case):
+                        continue
                     image = make_image("register", "unwind", body=body)
                     source = work / (case + ".elf")
                     output = source.with_suffix(".exe")
@@ -524,7 +542,8 @@ def main():
         for name, image in alu_execution_cases():
             convert(name, image)
         for name, image, address, instruction, register, wide, moved in register_load_cases():
-            convert(name, image, tls_address=address)
+            if not convert(name, image, tls_address=address):
+                continue
             pe = (work / (name + ".exe")).read_bytes()
             patched = pe_bytes_at(pe, 0x10000 + address, 5)
             stub = pe_bytes_at(pe, 0x10000 + address + 5 + struct.unpack_from("<i", patched, 1)[0], 96)
